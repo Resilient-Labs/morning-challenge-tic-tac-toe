@@ -62,10 +62,10 @@ h1{
   width: 500px;
 }
 
+/* RESET AREA */
 .reset {
   height: 50px;
   width: 150px;
-  /* border: 1px solid lightblue; */
   font-size: 2rem;;
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0);
