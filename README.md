@@ -4,8 +4,8 @@
 
 ## Screenshots of application
 
+[Checkout My Portfolio](https://www.tamikasterlin.com)
+
 
 ![Application Screenshot](screenshot/screenshot1.png)
 ![Application Screenshot](screenshot/screenshot2.png)
-
-[my website](https://www.tamikasterlin.com)
