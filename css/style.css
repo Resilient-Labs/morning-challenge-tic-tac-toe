@@ -1,0 +1,37 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 300px;
+  margin: 50px auto;
+
+
+}
+.cell{
+  border: 1px solid black;
+  height: 150px;
+  width: 150px;
+  font-size: 100px;
+
+  box-shadow: 0 0 0 1px #333333;
+
+   cursor: pointer;
+   line-height: 100px;
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
