@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/aa1a2a1c33.js" crossorigin="anonymous"></script>
+
+		<title>Tic Tac Toe</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<main>
+			<!-- title -->
+			<section class="header">
+				<h1 class="title">Tic Tac Toe</h1>
+			</section>
+
+			<!-- Player name input -->
+			<section class="players">
+			<form class="disposable" >
+				<input class="player1" type="text" name="player1" placeholder="Player 1">
+				<input class="player2" type="text" name="player2" placeholder="Player 2">
+				<input class="submit" type="button" name="submit" value="Start">
+			</form>
+			<!-- This will sow player tuns -->
+			<h2 class="info"></h2>
+			</section>
+
+			<!-- This table holds the gameboard -->
+			<section class="table">
+				<table>
+					<tr id="row1">
+						<td class="box" id="one"></td>
+						<td class="box" id="two"></td>
+						<td class="box" id="three"></td>
+					</tr>
+					<tr id="row2">
+						<td class="box" id="four"></td>
+						<td class="box" id="five"></td>
+						<td class="box" id="six"></td>
+					</tr>
+					<tr id="row3">
+						<td class="box" id="seven"></td>
+						<td class="box" id="eight"></td>
+						<td class="box" id="nine"></td>
+					</tr>
+				</table>
+			</section>
+
+			<!-- reset button and player scoes on each side -->
+			<form class="reset">
+				<h2 class="player1Score"></h2>
+				<input class="resetButton"type="button" name="" value="Reset">
+				<h2 class="player2Score"></h2>
+			</form>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
