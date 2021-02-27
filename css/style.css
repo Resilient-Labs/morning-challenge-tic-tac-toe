@@ -1,0 +1,147 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'DotGothic16',sans-serif;
+     background-color: rgb(255,255,153);
+}
+html{
+  font-size: 10px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1{
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+  margin-bottom: 23px;
+}
+td{
+  border: .3rem solid black;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+
+
+}
+table{
+  height: 600px;
+
+}
+tbody{
+  height: 600px;
+  font-size: 14rem;
+    text-align: center;
+}
+tr{
+  height: 200px;
+}
+div{
+  height: 100px;
+}
+button{
+  height: 92px;
+  background-color: #b19cd9;
+  border-radius: 50%;
+  width: 6%;
+  float: right;
+  box-shadow: 1px 4px 17px 7px;
+  outline: none;
+  margin-right: 15%;
+  font-weight: 800;
+  font-size: 2rem;
+  font-family: 'DotGothic16',sans-serif;
+}
+button:hover{
+  color: red;
+}
+input{
+  float: left;
+  height: 50px;
+  width: 24%;
+  background-color: #b19cd9;
+  margin: 0 3%;
+  border-radius: 38px;
+  box-shadow: 1px 4px 17px 7px;
+  outline: none;
+  font-size: 3rem;
+  font-family: 'DotGothic16',sans-serif;
+}
+p{
+  text-align: center;
+  height: 100px;
+  font-size: 3.5rem;
+  width: 10%;
+  float: left;
+  margin-left: 15%;
+  margin-right: 14%;
+}
+.rowOne td{
+  border-top: 0;
+}
+#zero, #three, #six{
+  border-left: 0;
+}
+#two, #five, #eight{
+  border-right: 0;
+}
+.rowThree td{
+  border-bottom: 0;
+}
+table{
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 100%;
+}
+.endgame{
+  text-align: center;
+  font-size: 4rem;
+  height: 162px;
+  margin-left: 19%;
+  float: left;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
