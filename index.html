@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <section class="game"> 
+        <section class="playerStats">
+            <h2>Player 1</h2>
+            <h3>Score: <span id="scorePlayer1">0</span></h3>
+        </section>
+        <section class="playerStats">
+            <h2>Player 2</h2>
+            <h3>Score: <span id="scorePlayer2">0</span></h3>
+        </section>
+        <ul id="row1" class="rows">
+            <li class="col1 box" data-position="1"></li>
+            <li class="col2 box" data-position="2"></li>
+            <li class="col3 box" data-position="3"></li>
+        </ul>
+        <ul id="row2" class="rows">
+            <li class="col1 box" data-position="4"></li>
+            <li class="col2 box" data-position="5"></li>
+            <li class="col3 box" data-position="6"></li>
+        </ul>
+        <ul id="row3" class="rows">
+            <li class="col1 box" data-position="7"></li>
+            <li class="col2 box" data-position="8"></li>
+            <li class="col3 box" data-position="9"></li>
+        </ul>
+       
+        <section id="playAgain">
+            <button id="clearBoard">Play Again?</button>
+        </section>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
