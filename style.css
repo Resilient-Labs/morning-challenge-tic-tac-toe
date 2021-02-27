@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5;
+}
+
+.parent {
+  height: 400px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(tictactoepic.jpg);
+}
+
+.board {
+  height: 300px;
+  width: 50%;
+  border: 1px solid #2196f3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 337px;
+}
+
+.square {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: 1px solid blue;
+  margin-left: 67px;
+  background-color: rgb(43, 198, 226);
+}
+h1{
+  font-size: 30px;
+}
+
