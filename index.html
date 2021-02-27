@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+  <section class='main'>
+    <section class="details">
+      <h1>Tik Tac Toebeans</h1>
+      <ul class='game-options flex-container'>
+        <li>
+          <button class="primary-button secondary-button reset" name="button">Reset</button>
+        </li>
+        <li class=flex-container>
+          <button id="twoPlayer" class="primary-button secondary-button " type="button" name="button">2 Player</button>
+          <button id="aiEasy" class="primary-button secondary-button " type="button" name="button">AI</button>
+          <!-- <button id="aiHard" class="primary-button secondary-button" type="button" name="button">AI Hard</button> -->
+        </li>
+      </ul>
+      <h2 class='prompt'></h2>
+    </section>
+
+    <div class="row row-0 flex-container">
+      <button class="primary-button square square-0 flex-container"></button>
+      <button class="primary-button square square-1 flex-container"></button>
+      <button class="primary-button square square-2 flex-container"></button>
+    </div >
+
+
+    <div class="row row-1 flex-container ">
+      <button class="primary-button square square-0 flex-container"></button>
+      <button class="primary-button square square-1 flex-container"></button>
+      <button class="primary-button square square-2 flex-container"></button>
+    </div>
+
+    <div class="row row-2 flex-container ">
+      <button class="primary-button square square-0 flex-container"></button>
+      <button class="primary-button square square-1 flex-container"></button>
+      <button class="primary-button square square-2 flex-container"></button>
+    </div>
+    <button class="info-button">...</button>
+  </section>
+  <aside>
+    <h4 id="projectTitle">Welcome to Tic Tac Toebeans</h4>
+    <div class="external-links"><a id="portfolio-link" class="" href="http://jpmbvistro.netlify.app/" target='_blank'> More of my work</a></div>
+    <h5>Tic Tac Toebeans</h5>
+    <p>I made this Tic Tac Toe game as a coding challenge to make aspects of the program object oriented. I used a constructor function for both the individual tiles and the entire game board. I made the tiles into button switches to give a visual cue that they cannot be pressed after one has been selected or when the game is completed.</p>
+    <div id="profile-container" class="profile-container"><img src="img/profile-picture.jpg" alt="Profile Picture"></div>
+    <h5>About Me</h5>
+    <p>A software engineer based in Boston, I combine archipelagic design and my diasporic experiences to compose engaging, complex, and intuitive applications.</p>
+    <div class="collab-button"><a id="portfolio-link" class=" portfolio-link" target="_blank" href="https://jpmbvistro.netlify.app/" target='_blank'>Work with me</a>
+    <a id="hide-aside" class="hide-aside"></a><div>
+</aside>
+    <script src="./js/main.js"></script>
+
+  </body>
+</html>

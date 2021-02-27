@@ -1,22 +1,19 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic Tac Toebeans
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+This application was made for a coding challenge to create a Tic Tac Toe game. A great exercise in creating objects, embedded objects, and object constructors. Styled so that there are visual cues for what has been selected and when the game is over.
 
-### How to submit your code for review:
+## Current Hosting
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+To see deployed site, visit [The Application here](https://jpmbvistro-tictactoebeans.netlify.app/)
+See my other deployed projects there as well!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Work With Me
+
+If you would like to work with me, feel free to contact me through [my website](https://www.jpmbvistro.com), my [LinkedIn](https://www.linkedin.com/in/juan-justin-vistro/), or email me directly [jpmbvistro@gmail.com](mailto:JPMBVistro@gmail.com)
+
+## Screenshots
+
+![Application Screenshot](screenshot/full-screenshot.png)
+
+### Contributions
+At this moment, I am currently not accepting contributions for this project.
