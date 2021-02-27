@@ -1,0 +1,133 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 12px;
+}
+body {
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #1F5673;
+  color: white;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Individual box styling */
+.box{
+ border: 4px solid white;
+ height: 100px;
+ width: 100px;
+ text-align: center;
+}
+
+/* These make the box look like TIC TAC TOE */
+#one, #four, #seven{
+border-left: transparent;
+}
+
+#three, #six, #nine{
+border-right: transparent;
+}
+
+#row1 .box{
+  border-top: 0;
+}
+
+#row3 .box{
+  border-bottom: none;
+}
+
+/* Covers full page */
+main{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Sets spacing and height. */
+.header{
+  flex: 1 1 15%;
+}
+.players{
+  flex: 1 1 15%;
+}
+.table{
+  width: 100%;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reset{
+  flex: 1 1 20%;
+}
+/* Button styling */
+.reset input{
+  height: 20%;
+  width: 15%;
+  border-radius: 5px;
+  border: none;
+}
+/* Sets highlight for buttons */
+.reset input:hover,
+.submit:hover{
+  background-color: lightblue
+}
+.submit{
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+}
+h1{
+  font-size: 5rem;
+}
+/* Tic tac toe text */
+table{
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+form h2{
+  font-size: 2rem;
+}
+.info{
+  font-size: 3rem;
+  text-align: center;
+}
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
