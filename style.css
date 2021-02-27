@@ -1,0 +1,11 @@
+section{
+    border: solid black 2px;
+    height:100px;
+    width:100px;
+    float: left;
+}
+#container{
+    height: 312px;
+    width: 312px;
+    border: solid rgb(251, 0, 0) 2px;
+}
