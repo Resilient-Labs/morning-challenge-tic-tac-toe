@@ -4,5 +4,6 @@
 
 ## Screenshots of application
 
-![screenshot 1] (screenshot/screenshot1.png)
-![screenshot 2] (screenshot/screenshot2.png)
+
+![Application Screenshot](screenshot/screenshot1.png)
+![Application Screenshot](screenshot/screenshot2.png)
