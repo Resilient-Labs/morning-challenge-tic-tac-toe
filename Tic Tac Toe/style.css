@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+
+/* #mainsec{
+height: 500px;
+width:60%;
+border: solid red 1px;
+margin: auto;
+/* background: black; */
+/* display: flex;
+justify-content: center;
+align-content: center;
+grid-template-columns: repeat (3,auto;); */
+
+h1{
+  text-align: center;
+}
+.img{
+  height:100px;
+  width:70%;
+  text-align: center;
+}
+#box1,#box2,#box3{
+  height:100px;
+  width:15%;
+  background: red;
+  display:inline-block;
+
+}
+#box4,#box5,#box6{
+  height:100px;
+  width:15%;
+  background: red;
+  display:inline-block;
+
+  }
+
+#box7,#box8,#box9{
+  height:100px;
+  width:15%;
+  background:red;
+  display:inline-block;
+}
