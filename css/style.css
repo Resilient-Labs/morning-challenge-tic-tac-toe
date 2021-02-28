@@ -1,0 +1,31 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.thirds{
+  border: 2px solid black;
+  text-align: center; 
+  width: 455px;
+  height: 150px;
+  
+}
+ .one9Box{
+  width: 150px;
+  float: left;
+  border: black 1px solid;
+  height: 150px;
+  cursor: pointer;
+} 
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
