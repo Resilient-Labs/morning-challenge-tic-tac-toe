@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>OOP TTT</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <h1> Harry Potter's Tic-Tac-Toe </h1>
+  <section class="tableContainer">
+  <p id="result"></p>
+<table id="main">
+  <tr>
+    <td class="box" id="box0"> </td>
+    <td class="box" id="box1"> </td>
+    <td class="box" id="box2"> </td>
+  </tr>
+  <tr>
+    <td class="box" id="box3"> </td>
+    <td class="box" id="box4"> </td>
+    <td class="box" id="box5"> </td>
+  </tr>
+  <tr>
+    <td class="box" id="box6"> </td>
+    <td class="box" id="box7"> </td>
+    <td class="box" id="box8"> </td>
+  </tr>
+</table>
+
+<button type="button" name="undo" id="undo">take away</button>
+<button type="button" name="reset" id="reset">redo</button>
+</section>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- connects JS and HTML together so it can be read -->
+  </body>
+</html>
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  background-image: url(../img/image1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-weight: bold;
+}
+
+h1{
+color: yellow;
+font-size: 50px;
+text-align:center;
+}
+
+table{
+  border: yellow 5px solid;
+  height: 450px;
+  width: 50%;
+  text-align: center;
+}
+
+td{
+  font-size: 25px;
+  border: 3px solid black;
+  color: green;
+}
+
+.tableContainer{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.box{
+  width: 25%;
+  height: 100px;
+  font-size: 100px;
+  color: black;
+}
+p{
+  font-size: 40px;
+  color: green;
+}
+
+
+let counter = 0;
+const box0= document.getElementById('box0')
+const box1= document.getElementById('box1')
+const box2= document.getElementById('box2')
+const box3= document.getElementById('box3')
+const box4= document.getElementById('box4')
+const box5= document.getElementById('box5')
+const box6= document.getElementById('box6')
+const box7= document.getElementById('box7')
+const box8= document.getElementById('box8')
+let winLose = document.getElementById("result")
+
+
+function win(which){
+  let notLoser = `The winner is: ${which}`;
+  // template literal is a new kind of string literal that can span multiple
+  //lines and interpolate expressions (include their results). For example:
+  //const firstName = 'Jane' ; console . ... Template literals always produce
+  // strings
+
+  winLose.innerHTML = notLoser
+}
+
+function clearBoard (){
+  document.querySelectorAll(".box").forEach( box => {
+      box.innerHTML = ""
+  })
+  // returns  the  first element  that matches a specified CSS selector in the
+  // document and it only return the first one
+  document.querySelectorAll("#result").forEach( box =>{
+      box.innerHTML = " "
+  })
+  counter = 0
+  winLose.innerHTML = ""
+}
+
+reset.addEventListener('click', clearBoard)
+
+undo.addEventListener('click', noGo)
+
+function noGo(){
+  alert("sorry, not allowed")
+}
+
+function checkWin(){
+  // The innerHTML property sets or returns the HTML content (inner HTML) of
+  // an element.
+  if(box0.innerHTML !== " " &&  box0.innerHTML === box1.innerHTML && box1.innerHTML === box2.innerHTML){
+    win(box0.innerHTML) // this will clear the board
+    //it will also let us know who is winning or losing
+    // counter will update to zero as well
+  }if(box3.innerHTML !== " " &&  box3.innerHTML === box4.innerHTML && box4.innerHTML === box5.innerHTML){
+    win(box3.innerHTML)
+   }if(box6.innerHTML !== " " &&  box6.innerHTML === box7.innerHTML && box7.innerHTML === box8.innerHTML){
+    win(box6.innerHTML)
+  }if(box4.innerHTML !== " " &&  box0.innerHTML === box4.innerHTML && box4.innerHTML === box8.innerHTML){
+    win(box4.innerHTML)
+  }if(box2.innerHTML !== " " &&  box2.innerHTML === box4.innerHTML && box4.innerHTML === box6.innerHTML){
+    win(box2.innerHTML)
+  }if(box0.innerHTML !== " " &&  box0.innerHTML === box3.innerHTML && box3.innerHTML === box6.innerHTML){
+    win(box0.innerHTML)
+  }if(box1.innerHTML !== " " &&  box1.innerHTML === box4.innerHTML && box4.innerHTML === box7.innerHTML){
+    win(box1.innerHTML)
+  }if(box2.innerHTML !== " " &&  box2.innerHTML === box5.innerHTML && box5.innerHTML === box8.innerHTML){
+    win(box2.innerHTML)
+  }
+  //The if/else statement executes a block of code if a specified condition is
+  //true. If the condition is false, another block of code can be executed.
+  // The if/else statement is a part of JavaScript's "Conditional" Statements,
+  // which are used to perform different actions based on different conditions.
+  //Use if to specify a block of code to be executed, if a specified condition
+  //is true
+  //Use else to specify a block of code to be executed, if the same condition
+  //is false
+  //Use else if to specify a new condition to test, if the first condition is false
+
+function markBoxAndCheckWin(event){
+console.log(winLose.innerHTML);
+  const box = event.target
+  //The target property of the Event interface is a reference to the object onto
+  //which the event was dispatched. It is different from Event.
+
+  if(box.innerHTML === "O" || box.innerHTML === "X"){
+    alert("aww")
+    return;
+  }
+
+  counter += 1
+  if(winLose.innerHTML===""){
+    console.log("hello");
+  if (counter % 2 == 0 ){
+
+    box.innerHTML= "O"
+
+  }else{
+    box.innerHTML= "X"
+
+  }
+}
+  if (counter === 9){
+    document.getElementById("result").innerHTML = 'Draw'
+  } // this message will let both players know they have to start over
+  checkWin()
+}
+
+function processBox(box){
+  box.addEventListener('click', markBoxAndCheckWin)
+  // the computer is listening for the click of the button and will let the
+  // user know the outcome at the end of the game
+}
+
+const totalBoxes = document.querySelectorAll('.box')
+//JavaScript arrays are zero-indexed. The first element of an array is at index 0
+//, and the last element is at the index value equal to the value of the array's
+//length property minus 1 . Using an invalid index number returns undefined .
+
+totalBoxes.forEach(processBox)
