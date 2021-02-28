@@ -13,12 +13,11 @@
 .container{
   display: grid;
   grid-template-columns: repeat(3, auto);
-  width: 300px;
-  margin: 50px auto;
+  width: 482px;
   border: 1px solid rgba(86,233,188,255);
   grid-gap: 15px;
-  left: 43%;
-  top: 50%;
+  left: 50%;
+  top: 56%;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -48,14 +47,27 @@ body{
 
 }
 h1{
+  font-size: 47px;
+  border-bottom: 5px solid rgb(244,251,205);
+  margin-bottom: 0%;
+  width: 23%;
+  left: 50%;
+  top: 0%;
+  position: absolute;
+  transform: translate(-50%, -50%);
   /* text-align: center;
   color: rgb(244,251,205); */
 }
 h2{
+  left: 50%;
+  top: 12%;
+  position: absolute;
+  transform: translate(-50%, -50%);
   /* text-align: center;
   color: rgb(244,251,205); */
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 0%;
+  margin-top: 2%;
 }
 button{
   margin: 10px auto;
@@ -64,9 +76,10 @@ button{
   font-size: 25px;
   background-color: rgba(17,211,187,255);
   left: 50%;
-  top: 95%;
+  top: 93%;
   position: absolute;
   transform: translate(-50%, -50%);
+  padding: .5%;
 }
 button:hover{
   background-color: rgb(70,238,212);

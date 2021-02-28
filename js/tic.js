@@ -21,11 +21,11 @@ const winningCombinations = [
 let state = ['', '', '', '', '', '', '', '', '']
 
 //messages for players, who won, is it a tie, and who's turn is it
-const whoWins = () => `Player ${currentUser} is the Winner`
+const whoWins = () => `Player ${currentUser} Is The Winner`
 console.log(whoWins())
-const darw = () => `It is a Draw`
+const darw = () => `It's A Draw`
 console.log(darw())
-const whoTurn = () => `It is Player ${currentUser} turn`
+const whoTurn = () => `It's Your Turn Player: ${currentUser} `
 console.log(whoTurn())
 
 //show who's turn is it
