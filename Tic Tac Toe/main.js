@@ -11,7 +11,7 @@ console.log('main.js')
 let currentPlayer = 'x'
 
 
-// document.getElementById('box1').addEventListener('click', box)
+
 // document.getElementById('box2').addEventListener('click', box)
 // document.getElementById('box3').addEventListener('click', box)
 // document.getElementById('box4').addEventListener('click', box)
@@ -21,39 +21,53 @@ let currentPlayer = 'x'
 // document.getElementById('box8').addEventListener('click', box)
 // document.getElementById('box9').addEventListener('click', box)
 
-function box(e) {
-  //
-   document.getElementById('puppy').innerHTML = "<img src='images/puppy.jpg' >"
-  // console.log('hello')
-  console.log(currentPlayer);
-   put 'x' or 'o' on page
-   if (currentPlayer === 'x') {
-     e.target.innerHTML = "<img class='img' src='images/puppy.jpg'>"
-     e.target.classList.toggle('x')
+// function box(e) {
+//   //
+//    document.getElementById('puppy').innerHTML = "<img src='images/puppy.jpg' >"
+//   // console.log('hello')
+//   console.log(currentPlayer);
+//    // put 'x' or 'o' on page
+//    if (currentPlayer === 'x') {
+//      e.target.innerHTML = "<img class='img' src='images/puppy.jpg'>"
+//      e.target.classList.toggle('x')
+//
+//    } else {
+//    e.target.innerHTML = "<img class='img' src='images/black.jpg'>"
+//    e.target.classList.toggle('o')
+//    }
+// }
 
-   } else {
-   e.target.innerHTML = "<img class='img' src='images/black.jpg'>"
-   e.target.classList.toggle('o')
+// worked with Mark
+   detectWin()
+  // // toggle current player
+  if (currentPlayer === 'x') {
+     currentPlayer = 'x'
+  } else {
+     currentPlayer = 'o'
    }
 
-  detectWin()
-  // toggle current player
-  if (currentPlayer === 'o') {
-    currentPlayer = 'x'
-  } else {
-    currentPlayer = 'o'
-  }
 
-}
 let box1 = document.getElementById('box1')
 let box2 = document.getElementById('box2')
 let box3 = document.getElementById('box3')
 let box4 = document.getElementById('box4')
+let box5 = document.getElementById('box5')
+let box6 = document.getElementById('box6')
+let box7 = document.getElementById('box7')
+let box8 = document.getElementById('box8')
+let box9 = document.getElementById('box9')
 
-function detectWin() {
-  console.log(box1, box2, box3)
 
+
+
+ function detectWin() {
+// // console.log(box1, box2, box3)
+// alert('Great! You Won')
+// if(box1 === box2 ){
+//   alert('helo')
+// }
 }
+
 
 // refered to coding challange tic tac toe
 // box[i] = player_turn;
@@ -84,18 +98,17 @@ class Square{
   id = 0
 
   handleClick(e){
-  // e.target.innerHTML = "<img class='img' src='images/puppy.jpg'>"
+   // e.target.innerHTML = "<img class='img' src='images/o.jpg'>"
   // console.log('clicked on', this.id, e.target)
   if (currentPlayer === 'x') {
-    e.target.innerHTML = "<img class='img' src='images/puppy.jpg'>"
+    e.target.innerHTML = "<img class='img' src='images/x.jpg'>"
     e.target.classList.toggle('o')
 
-  } else {
-  e.target.innerHTML = "<img class='img' src='images/black.jpg'>"
-  e.target.classList.toggle('o')
+  }else if (currentPlayer === 'o'){
+    e.target.innerHTML = "<img class='img' src='images/o.jpg'>"
+    e.target.classList.toggle('x')
    }
-
-   }
+ }
   constructor(id) {
     this.id = id
     document.getElementById('box' + id).addEventListener('click', (e) => this.handleClick(e))
