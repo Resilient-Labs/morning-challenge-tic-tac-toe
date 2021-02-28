@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background: #FFA384;
+}
+
+ #mainsec{
+height: 500px;
+width:60%;
+border: solid #F4B18C 1px;
+border-radius: 6px;
+margin: auto;
+background: #F4B18C;
+padding-left: 13%;
+padding-top: 70px;
+
+/* display: flex;
+justify-content: center;
+align-content: center;
+grid-template-columns: repeat (3,auto;); */
+}
+button{
+margin-top:10%;
+}
+h1{
+  text-align: center;
+  font-family: 'Akaya Telivigala', cursive;
+}
+.img{
+  height:100px;
+  width:70%;
+
+}
+#box1,#box2,#box3{
+  height:100px;
+  width:25%;
+  background: #E98980;
+  display:inline-block;
+  padding-left: 5%;
+}
+#box4,#box5,#box6{
+  height:100px;
+  width:25%;
+  background: #E98980;
+  display:inline-block;
+  padding-left: 5%;
+  }
+
+#box7,#box8,#box9{
+  height:100px;
+  width:25%;
+  background:#E98980;
+  display:inline-block;
+    padding-left: 5%;
+}
