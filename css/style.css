@@ -1,0 +1,463 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 62.5%;
+
+}
+
+body{
+    background-image: url(../pic/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(113, 27, 130, 0.2);
+    /* height: 100vh; */
+    padding: 0;
+    margin: 0;  
+} 
+
+.secTitle{
+    height: 10rem;
+    width: 100%;
+    text-align: center;
+}
+
+.h1Title{
+    font-size: 5rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.gridContainer{
+
+    display: inline-grid;
+    justify-content: center; 
+    height: 45rem;
+    width: 100%;
+    grid-template-rows: 15rem 15rem 15rem;
+    grid-template-columns: 15rem 15rem 15rem;
+    
+    
+}
+
+.gridItem{
+    border: .1rem solid black;
+    background-color: white;
+    font-size: 4rem;
+}
+
+.itemImg{
+    height: 14.8rem;
+    text-align: center;
+    
+}
+
+.secRes{
+    display: flex;
+    justify-content: center;
+    height: 7rem;
+    text-align: center;
+    border-radius: 10%;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.h2Res{
+    font-size: 4rem;
+    width: 50%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border-radius: 10%;
+    background-color: rgb(183, 106, 187);
+    color: white;
+}
+
+.scoreboard{
+    background-color: rgb(142, 215, 228);
+    border: .1rem solid black;
+    height: 15.5rem;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.scoreTitle{
+    height: 6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.h2Score{
+
+    font-size: 4rem;
+    height: 4rem;
+    margin-top: 0%;
+    color: white;
+}
+
+.scoreCount{
+    
+    display: flex;
+    justify-content: space-evenly;
+    height: 10rem;
+
+}
+
+.tabScore{
+
+    height: 10rem;
+    width: 33.3333%;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.tabScore h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.tabScore h4{
+    margin-top: 1%;
+}
+
+.secButtons{
+    display: flex;
+    height: 6rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.secPlayAgain, .secReset {
+    width: 50%;
+    text-align: center;
+}
+
+.buttReset{
+    font-size: 4rem;
+   
+}
+
+.buttonPlayAgain{
+    font-size: 4rem;
+    
+}
+
+@media only screen and (max-width: 32rem) {
+
+    body{
+        height: 100vh;
+    }
+
+    .h1Title{
+        font-size: 4rem;
+    }
+
+    .gridContainer{
+        height: 35rem;
+        width: 100%;
+        grid-template-rows: 12rem 12rem 12rem;
+        grid-template-columns: 12rem 12rem 12rem;
+         
+    }
+    
+    .gridItem{
+
+        border: .1rem solid black;
+        background-color: white;
+        font-size: 4rem;
+    }
+    
+    .itemImg{
+        height: 11.8rem;
+        
+    }
+    
+    .secRes{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 5rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        
+    }
+    
+    .h2Res{
+        font-size: 2rem;
+        height: 3rem;
+        width: 50%;
+        border: .1rem solid black;
+        border-radius: 10%;
+        background-color: rgb(183, 106, 187);
+        color: white;
+    }
+
+    .scoreboard{
+        background-color: rgb(142, 215, 228);
+        border: .1rem solid black;
+        height: 6rem;
+        margin-bottom: 30%;
+    }
+
+    .scoreTitle{
+        height: 5rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 1%;
+        color: white;
+    }
+
+    
+    .h2Score{
+    
+        font-size: 3rem;
+        height: 3rem;
+        margin-top: 1%;
+        margin-bottom: 6%;
+    }
+    
+    .scoreCount{
+    
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    
+    .tabScore{
+        border: .1rem solid black;
+        height: 6rem;
+        width: 33.3333%;
+        font-size: 3rem;
+        background-color: rgb(142, 215, 228);
+    }
+
+    .tabScore h3{
+        font-size: 2rem;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        color: white;
+    }
+    
+    .tabScore h4{
+        font-size: 1.5rem;
+        height: 3rem;
+        margin-top: 0%;
+        margin-bottom: 3%;
+        padding-bottom: 3%;
+        color: white;
+    }
+
+    .secButtons{
+        display: flex;
+        height: 6rem;
+        
+    }
+    
+    .secPlayAgain, .secReset {
+        width: 50%;
+        text-align: center;
+    }
+    
+    .buttReset{
+
+        font-size: 2rem;
+        border-radius: 10%;
+       
+    }
+    
+    .buttonPlayAgain{
+        font-size: 2rem;
+        border-radius: 10%;
+    }
+}
+
+@media (min-width: 32rem) and (max-width: 60rem) {
+
+    body{
+        background-image: url(../pic/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(113, 27, 130, 0.2);
+        height: 100vh;
+        padding: 0;
+        margin: 0;  
+    }
+
+    .secTitle{
+        height: 7rem;
+    }
+
+    .h1Title{
+        font-size: 3.5rem;
+    }
+
+    .gridContainer{
+        height: 35rem;
+        width: 100%;
+        grid-template-rows: 12rem 12rem 12rem;
+        grid-template-columns: 12rem 12rem 12rem;
+         
+    }
+    
+    .gridItem{
+
+        border: .1rem solid black;
+        background-color: white;
+        font-size: 4rem;
+    }
+    
+    .itemImg{
+        height: 11.8rem;
+        
+    }
+    
+    .secRes{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 7rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        
+    }
+    
+    .h2Res{
+        font-size: 3rem;
+        height: 5rem;
+        width: 50%;
+        border: .1rem solid black;
+        border-radius: 10%;
+        background-color: rgb(183, 106, 187);
+        color: white;
+    }
+
+    .scoreboard{
+        background-color: rgb(142, 215, 228);
+        border: .1rem solid black;
+        height: 10rem;
+        margin-bottom: 15%;
+    }
+
+    .scoreTitle{
+        height: 7rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 1%;
+        color: white;
+        background-color: rgb(142, 215, 228);
+    }
+
+    
+    .h2Score{
+    
+        font-size: 3rem;
+        height: 3rem;
+        margin-top: 1%;
+        margin-bottom: 6%;
+    }
+    
+    .scoreCount{
+    
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    
+    .tabScore{
+        border: .1rem solid black;
+        height: 8rem;
+        width: 33.3333%;
+        font-size: 4rem;
+        background-color: rgb(142, 215, 228);
+    }
+
+    .tabScore h3{
+        font-size: 3rem;
+        height: 2.5rem;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        color: white;
+    }
+    
+    .tabScore h4{
+        font-size: 3rem;
+        height: 3rem;
+        margin-top: 0%;
+        margin-bottom: 3%;
+        padding-bottom: 3%;
+        color: white;
+    }
+
+    .secButtons{
+        display: flex;
+        height: 6rem;
+        
+    }
+    
+    .secPlayAgain, .secReset {
+        width: 50%;
+        text-align: center;
+    }
+    
+    .buttReset{
+
+        font-size: 3rem;
+        border-radius: 10%;
+       
+    }
+    
+    .buttonPlayAgain{
+        font-size: 3rem;
+        border-radius: 10%;
+    }
+}
+
+@media (min-width: 60rem) and (max-width: 100rem) {
+
+    .secTitle{
+        height: 9rem;
+    }
+
+    .h1Title {
+        font-size: 5rem;
+    }
+
+    .gridContainer {
+        height: 50rem;
+        grid-template-rows: 15rem 15rem 15rem;
+        grid-template-columns: 15rem 15rem 15rem;
+    }
+
+    .itemImg {
+        height: 14.8rem;
+
+    }
+
+    .secRes {
+        height: 5rem;
+        margin-top: 0%;
+
+    }   
+
+    .h2Res {
+        font-size: 3rem;
+    }
+
+    .scoreboard {
+        height: 13.5rem;
+    }
+
+    .scoreTitle {
+        height: 4rem;
+    }
+
+    .h2Score {
+        font-size: 3rem;
+        height: 4rem;
+    }
+
+    .buttonPlayAgain, .buttReset {
+        font-size: 3rem;
+    }
+    
+}
+
