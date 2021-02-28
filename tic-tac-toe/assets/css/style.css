@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    margin-left: 27%;
+}
+
+.rows {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: inline;
+    list-style-type: none;
+    padding: 0px 145px 280px 145px;
+    background-size: cover;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.box:nth-of-type(2) {
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.rows:first-of-type > .box {
+    border-top: none;
+    border-bottom: none;
+}
+
+.rows:last-of-type > .box {
+    border-top: none;
+    border-bottom: none;
+}
+
+#clearBoard{
+    display: none;
+    position: fixed;
+    top: 44%;
+    left: 38%;
+    width: 500px;
+    height: 150px;
+    font-size: 75px;
+    padding: 20px;
+}
+
+.playerStats,
+.playerStats * {
+    display: inline;
+}
+
+.playerStats {
+    font-size: 30px;
+}
+
+.playerStats:first-of-type {
+    margin-left: 10%;
+}
