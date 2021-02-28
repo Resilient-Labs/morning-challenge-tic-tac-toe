@@ -1,0 +1,41 @@
+* {
+  font-family: 'Comfortaa', cursive;
+}
+
+.row1 {
+  height: 200px;
+}
+
+.box {
+  width: 32.99%;
+  float: left;
+  height: 100%;
+  border: 1px solid white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  border: 1px;
+  color: white;
+}
+
+div {
+  font-size: 90px;
+  text-align: center;
+}
+
+.div2 {
+  border-left: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 120px;
+  border: 1px;
+  color: white;
+}
+
+body {
+    background-image: url('images.jpg');
+}
