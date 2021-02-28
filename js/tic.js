@@ -2,7 +2,7 @@ const status = document.querySelector('.status')
 const block = document.querySelectorAll('.cell')
 const resetBtn = document.querySelector('.reset')
 // pasuse the game
-let isClickable = true;
+let isActive = true;
 
 //who is currently playing
 let currentUser = 'O'
@@ -25,7 +25,7 @@ const whoWins = () => `Player ${currentUser} is the Winner`
 console.log(whoWins())
 const darw = () => `It is a Draw`
 console.log(darw())
-const whoTurn = () => `It is ${currentUser} turn`
+const whoTurn = () => `It is Player ${currentUser} turn`
 console.log(whoTurn())
 
 //show who's turn is it
@@ -49,12 +49,12 @@ function clickCheck(e){
   //or if play is not true
   //if true for all three, we ignore click
   // another axample const hasCellBeenClicked = state[cellIndex] !== ''
-  if (state[cellIndex] === 'X' || state[cellIndex] === 'O' || isClickable === false){
+  if (state[cellIndex] === 'X' || state[cellIndex] === 'O' || isActive === false){
     return;
   }
   moveMade(cellClick, cellIndex)
   checkGameOver()
-  if(isClickable === true){
+  if(isActive === true){
     switchUser()
   }
 
@@ -113,7 +113,7 @@ function checkGameOver(){
 
   if(roundWon === true){
     status.innerText = whoWins()
-    isClickable = false
+    isActive = false
     return;
   }
   // state.includes('') === false
@@ -122,7 +122,7 @@ function checkGameOver(){
 
   if(state.includes('') === false ){
     status.innerText = darw()
-    isClickable = false
+    isActive = false
     return;
   }
 }
@@ -138,14 +138,14 @@ function switchUser(){
 
   // currentUser = currentUser === "X" ? "O" : "X";
 }
-// console.log(result())
+
 
 //reset game by putting it back to default
 
 resetBtn.addEventListener('click', playAgain)
 
 function playAgain(){
-  isClickable = true;
+  isActive = true;
   currentUser = 'O'
   state = ['', '', '', '', '', '', '', '', '']
   status.innerText = whoTurn()
