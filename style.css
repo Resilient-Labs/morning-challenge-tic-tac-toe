@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: url(tictactoepic.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.parent {
+  height: 700px;
+  width: 100%;
+  /* border: 1px solid black; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.board {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  /* border: 2px solid red; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.square {
+  width: 130px;
+  height: 130px;
+  border: 1px solid blue;
+  background-color: rgb(43, 198, 226);
+}
+
+h1{
+  font-size: 50px;
+  margin: 20px 0px;
+}
+.newGame{
+  width: 200px;
+  height: 50px;
+}
+
+img {
+  width: 70px;
+}
