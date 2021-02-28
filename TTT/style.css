@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5;
+}
+
+.parent {
+  height: 100vh;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family: 'Unica One', cursive;
+  font-size: 3rem;
+  color: white;
+}
+
+body{
+  background: url('./img/Aerial_View_Parkman_Bandstand_at_Boston_Common.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.board {
+  height: 400px;
+  width: 400px;
+  border: 3px solid cyan;
+  display: flex;
+  /* margin-left: 40%; */
+}
+
+.square {
+  /* display: flex; */
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  border: 2px solid cyan;
+}
+
+button{
+  /* margin-left:9%; */
+  font-family: 'Unica One', cursive;
+  font-size: 2rem;
+  display: block;
+
+}
+
+button:hover{
+  background-color: chartreuse;
+}
+img{
+  width:75px;
+}
