@@ -2,12 +2,12 @@ const status = document.querySelector('.status')
 const block = document.querySelectorAll('.cell')
 const resetBtn = document.querySelector('.reset')
 // pasuse the game
-let play = true;
+let isClickable = true;
 
 //who is currently playing
-let currentUser = '0'
+let currentUser = 'O'
 //wining combinations
-const winningCombination = [
+const winningCombinations = [
     [3, 4, 5],
     [0, 1, 2],
     [6, 7, 8],
@@ -28,14 +28,15 @@ console.log(darw())
 const whoTurn = () => `It is ${currentUser} turn`
 console.log(whoTurn())
 
-//who's turn is it
+//show who's turn is it
 status.innerText = whoTurn();
 console.log(whoTurn())
 
 
 //have every cell be clickable
 block.forEach(cell => cell.addEventListener('click', clickCheck))
-//get the grab the 'data-cell-index' attribute from the clicked cell, check if block has been click or not
+//get the grab the 'data-cell-index' attribute from the clicked cell,
+//check if block has been click or not
 function clickCheck(e){
   //assinged each section
   const cellClick = e.target
@@ -44,13 +45,19 @@ function clickCheck(e){
   const cellIndex = parseInt(cellClick.getAttribute('data-cell-index'))
   console.log(cellIndex)
   //if sections have been clicked on and if game is paused or not
-  //if the cells the players clicked on dont match empty string  or if play is not true
-  //if true for both, we ignore click
-  if (state[cellIndex] !== '' || !play){
+  //if the cells the players clicked on dont match empty string
+  //or if play is not true
+  //if true for all three, we ignore click
+  // another axample const hasCellBeenClicked = state[cellIndex] !== ''
+  if (state[cellIndex] === 'X' || state[cellIndex] === 'O' || isClickable === false){
     return;
   }
   moveMade(cellClick, cellIndex)
-  result()
+  checkGameOver()
+  if(isClickable === true){
+    switchUser()
+  }
+
 }
 //update current state of the game and who's turn it is
 function moveMade(cellClick, cellIndex){
@@ -58,6 +65,7 @@ function moveMade(cellClick, cellIndex){
 
   cellClick.innerText = currentUser
 }
+
 console.log(state)
 console.log(currentUser)
 console.log(moveMade)
@@ -65,49 +73,63 @@ console.log(moveMade)
 
 
 //who won
-function result(){
-  let roundWon = false
-  for(let i = 0; i <= 7; i++){
-    const winCondition = winningCombination[i];
-    console.log(winningCombination[0])
-    console.log(winCondition[0])
-    console.log(winCondition[1])
-    console.log(winCondition[2])
+//if won
+//if darw
+//we should validate the game state
+//either stop the game or change the  player, depending on if won, darw
+//or if any avaible cells that still need to be clicked on
+
+//game is over when there has been win or timeout
+//game is not over when there are avaible cells
+function checkGameOver(){
+  let roundWon = 'I do not know'
+  for(let i = 0; i < winningCombinations.length; i++){
+    const winCombination = winningCombinations[i];
+    console.log(winningCombinations[0])
+    console.log(winCombination[0])
+    console.log(winCombination[1])
+    console.log(winCombination[2])
     console.log(state)
-      let a = state[winCondition[0]];
-      console.log(a)
-      let b = state[winCondition[1]];
-      console.log(b)
-      let c = state[winCondition[2]];
-      console.log(c)
-      if (a === '' || b === '' || c === '') {
+      let cellA = state[winCombination[0]];
+      console.log(cellA)
+      let cellB = state[winCombination[1]];
+      console.log(cellB)
+      let cellC = state[winCombination[2]];
+      console.log(cellC)
+      if (cellA === '' || cellB === '' || cellC === '') {
             continue;
-        } console.log(a)
-        console.log(b)
-        console.log(c)
-        if (a === b && b === c) {
+        }
+
+        if (cellA === cellB && cellB === cellC) {
             roundWon = true;
             console.log(roundWon)
             break
         }
 
   }
-  if(roundWon){
-    status.innerText = whoWins()
-    play = false
-    return;
+  if(roundWon === 'I do not know'){
+    roundWon = false
   }
-  if(!state.includes('')){
-    status.innerText = darw()
-    play = false
-    return;
-  }
-  switchUser();
-}
 
+  if(roundWon === true){
+    status.innerText = whoWins()
+    isClickable = false
+    return;
+  }
+  // state.includes('') === false
+  // state.includes('') !== true
+  // !state.includes('') === true
+
+  if(state.includes('') === false ){
+    status.innerText = darw()
+    isClickable = false
+    return;
+  }
+}
+//if player x made a move, then it is player o turn
 function switchUser(){
   if(currentUser === "X"){
-    currentUser = '0'
+    currentUser = 'O'
   }
   else{
     currentUser = 'X'
@@ -116,13 +138,15 @@ function switchUser(){
 
   // currentUser = currentUser === "X" ? "O" : "X";
 }
-console.log(result())
+// console.log(result())
+
+//reset game by putting it back to default
 
 resetBtn.addEventListener('click', playAgain)
 
 function playAgain(){
-  play = true;
-  currentUser = '0'
+  isClickable = true;
+  currentUser = 'O'
   state = ['', '', '', '', '', '', '', '', '']
   status.innerText = whoTurn()
   block.forEach(cell => cell.innerText = '')
