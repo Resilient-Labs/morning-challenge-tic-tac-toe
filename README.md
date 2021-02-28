@@ -1,23 +1,34 @@
 # ❌ TIC TAC TOE ⭕
 
-This was a really fun project that made me think on how to apply everything I've learned when using Math objects and referencing using the DOM! Let me know your thoughts!
+This project strengthens my understanding of Javascript Es6 features and their application. I wanted to keep my code as compact as possible. Setting up an array of win conditions helped me complete this goal and with comments through my code, I managed to learn about OOP as I went along!
 
 &emsp;
 
-<img src="https://github.com/DashlinS/SlotMachine/blob/answer/gifs/OnePieceGR.png" width="700">
+<img src="https://github.com/DashlinS/tic-tac-toe/blob/answer/gifs/tictactoedemo.gif" width="700">
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Click Here to go to the website!](https://onepiecegoldrush.netlify.app/)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Click Here to go to the website!](https://tiic-tac-toe.netlify.app/)
 
 ## How Its Made 
-
-<img src="https://github.com/DashlinS/slot-machine-2019-week05/blob/answer/gifs/SlotMachinePlay.gif" width="700">
 
 **Languages used:** Html, CSS, Javascript
 
 # What I Learned
-Javascript Classes
 
+### Javascript Classes
+Classes are templates/blueprints for JS objects created with the class keyword. The name of the class is written using Pascal case instead of the usual Camel case. 
 
+### Constructor
+Constructors are special methods defined in JS classes to create and initialize objects of the the class. They contain a list of parameters with properties for the objects. The this keyword is used to define an object passed through the constructor 
+
+### Instantiate
+To instantiate an object is to create a new object to be passed though the class created with. These objects can be declared by a variable and use the new keyword to create the instance of a user-defined object type.
+
+### Methods
+Some Method checks whether at least one element in the array passes the test implemented by the provided function. Return Boolean
+
+Every Method checks whether all the elements pass the test implemented by the provided testing function. Returns Boolean
+method checks whether an array includes a certain value. Returns Boolean.
+Includes 
 
 ### My Other Projects 
 
@@ -27,3 +38,4 @@ Check out some of my other work using the DOM!
 * [Calculator](https://github.com/DashlinS/calculator)
 * [Todo List](https://github.com/DashlinS/ToDo_List)
 * [Rock, Paper, Scissors](https://github.com/DashlinS/rock-water-fire)
+* [Slot Machine](https://github.com/DashlinS/SlotMachine/tree/answer)

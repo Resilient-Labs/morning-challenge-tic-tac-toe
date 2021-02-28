@@ -84,6 +84,4 @@ clear.addEventListener('click',_ => {
   window.location.reload()
 })
 
-new GameTable(cellArea) 
-
-
+const cellsArea = new GameTable(cellArea) 
