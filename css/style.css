@@ -53,7 +53,7 @@ h1{
   height: 150px;
   font-size: 6rem;
   font-family: cursive;
-  text-align: center;
+  /* text-align: center; */
 }
 
 img {

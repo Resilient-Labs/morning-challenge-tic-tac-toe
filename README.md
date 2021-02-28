@@ -1,22 +1,29 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# ❌ TIC TAC TOE ⭕
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+This was a really fun project that made me think on how to apply everything I've learned when using Math objects and referencing using the DOM! Let me know your thoughts!
 
-### How to submit your code for review:
+&emsp;
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<img src="https://github.com/DashlinS/SlotMachine/blob/answer/gifs/OnePieceGR.png" width="700">
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Click Here to go to the website!](https://onepiecegoldrush.netlify.app/)
+
+## How Its Made 
+
+<img src="https://github.com/DashlinS/slot-machine-2019-week05/blob/answer/gifs/SlotMachinePlay.gif" width="700">
+
+**Languages used:** Html, CSS, Javascript
+
+# What I Learned
+Javascript Classes
+
+
+
+### My Other Projects 
+
+Check out some of my other work using the DOM!
+
+* [Horoscope](https://github.com/DashlinS/Horoscope)
+* [Calculator](https://github.com/DashlinS/calculator)
+* [Todo List](https://github.com/DashlinS/ToDo_List)
+* [Rock, Paper, Scissors](https://github.com/DashlinS/rock-water-fire)
