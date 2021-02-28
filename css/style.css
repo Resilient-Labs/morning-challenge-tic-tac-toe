@@ -56,9 +56,6 @@ h1{
   /* text-align: center; */
 }
 
-img {
-  width: 150px;
-}
 
 .displayArea {
   margin-top: 10px;
@@ -76,6 +73,3 @@ img {
   color: cyan;
 }
 
-.reset:focus {
-  outline: none;
-}
