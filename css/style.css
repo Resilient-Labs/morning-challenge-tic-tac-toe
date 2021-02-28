@@ -1,0 +1,28 @@
+html{
+  background: rgb(231, 232, 222);
+  font-size: 62.5%;
+  font-family: "DotGothic16", sans-serif;
+}
+
+h1{
+  color: rgb(105, 122,67);
+  font-size: 6rem;
+  text-align: center;
+
+}
+.gameBoard{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin-left: 10%;
+}
+.gameSections{
+  border: 5px solid rgb(131, 167,115);
+  height: 15rem;
+  margin:2rem;
+
+}
+
+.gameSections:hover{
+  background: url(../img/green.jpg);
+  background-size: contain;
+}
