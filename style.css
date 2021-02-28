@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5;
+}
+
+.parent {
+  height: 400px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.board {
+  height: 300px;
+  width: 50%;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.square {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: 1px solid blue;
+}
