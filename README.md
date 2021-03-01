@@ -1,6 +1,6 @@
 # ❌ TIC TAC TOE ⭕
 
-This project strengthens my understanding of Javascript Es6 features and their application. I wanted to keep my code as compact as possible. Setting up an array of win conditions helped me complete this goal and with comments through my code, I managed to learn about OOP as I went along!
+This project strengthens my understanding of Javascript Es6 features and their application. I wanted to keep my code as compact as possible. I wanted to do a Neon theme for this project! The product came out clean, eye catching and fun! By the end of it, I managed to strengthened my knowledge on the core concepts of OOP. I'm excited for the future projects, so stay tuned!
 
 &emsp;
 
