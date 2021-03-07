@@ -281,7 +281,7 @@ let player2Mark = "./pic/bird.png"; //Bird image
 
 //The 'setImage' function populates the square with a mark/image depending on which player has clicked on the square.
 
-//The funciton takes 2 parameters: 'item' and 'index'. 
+//The funciton takes 2 parameters: 'item' and 'index'.  The 
 
 function setImage(item, index) {
     
@@ -324,10 +324,9 @@ function gridClick(e) {
 
     updateScore();
     
-    
 }
 
-//The 'removeGridClick' function removes the event listener. It removes the event listener by looking at the currentState value. If it is 'player1' or 'player2', then someone has played on the square and the ability to keep clicking on that square is removed. 
+//The 'removeGridClick' function removes the event listener. It removes ƒthe event listener by looking at the currentState value. If it is 'player1' or 'player2', then someone has played on the square and the ability to keep clicking on that square is removed. 
 
 function removeGridClick(item) {
     
@@ -352,8 +351,9 @@ function updateGrid() {
     
     gridImgs.forEach( (item, index) => {
         
-        setImage(item, index);
         setUpGridClick(item.parentElement);
+        setImage(item, index);
+        
         
         if(currentState !== "continue") {
             
@@ -364,6 +364,13 @@ function updateGrid() {
     } )
     
                 
+    updateResultsToDom();
+   
+    
+}
+
+function updateResultsToDom() {
+
     if(currentState === "player1"){
         document.querySelector('.h2Res').innerHTML = "Fox Win!"
     } else if (currentState === "player2"){
@@ -374,8 +381,6 @@ function updateGrid() {
         document.querySelector('.h2Res').innerHTML = ""
     }
 
-   
-    
 }
 
 updateGrid();
