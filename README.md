@@ -1,22 +1,23 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# tic-tac-toe
+A blissful afternoon in the forest sets this game of tic-tac-toe.
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+Two travelers are making their way through the woodland. It is a bright and warm afternoon and the air is calm. The travelers decide to take a rest. They take out their canteens and discuss a potential game of tic-tac-toe. Two creatures: a fox and a bird, hear our travelers and want to join in on the fun as well. The fox will accompany traveler 1 and the bird will accompany traveler 2. 
 
-### How to submit your code for review:
+Link to Project: https://forest-tic-tac-toe.netlify.app/
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![Project Image](/pic/tic-tac-toe.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+### How It's Made:
+
+Tech used: HTML, CSS, JavaScript
+
+This game is written in JavaScript. It is a 2 player game. Player 1 goes first by clicking on a square, then player 2 goes by clicking on a square. After a player clicks on a square, a function is called so that it cannot be clicked on anymore and another function is called to check the game board to determine if there is a victory. If there is a victory, a function is called to update the score and report the score on the DOM. There are buttons to play again or reset the game. 
+
+
+### Lesson Learned
+
+I learned about splitting my code so that the game functionality is separate from the JavaScript that renders HTML to the DOM. In doing so, the functionality of the game and the rendering of the JS is kept separate. This method can better organize the code and make any future changes easier to fix. 
+ 
+
+###
