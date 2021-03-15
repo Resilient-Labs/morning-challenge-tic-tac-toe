@@ -2,7 +2,7 @@
 A simple tic-tac-toe game that allows two users to take turns. To clear the board, click the reset button and start a new game with a cleared score count.
 
 **View project in browser:** 
-![alt tag](![image](https://user-images.githubusercontent.com/68411050/111103586-34242400-8525-11eb-8185-96708350950e.png)
+(![image](https://user-images.githubusercontent.com/68411050/111103586-34242400-8525-11eb-8185-96708350950e.png)
 tic.png)
 
 ## Design and Development
