@@ -1,11 +1,4 @@
-// 2 players, each player is represented by an X or an O (dog or cat)
-// A grid that is 3 by 3 so 9 boxes total
-// Display who wins after each round in the dom
-// A few event listeners for the X’s and O’s
-// A counter to keep track of winner if possible like rock paper scissors game
-//If players want to play new game, they can just refresh the page
-// Create a basic html and css first so we can see what is going on and what will be working
-//
+// worked with milan and miggie 
 console.log('main.js')
 // document.getElementById("box1").addEventListener("click", playerMove)
 let currentPlayer = 'x'
@@ -21,9 +14,7 @@ let currentPlayer = 'x'
 // document.getElementById('box9').addEventListener('click', box)
 
 function box(e) {
-    //
-    // document.getElementById('puppy').innerHTML = "<img src='images/puppy.jpg' >"
-    // console.log('hello')
+   
     console.log(currentPlayer);
     // put 'x' or 'o' on page
     if (currentPlayer === 'x') {
