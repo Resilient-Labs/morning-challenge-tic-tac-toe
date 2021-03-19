@@ -34,7 +34,7 @@ Array.from(box).forEach(b => b.addEventListener('click', (e)=> {
             clicks++;
         selected.push(e.target.dataset.position);
         myTurn(e.target.dataset.position);
-        (clicks % 2 === 0) ? b.style.backgroundImage = `url(\'o.png\')`: b.style.backgroundImage = `url(\'x.png\')`;
+        (clicks % 2 === 0) ? b.style.backgroundImage = `url(\'image/o.png\')`: b.style.backgroundImage = `url(\'image/x.png\')`;
     }
 }))
 
