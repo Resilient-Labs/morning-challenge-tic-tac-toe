@@ -1,5 +1,7 @@
 # Tic-Tac-Toe
 
-A simple Tic-Tac-Toe between two players
+link to project: https://danstan-tic-tac-toe.netlify.app/
+
+A simple Tic-Tac-Toe between two human players. The first player that gets to align 3 items of either 'x' or 'o' vertically, horizonally or diagonally in a row wins the game.
 
 ![](image.png)
