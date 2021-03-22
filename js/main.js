@@ -9,6 +9,8 @@ let points1 = 0;    // player 1 points
 let points2 = 0;    // player 2 points
 let size = 3;
 
+document.querySelector("#restart").addEventListener("click", restart)
+
 function board() {
     let Parent = document.getElementById("game");
     let counter = 1;
@@ -82,11 +84,18 @@ function board() {
     winnerCode();
 }
 
+
 function d(id)
 {
     let el = document.getElementById(id);
     return el;
 }
+
+function restart(){
+  points1 = 0
+  points2 = 0
+}
+
 function reset()
 {
     currentPlayer = 0;
@@ -95,6 +104,7 @@ function reset()
     d('player1').classList.add('selected');
     d('player2').classList.remove('selected');
 }
+
 
 function winnerCode()
 {

@@ -40,6 +40,7 @@
 body{
     margin:0px;
     padding:0px;
+    background-color: #99cfeb;
 }
 
 .game td
@@ -59,13 +60,25 @@ body{
     cursor:pointer;
 }
 
+.brd{
+  width: 25%;
+  margin: auto;
+}
+
 .game
 {
     background: #fbd3d1;
-    border:solid 10px #81ef93;
+    border:solid 10px #bee4f7;
     width: 55%;
+    height: 570px;
     margin: auto;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
+}
+
+td{
+   box-shadow: 10px 10px grey;
 }
 
 .game .game-title
@@ -94,9 +107,30 @@ body{
 
 }
 
+#restart
+{
+  text-align: center;
+  width: 203px;
+  height: 62px;
+  background-color: pink;
+  cursor:pointer;
+  border-radius:10px;
+  box-sizing:border-box;
+}
+
+#restart .selected{
+    border-bottom:solid 4px #bee4f7;
+}
+
+#rs{
+  margin: auto;
+  width: 17%;
+  margin-top: 17px;
+  }
+
 .game .player .selected
 {
-    border-bottom:solid 4px #00fa9a;
+    border-bottom:solid 4px #bee4f7;
 }
 
 
