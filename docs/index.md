@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+# 📊 Tic-Tac-Toe
 
-You can use the [editor on GitHub](https://github.com/zwiz098/morning-challenge-tic-tac-toe/edit/answer/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### Welcome to the Clasic Tic-Tac-Toe Game! 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### About this project
 
-### Markdown
+This fun Tic-Tac-Toe was buit using: HTML, CSS, and Java Script.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Some things I struggled to accomplish with the project:
 
-```markdown
-Syntax highlighted code block
+- Creating a function to determine the winner based on possition of the table
 
-# Header 1
-## Header 2
-### Header 3
+Some things that I enjoyed about the project:
 
-- Bulleted
-- List
+- Creating shaddows, and selection visuals in CSS
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zwiz098/morning-challenge-tic-tac-toe/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# Enjoy the game and feel free to give feedback!
