@@ -3,7 +3,7 @@ A simple tic-tac-toe game that allows two users to take turns. To clear the boar
 
 **View project in browser:** 
 ![image](https://user-images.githubusercontent.com/68411050/111103586-34242400-8525-11eb-8185-96708350950e.png)
-
+view here: https://julietran.herokuapp.com/projects/tic-tac-toe
 
 ## Design and Development
 **Skills Used** HTML, CSS, Object Oriented Javascript:
