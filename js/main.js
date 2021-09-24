@@ -36,17 +36,8 @@ class TicTacToeBoard{
   
   
 
-// RESET FUNCTION  
-    let reset = document.getElementById('reset').addEventListener('click', newGame)
-
-    function newGame() {
-    for (let i = 0; i < squares.length; i++) {
-    squares[i].innerHTML = "";
-  }
- }
-
  // CHECK WINNER - SHOW WINNER - SHOW TIE
- const combinations = [
+ /* const combinations = [
   [0, 1, 2],
   [3, 4, 5],
   [6, 7, 8],
@@ -55,35 +46,13 @@ class TicTacToeBoard{
   [2, 5, 8],
   [0, 4, 8],
   [2, 4, 6],
-];
+]; */
 
-// DISPLAYS GAME WINNER
-function combinations() {
-  document.getElementById('winner').innerText 
+// RESET FUNCTION  
+let reset = document.getElementById('reset').addEventListener('click', newGame)
+
+function newGame() {
+for (let i = 0; i < squares.length; i++) {
+squares[i].innerHTML = "";
 }
-
-
-
-function showWinner(x, y, z) {
-  squares[x].style.background = "green";
-  squares[x].style.color = "white";
-  squares[y].style.background = "green";
-  squares[y].style.color = "white";
-  squares[z].style.background = "green";
-  squares[z].style.color = "white";
-  document.getElementById("winner").innerHTML =
-  this.currentPlayer == "x" ? "O" : "X";
-  document.getElementById("message").style.display = "block";
-  gameStatus = "Game Off";
 }
-
-
-
-
-
-
-  // (let i = 0; i < squares.length; i++){
-      // startTurn is a property of the class
-//           squares[i].addEventListener("click", ticTacToeBoard.startTurn)
-//           console.log (squares)
-// }
