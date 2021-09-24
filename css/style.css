@@ -1,0 +1,92 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 482px;
+  border: 1px solid rgba(86,233,188,255);
+  grid-gap: 15px;
+  left: 50%;
+  top: 56%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.cell{
+  /* border: 6px solid rgba(86,233,188,255); */
+  height: 150px;
+  width: 150px;
+  font-size: 100px;
+  /* box-shadow: 0 0 0 1px #333333; */
+  cursor: pointer;
+  line-height: 100px;
+  text-align: center;
+  margin: auto 0px;
+  background-color: rgba(17,211,187,255);
+  color: rgb(244,251,205);
+  padding: 19%;
+}
+.cell:hover{
+  background-color: rgb(70,238,212);
+}
+body{
+  background-color: rgba(86,233,188,255);
+  font-family: 'Reggae One', cursive;
+  text-align: center;
+  color: rgb(244,251,205);
+
+}
+h1{
+  font-size: 47px;
+  border-bottom: 5px solid rgb(244,251,205);
+  margin-bottom: 0%;
+  width: 23%;
+  left: 50%;
+  top: 0%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* text-align: center;
+  color: rgb(244,251,205); */
+}
+h2{
+  left: 50%;
+  top: 12%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* text-align: center;
+  color: rgb(244,251,205); */
+  font-size: 40px;
+  margin-bottom: 0%;
+  margin-top: 2%;
+}
+button{
+  margin: 10px auto;
+  border: rgba(17,211,187,255);
+  color: rgb(244,251,205);
+  font-size: 25px;
+  background-color: rgba(17,211,187,255);
+  left: 50%;
+  top: 93%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: .5%;
+}
+button:hover{
+  background-color: rgb(70,238,212);
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
