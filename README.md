@@ -7,10 +7,10 @@
 THE ULTIMATE GAME TO SEE WHO EATS FLEX'S PASTA DURING GAME NIGHT. With the original Tic Tac Toe game!
 Click on any of the 9 squares of the grid to start.
 
+**Link to game:** https://tictactoe-nktruong.netlify.app/
+
 ## Players
 2 (you do not have to be Leon or Jeon)
-
-**Link to game:** https://tictactoe-nktruong.netlify.app/
 
 ## A Picture of the Very Fancy Website:
 ![Image of Preview](https://i.imgur.com/vnRMGIr.png)
