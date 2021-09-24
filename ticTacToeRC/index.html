@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="title">
+        <img src="gameTitle.png">
+    </section>
+
+    <section class="whosTurn">
+        <p>Player <span id="player">X</span> it's your turn</p>
+    </section>
+
+    <section class="game">
+        <section class="columns">
+            <section class= "box" data="0"></section>
+            <section class= "box" data="3"></section>
+            <section class= "box" data="6"></section>
+        </section>
+        <section class="columns">
+            <section class= "box" data="1"></section>
+            <section class= "box" data="4"></section>
+            <section class= "box" data="7"></section>
+        </section>
+        <section class="columns">
+            <section class= "box" data="2"></section>
+            <section class= "box" data="5"></section>
+            <section class= "box" data="8"></section>
+        </section>
+    </section>
+            
+    <section class="gameOver">
+        <h2 id="result"></h2>
+        <button id="reset">New Game</button>
+    </section>
+
+    <script type="text/javascript" src="oop.js"></script>
+ 
+</body>
+</html>
