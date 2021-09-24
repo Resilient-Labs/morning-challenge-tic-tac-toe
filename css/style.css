@@ -1,0 +1,110 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* .alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image 
+}
+/*
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image 
+     
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 20px;
+     /* line-height: 1.4; */
+     font-family: Helvetica, Arial, sans-serif;
+}
+header{
+     background-image: url('tictactoeheader.png');
+}
+.outside {
+     font-family: "Fira Sans", sans-serif;
+     /* padding: 15px 0; */
+   }
+
+   .table {
+     border-spacing: 0em;
+     text-align: center;
+   }
+
+   .gridtable {
+     /* margin: 10 auto; */
+     text-align: center;
+   }
+
+   .box {
+     border: 2px solid black;
+     min-width: 250px;
+     min-height: 250px;
+     background: #daffecaf;
+     /* text-align: center; */
+     /* vertical-align: center; */
+     font-size: 50px;
+     font-weight: 900;
+   }
+
+   .box:hover {
+     opacity: 0.5;
+   }
+   
+   h2.endgame{
+        display: block;
+   }
+   h2 {
+     color: #498a7c;
+     display: none;
+   }
+
+   button {
+     border: none;
+     background: #30a84e;
+     color: white;
+     border-radius: 10px;
+     padding: 10px 10px;
+     font-size: 20px;
+     margin: 50px;
+   }
+
+   button:hover {
+     opacity: 0.7;
+   }
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
