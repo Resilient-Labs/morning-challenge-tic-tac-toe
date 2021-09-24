@@ -1,41 +1,35 @@
+<!--THIS WAS A GROUP EFFORT PROJECT - HOUSE GARDNER 2021B-->
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 class="title">Tic Tac Toe</h1>
 
-		<title>Tic-Tac-Toe</title>
+		<section>
+			<div class="board">
+				<button class="box"><span class="boxContent"></span></button>
+				<button class="box"><span class="boxContent"></span></button>
+				<button class="box"><span class="boxContent"></span></button>
 
-		<!-- external CSS link -->
-		<!--<link rel="stylesheet" href="css/normalize.css">-->
-		<!--<link rel="stylesheet" href="css/reset.css">-->
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-        <section id="mainContainer">
-            <h1>Tic<span class="title">Tac</span>Toe</h1>
-            <div id="popUpBackground">
-                <div id="popUpNames">
-                    <form id="playerNames">
-                        <input id="player1" type="text" placeholder="Player1">
-                        <input id="player2" type="text" placeholder="Player2">
-                        <a id="namesButton" href="#" class="button">Submit</a>
-                    </form>
-                </div>
-            </div>
-            
-            <div id="gameBoard"></div>
-            <div id ="controlButtons">
-            <a id="playAgainButton" href="#" class="button">Play Again</a>
-            <a id="resetButton" href="#" class="button">Reset</a>
-            </div>
+				<button class="box"><span class="boxContent"></span></button>
+				<button class="box"><span class="boxContent"></span></button>
+				<button class="box"><span class="boxContent"></span></button>
+
+				<button class="box"><span class="boxContent"></span></button>
+				<button class="box"><span class="boxContent"></span></button>
+				<button class="box"><span class="boxContent"></span></button>
+			</div>
+			<h1 id="instructions"></h1>
+			<h1 id="message"></h1>
+			<h1 id="whoseTurn"></h1>
+		</section>
     
-            <div id="results"> </div>
-        </section>
-
-		<script src="https://kit.fontawesome.com/c0e668a8ad.js" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+        <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
+

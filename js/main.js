@@ -1,238 +1,111 @@
-//initial object of the entire game
-const tictactoe = (() => {
-    const gameBoard = (() => {
-        let currentBoard;
+//<!--THIS WAS A GROUP EFFORT PROJECT - HOUSE GARDNER 2021B-->
 
-        const updateResults = ((winMessage) => {
-            const element = document.getElementById("results");
-            element.innerHTML = winMessage;
-        })
-        //This creates a clear board with a value of "null" in each array location
-        const createBoard = (() => {
-            let newBoard = {
-            row1: [null, null, null],
-            row2: [null, null, null],
-            row3: [null, null, null],
-            }
-            currentBoard = newBoard;
-        });
-        //This is pulling the board and allowing the user to enter information
-        const newPopUp = (() => {
-            const element = document.getElementById("popUpBackground").style;
-            const state = element.display;
-            if(state === "" || state === "flex"){
-                element.display = "none";
-            } else if(state === "none"){
-                element.display = "flex";
-            }
-        })
+//created an array from all the HTML elements with the class '.box', assigned to an variable, this will represent the tiles on the board
+const board = Array.from(document.querySelectorAll('.box'));
 
-        const create = (() => {
-            //This is the creation of the entire gameboard
-            const boardContainer = document.querySelector("#gameBoard");
-            document.getElementById("namesButton").addEventListener("click", gameMagic.inputNames);
-            document.getElementById("resetButton").addEventListener("click", gameMagic.newGame);
-            document.getElementById("playAgainButton").addEventListener("click", clearBoard);
-            
-            //creates the squares that were styled in CSS into the gameboard
-            for(let i = 0; i < 9; i++){
-                const gameSquare = document.createElement("div");
-                gameSquare.id = `${i}`;
-                gameSquare.classList.add("square");
-                boardContainer.appendChild(gameSquare);
-                gameSquare.addEventListener("click", updateBoard);
-                gameSquare.classList.add(`square${i}`);
-            }
-            createBoard();
-        })
-        //clears the board back to defaut settings or "emptying" the squares
-        const clearBoard = (() => {
-            const allSquares = [...document.querySelectorAll(".square")];
-            for(let i = 0; i < allSquares.length; i++){
-                allSquares[i].innerHTML = "";
-            }
-            createBoard();
-            gameStatus = false;
-        });
-        //this updates the board with the location of what was clicked and checks to make sure it can be filled
-        const updateBoard = ((e) => {
-            const square = document.getElementById(e.currentTarget.id);
-            if(isSqaureAvailable(square) == true){
-                let value = player.turnTaken();
-                square.innerText = value;
-                gameBoardStatus(parseInt(square.id), value);
-            }
-        })
-        //confirms where a value can be placed either "x" or "o" as it checks each row then runs function checkWin
-        const gameBoardStatus = ((square, value) => {
-            if(square === 0 || square === 1 || square === 2){
-                currentBoard.row1[square] = value;
-            } else if(square === 3 || square === 4 || square === 5){
-                square = square - 3;
-                currentBoard.row2[square] = value;
-            } else if(square === 6 || square === 7 || square === 8){
-                square = square - 6;
-                currentBoard.row3[square] = value;
-            }
+//created a parent array that holds all the possible win combinations, each index of the parent array represents a specific winning combination that is stored in its own array
+const combinations = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+];
 
-            gameMagic.checkWin(currentBoard);
-        });
-        //created to make sure the "square" space is actually empty to utilize filling it in other objects
-        const isSqaureAvailable = ((square) => {
-            if(square.innerText == "" && gameStatus == false){
-                return true;
-            } else {
-                return false;
+//created game object
+const game = {
+    // object properties that holds values for the current game turn and the player
+    turn: 1,
+    currentPlayer: 'X',
+    // object method that updates current player's turn
+    nextTurn: function(){
+        if(this.turn % 2 == 0){
+            this.currentPlayer = 'O'
+        }else{
+            this.currentPlayer = 'X'
+        }
+    },
+    // object method that displays what player's turn it is
+    checkCurrentPlayer: function(){
+        document.getElementById('whoseTurn').innerHTML = 'CURRENT PLAYER: ' + this.currentPlayer;
+    },
+    // object method that checks who won by running a for loop to iterate through the array of winning combinations. 
+    checkWin: function(){
+        for (let i = 0; i < combinations.length; i++) {
+            // setting the indexes of the combination array to equal the values of the placeholder array [a,b,c], which will be used to match the indexes of the board array
+            const [a, b, c] = combinations[i];
+            // conditional is ran to detect whether there are 3 matching X or O in the content of each board element (or tile/square), also checks if the content of the element is not empty
+            if (
+                board[a].textContent !== "" &&
+                board[a].textContent === board[b].textContent && 
+                board[a].textContent === board[c].textContent
+            ) {
+                // if winning conditions are met, winner message is displayed along with the sign that won
+                document.getElementById('message').innerHTML = 'WINNER IS ' + board[a].textContent;
+                // makes all board tiles unclickable after winning
+                board.forEach(element => {
+                    element.classList.add('unclickable');
+                });
+                // highlights winning board tile combination
+                board[a].classList.add('winningTiles');
+                board[b].classList.add('winningTiles');
+                board[c].classList.add('winningTiles');
+                // hides player turn message 
+                document.getElementById('whoseTurn').style.display = 'none';
             }
-        });
-        //returns all values of all the objects so they can be utilized within each other
-        return {
-            create,
-            gameBoardStatus,
-            clearBoard,
-            newPopUp,
-            updateResults,
-        };
-    })();
-
-    //object for creating the players and other conditions that all effect player functionality 
-    const player = (() => {
-        let turns = 1;
-
-        const createPlayers = (name, symbol) => {
-            let wins = 0;
-            return { name, symbol, wins };
-          };
-
-        const turnTaken = (() => {
-            turns++;
-            return playersTurn();
-        });
-        const playersTurn =(() => {
-            if(turns % 2 == 0){
-                return firstPlayer.symbol;
-            } else if (turns % 2 != 0){
-                return secondPlayer.symbol;
+        }
+    },
+    // object method that checks if the game is a draw by running a for loop to iterate through the array of winning combinations. 
+    checkDraw: function(){
+        for (let i = 0; i < combinations.length; i++) {
+            const [a, b, c] = combinations[i];
+            // conditional is ran to detect whether if it's the tenth turn of the game,if there are no matching X or O in the content of each board element (or tile/square), also checks if the content of the element is not empty
+            if (
+                this.turn == 10 &&
+                board[a].textContent !== "" &&
+                board[a].textContent !== board[b].textContent && 
+                board[a].textContent !== board[c].textContent
+            ) {
+                // if draw conditions are met, draw message is displayed
+                document.getElementById('message').innerHTML = 'DRAW';
+                // hides player turn message 
+                document.getElementById('whoseTurn').style.display = 'none';
             }
-        });
+        }
+    },
+}
 
-        const reset = (() => {
-            turns = 1;
-            players = [];
-        });
-        
-        
-        return {
-            turnTaken,
-            reset,
-            createPlayers,
-        };
-    })();
+// shows current player and the instructions upon game start
+document.getElementById('instructions').innerHTML = 'X STARTS THE GAME! 3 MATCHES = WIN';
+game.checkCurrentPlayer();
 
-    //the gameMagic object that runs every win function and displays a counter of the number of wins per player or a draw
-    const gameMagic = (() => {
-        //this was a experimental piece of code I found and utilized which helped me making a better win declaration object
-        const checkWin = ((currentBoard) => {
-            let allRows = Object.keys(currentBoard);
-            let topLeft = currentBoard[allRows[0]][0];
-            let topRight = currentBoard[allRows[0]][2];
-            let middle = currentBoard[allRows[1]][1];
-            let botRight = currentBoard[allRows[2]][2];
-            let botLeft = currentBoard[allRows[2]][0];
-            let nullValue = false;
-            for(let i = 0; i < 3; i++){
-                let thisRow = allRows[i];
-                let otherRow = currentBoard[thisRow];
-                //Check Win state in rows, columns and Diag
-                if(winLogic(currentBoard[allRows[i]][0], currentBoard[allRows[i]][1], currentBoard[allRows[i]][2]) == true){
-                    won(otherRow[0]);
-                    return "game won";
-                } else if (winLogic(currentBoard[allRows[0]][i], currentBoard[allRows[1]][i], currentBoard[allRows[2]][i]) == true){
-                    won(currentBoard[allRows[0]][i]);
-                    return "game won";
-                } else if ((winLogic(topLeft, middle, botRight) == true) || (winLogic(topRight, middle, botLeft) == true)){
-                    won(middle);
-                    return "game won";
-                } else {
-                        for(let n=0; n < otherRow.length; n++){
-                            if(otherRow[n] === null){
-                                nullValue = true;
-                                break;
-                            }
-                        }
-                    }        
-            }
-            if(nullValue == false){
-                won("tie");
-            }
-        });
-
-        const won = ((symbol) => {
-            alertWin(symbol);
-            player.reset();
-            gameStatus = true;
-            
-        });
-        //the winLogic here determines or makes sure that everything is equal in value and type for a declared official winner
-        const winLogic = ((ele0, ele1, ele2) => {
-            if(ele0 === ele1 && ele1 === ele2 && ele0 === ele2 && ele1 !== null){
-                return true;
-            } else {
-                return false;
-            }
-        });
-        //alerts the win messages or draw feature
-        const alertWin = ((symbol) => {
-            let winMessage = "";
-            if(symbol == "X" || symbol == "O"){
-                if (symbol === firstPlayer.symbol){
-                    firstPlayer.wins++;
-                    winMessage =  `${firstPlayer.name} has won ${firstPlayer.wins} time(s)`;
-                } else if (symbol === secondPlayer.symbol){
-                    secondPlayer.wins++;
-                    winMessage = `${secondPlayer.name} has won ${secondPlayer.wins} time(s)`;
-                }
-            } else {
-                winMessage = "DRAW!";
-            }
-            gameBoard.updateResults(winMessage);
-        })
-        //this object is allowing the value of the 
-        const inputNames = (() => {
-            const name1 = (document.getElementById("player1").value);
-            const name2 = (document.getElementById("player2").value);
-            firstPlayer = player.createPlayers(name1, "X");
-            secondPlayer = player.createPlayers(name2, "O");
-            gameBoard.newPopUp();
-
-
-        });
-        //this resets the game back to default
-        const newGame = (()=>{
-            player.reset();
-            firstPlayer = "";
-            secondPlayer = "";
-            gameBoard.clearBoard();
-            gameStatus = false;
-            gameBoard.newPopUp();
-            gameBoard.updateResults("");
-        })
-        
-        return {
-            checkWin,
-            inputNames,
-            newGame,
-        };
-    })();
-
-    return {
-        gameBoard,
-        player,
-        gameMagic,
+// sets a click event for each element of the board array (squares/tiles), this will keep running until all the squares/tiles are clicked
+board.forEach(element => {
+    element.onclick = function(event){
+        // stores click event target in a variable
+        const tileTarget = event.target;
+        // once a specific element is clicked, the current player's sign will be inserted as text content in that specific element
+        tileTarget.innerHTML = game.currentPlayer;
+        // the element is made unclickable by adding a css class that removes pointer event. 
+        tileTarget.classList.add('unclickable');
+        // game turn will increment
+        game.turn++;
+        // nextTurn method is called which will update currentPlayer property and switch the player sign based on the turn number
+        game.nextTurn();
+        // checkDraw method is called to see if the game resulted in a draw, if not, the checkWin method is called
+        game.checkDraw();
+        // checkWin method is called to see if the clicked tiles have a matching win combination
+        game.checkWin();
+        // checkCurrentPlayer method is called to display who the current player is
+        game.checkCurrentPlayer();
+        // removes instructions from display 
+        document.getElementById('instructions').style.display = 'none';
     };
-})();
-//initial issue I was having when making the objects but these must be run outside of it or they don't run properly "learned from RC alumni"
-let gameStatus = false;
-let firstPlayer = "";
-let secondPlayer = "";
-tictactoe.gameBoard.create();
+});
+
+
+
+
