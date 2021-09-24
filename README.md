@@ -1,7 +1,7 @@
 # Tik Tak Toe
 This is a project for creating a tik tak toe game. this was worked on collaboratively with the goal to apply Object Oriented Programming.
 
-**Link to project:** modest-stonebraker-058549.netlify.app
+**Link to project:** https://modest-stonebraker-058549.netlify.app/
 
 <img src="">
 
