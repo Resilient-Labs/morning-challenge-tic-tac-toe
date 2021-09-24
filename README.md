@@ -1,22 +1,21 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tik Tak Toe
+This is a project for creating a tik tak toe game. this was worked on collaboratively with the goal to apply Object Oriented Programming.
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+**Link to project:** https://modest-stonebraker-058549.netlify.app/
 
-### How to submit your code for review:
+<img src="img/live_screenshot.png">
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Tech used:** HTML, CSS, JavaScript
+
+To make this Tik Tak Toe game we implemented Object Oriented Programming.
+
+## Optimizations
+
+
+## Lessons Learned:
+
+Some great takeaways from this project are starting off with phenomenal pseudo code. from there you built out OOP first and then work on the HTML and CSS.
+
+
