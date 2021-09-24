@@ -13,7 +13,7 @@ Click on any of the 9 squares of the grid to start.
 2 (you do not have to be Leon or Jeon)
 
 ## A Picture of the Exciting Website:
-![Image of Tic Tac Toe Game](https://i.imgur.com/CMGkyiw.png)
+![Image of Tic Tac Toe Game](https://i.imgur.com/4nMLCLa.png)
 
 ## How It's Made:
 
