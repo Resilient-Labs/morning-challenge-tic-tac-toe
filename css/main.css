@@ -1,0 +1,16 @@
+ .hidden {
+    display: none;
+ }
+ .container {
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ section {
+    border: 3px solid black;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    font-size: 40px;
+ }
