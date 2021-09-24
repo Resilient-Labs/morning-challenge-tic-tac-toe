@@ -1,0 +1,113 @@
+#mainContainer{
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(47, 107, 156);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+span{
+    color: red;
+}
+#playerNames{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    column-gap: 10px;
+}
+#player1{
+    grid-column: 1/2;
+}
+#player2{
+    grid-column: 2/3;
+}
+#gameBoard{
+    display: grid;
+    background-color: black;
+    width: 50vw;
+    height: 40vh;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    justify-content: center;
+    align-content: center;
+}
+.square{
+    display:grid;
+    background-color: rgb(67, 156, 101);
+    justify-content: center;
+    align-content: center;
+}
+.square4{
+    border-style: solid;
+    border-color:black;
+}
+.square1, .square7{
+    border-right: solid;
+    border-left: solid;
+}
+.square3, .square5{
+    border-top: solid;
+    border-bottom: solid;
+}
+
+#popUpNames, #playerNames{
+    display:flex;
+    flex-direction: column;
+    height: 250px;
+    width: 500px;
+    background: rgb(47, 107, 156);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#popUpBackground{
+    background:rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin: 20px auto;
+    display:block;
+    width: 50%;
+    padding: 8px;
+}
+#namesButton, #resetButton, #playAgainButton{
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: black;
+    border-radius: 5px;
+    background: rgb(67, 156, 101);
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.25);
+    margin-top: 25px;
+    text-decoration:none;
+}
+#controlButtons{
+    display: flex;
+    width: 50%;
+    justify-self: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#results{
+    display: flex;
+    padding-top: 15px;
+    margin-top: 10px;
+    justify-self: center;
+}
