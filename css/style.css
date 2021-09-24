@@ -1,0 +1,96 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  color:black;
+  background-color:rgb(108 188 171);
+  font-family: 'Gluten', Arial, Helvetica, sans-serif;
+}
+ 
+div{
+  width: 100%;
+  height: auto;
+}
+
+section h1{
+  font-size: 3em;
+  text-align: center;
+}
+
+section{
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+th{
+  height: 10em;
+  width: 10em;
+}
+
+[id='0']{
+  border-right:1px solid rgb(91 159 145);
+  border-bottom: 1px solid rgb(91 159 145);
+}
+[id='3']{
+  border-right:1px solid rgb(91 159 145);
+  border-bottom: 1px solid rgb(91 159 145);
+}
+[id='6']{
+  border-right:1px solid rgb(91 159 145);
+}
+
+[id='2']{
+  border-left:1px solid rgb(91 159 145);
+  border-bottom: 1px solid rgb(91 159 145);
+}
+[id='5']{
+  border-left:1px solid rgb(91 159 145);
+  border-bottom: 1px solid rgb(91 159 145);
+}
+[id='8']{
+  border-left:1px solid rgb(91 159 145);
+}
+
+[id='1']{
+  border-bottom: 1px solid rgb(91 159 145);
+}
+[id='4']{
+  border-bottom: 1px solid rgb(91 159 145);
+}
+
+#winnerOrTie{
+  color:black;
+  font-size: 3em;
+}
+
+.restartGame{
+  margin-top: 2em;
+  background-color: white;
+  color:black;
+  border: none;
+  width:10em;
+  height:2em;
+  font-size: 1em;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
