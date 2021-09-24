@@ -3,7 +3,7 @@ This is a project for creating a tik tak toe game. this was worked on collaborat
 
 **Link to project:** https://modest-stonebraker-058549.netlify.app/
 
-<img src="img/live_screenshot">
+<img src="img/live_screenshot.png">
 
 ## How It's Made:
 
