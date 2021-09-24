@@ -1,0 +1,89 @@
+
+body{
+    background-image: url('garden.gif');
+    background-size: cover ;
+    color: white;
+    font-family: 'Matrix', sans-serif;
+}
+
+.container{
+    border: 1px solid transparent;
+    height: 450px;
+    width: 49%;
+    margin-left: 360px;
+    margin-top: 40px;
+}
+
+.box{
+    border: 1px solid black;
+    float: left;
+    height: 148px;
+    width: 32.5%;
+    background-color: rgb(70, 175, 41);
+    
+}
+
+.playerone{
+    background-image: url('pics/trin.jpg');
+    background-size: 250px 150px;
+}
+
+.playertwo{
+    background-image: url('pics/neo.WEBP');
+    background-size: 250px 150px;
+}
+
+h1{
+    font-size: 45px;
+    margin-left: 30px;
+}
+
+div{
+    margin-left: 140px;
+    font-size: 40px;
+    
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: white;    }
+    49%{    color: white; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: white;    }
+}
+
+button{
+    background-color: white; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    font-family: 'Matrix', sans-serif;
+    float: left;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#results{
+    margin-left: 450px;
+    font-size: 24px;
+    
+}
+
+#winner{
+    margin-left: 450px;
+    font-size: 24px;
+    
+}
