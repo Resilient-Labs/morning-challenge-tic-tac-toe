@@ -1,0 +1,17 @@
+#container {
+    padding: 15px 0;
+}
+.table {
+    margin: 10 auto;
+    text-align: center;
+}
+
+.box {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #dee9ec;
+}
+
+#turnMessage {
+    display: none;
+}

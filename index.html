@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Gardner Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="header">House Gardner Tic Tac Toe</h1>
+    <!-- This part will be seen after start game is clicked -->
+    <h2 id="turnMessage"><span id="yourTurn"></span>'S TURN </h2>
+
+    <!-- Create Players section for Tic Tac Toe -->
+    <section id="nameInput">
+        <section>
+            <label for="playerOne">Player 1</label>
+            <input type="text" 
+                        placeholder="enter name"
+                        name="'playerOne"
+                        id="playerOne">
+        </section>
+
+        <section>
+            <label for="playerTwo">Player 2</label>
+            <input type="text" 
+                        placeholder="enter name"
+                        name="'playerTwo"
+                        id="playerTwo">
+        </section>
+        <input id="startGame" type="submit" value="Start Game">    
+    </section>
+
+    <!-- Game board -->
+    <div id="container">
+        <table class="table">
+            <tr>
+                <td ><div class="box" id="1"></div></td>
+                <td ><div class="box" id="2"></div></td>
+                <td ><div class="box" id="3"></div></td>
+            </tr>
+            <tr>
+                <td ><div class="box" id="4"></div></td>
+                <td ><div class="box" id="5"></div></td>
+                <td ><div class="box" id="6"></div></td>
+            </tr>
+            <tr>
+                <td ><div class="box" id="7"></div></td>
+                <td ><div class="box" id="8"></div></td>
+                <td ><div class="box" id="9"></div></td>
+            </tr>
+        </table>    
+    </div>
+
+    <!-- After Game options -->
+    <h2 id='message'><span id="winner"></span> Wins</h2>
+    <section>
+        <button id="reset">Replay Game</button>
+    </section>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
