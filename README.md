@@ -12,8 +12,8 @@ Click on any of the 9 squares of the grid to start.
 ## Players
 2 (you do not have to be Leon or Jeon)
 
-## A Picture of the Very Fancy Website:
-![Image of Preview](https://i.imgur.com/vnRMGIr.png)
+## A Picture of the Exciting Website:
+![Image of Tic Tac Toe Game](https://i.imgur.com/CMGkyiw.png)
 
 ## How It's Made:
 
