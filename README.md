@@ -4,7 +4,7 @@ This Object Oriented Tic Tac Toe game is a two-player application that continuou
 
 ## Link to Project: 
 
-![Tic Tac Toe Demo](url)
+![Tic Tac Toe Demo](https://github.com/cat-goncalves/morning-challenge-tic-tac-toe/blob/answer/css/img/tic-tac-toe-demo.gif)
 
 
 ## How It's Made:
