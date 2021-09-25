@@ -1,0 +1,159 @@
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+
+
+body {
+    font-family: "Arial", sans-serif;
+    background-image: linear-gradient(to right, black, slategrey, slategray);
+}
+header h2{
+  margin-top: 50px;
+  text-align: center;
+  color: whitesmoke;
+}
+section {
+    text-align: center;
+}
+.gameBoard {
+  
+    width: 300px;
+    margin: 100px auto;
+}
+.ticTacSquare {
+    font-family: "Permanent Marker", cursive;
+    width: 33.3333%;
+    height: 100px;
+    border: .5px solid whitesmoke;
+    font-size: 60px;
+    float: left;
+}
+
+.ticTacSquare:hover{
+    box-shadow:0 0 0 1px yellow;
+
+} 
+
+button{
+  text-align: center;
+  margin: 0px 950px;
+  color: whitesmoke;
+  background-color: black;
+}
+
+button:hover{
+  background-color: blueviolet;
+}
+
+  /* body{s
+
+    background-color: lavender; if gradients are not supported
+    background-image: linear-gradient(to right, plum , lavender);
+    margin-left: 10px;
+
+  }
+    
+
+.gameBoard{
+  clear: both;
+  margin: 30px 30px;
+  padding: 30px 30px;
+}
+
+#ticTacSquare{
+  border: 1px solid blue;
+  height: 100px;
+}
+
+.rowOne{
+  width: 100%;
+  clear: both;
+}
+
+.squareOne{
+  width: 20%;
+  float: left;
+}
+.squareTwo{
+  width: 20%;
+  float: left;
+}
+.squareThree{
+  width: 20%;
+  float: left;
+}
+
+.rowTwo{
+  width: 100%;
+  clear: both;
+}
+
+.squareFour{
+  width: 20%;
+  float: left;
+}
+
+.squareFive{
+  width: 20%;
+  float: left;
+}
+
+.squareSix{
+  width: 20%;
+  float: left;
+}
+
+.rowThree{
+  width: 100%;
+  clear: both;
+}
+
+.squareSeven{
+  width: 20%;
+  float: left;
+}
+
+.squareEight{
+  width: 20%;
+  float: left;
+}
+
+.squareNine{
+  width: 20%;
+  float: left;
+}
+
+.reset{
+  clear: both;
+}
+button{
+  clear:both;
+}
+
+.output{
+    background-color: lightgrey transparent;
+
+}
+button{
+  width: px;
+  border: 1px solid black;
+  background-color: slateblue;
+  padding: 5px;
+  text-align: center;
+  clear: both;
+}
+
+button:hover{
+    background-color: blueviolet;
+}  */
