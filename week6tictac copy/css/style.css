@@ -1,0 +1,95 @@
+
+*{
+  box-sizing: border-box;
+}
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+ clear: both;
+}
+.alignright {
+ float: right;
+ padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+.alignleft {
+ float: left;
+ padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+  background: linear-gradient(to right, #5706ED, #9785AF);
+}
+.title{
+  text-align: center;
+}
+.board{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  animation: rotate-image 1s linear;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes rotate-image  {
+  0%{ transform: rotate(0deg);}
+  100%{ transform: rotate(500deg);}
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 100px;
+  margin: 2px;
+  width: 225px;
+  height: 150px;
+  background: rgba(87, 86, 86, 0.955);
+  border-radius: 4%;
+  border-style: none;
+  cursor: pointer;
+}
+.box:hover{
+  background: grey;
+}
+.unclickable{
+  pointer-events: none;
+}
+.winningTiles{
+  background: rgb(202, 6, 160);
+}
+h1{
+  font-size: 3rem;
+}
+#instructions{
+  line-height: 0;
+  padding-top: 1%;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
+
+
+
+
+
+
