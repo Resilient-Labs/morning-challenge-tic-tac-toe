@@ -1,6 +1,6 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+### A two player Tic-Tac-Toe game. The users are able to click to place their X or O. Get three matching characters side by side, top to bottom, or diagonally and win.
 
 ### How to submit your code for review:
 
