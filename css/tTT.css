@@ -1,16 +1,30 @@
 *{
     box-sizing: border-box;
+    margin: auto;
 }
 body{
-    background-image: url("img/theend.jpeg");
+    background-image: url("../theend.jpeg");
+    color: white;
+    width: 50%;
+
 }
 section{
-    border: 2px brown dotted;
+    border: 2px brown double;
     width: 100px;
     height: 100px;
     border-radius: 20px;
+    background-color: hsl(0,100%,50%, 0.5);
+}
+p, h1, button{
+    background-color: hsl(0,100%,50%, 0.5);
+    width: 100%;
+    margin: auto;
 }
 
+label{
+    position: relative;
+    left: 100px;
+}
 
 
 .hide{
