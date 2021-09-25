@@ -1,0 +1,179 @@
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+
+  body{
+    background:linear-gradient(132deg,#83a4d4, #b6fbff  );
+    animation:BackgroundGradient 30s ease infinite;
+      /* background-image: url('redback.jpeg');
+      background-repeat: no-repeat;
+      font-family: 'Press Start 2P', cursive;
+
+      background-size: cover; */
+  }
+
+  .title img{
+    margin-left: 35.5%;
+    width: 30%;
+  }
+
+  .title{
+      height: 190px;
+  }
+
+  .whosTurn{
+      text-align: center;
+      font-weight:1000;
+      color: white;
+      padding-bottom:5px;
+  }
+
+.game{
+    /* border: 2px solid black; */
+    height: 390px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.columns{
+    float: left;
+    width: 33.333%;
+}
+
+.box{
+    border: 2px solid whitesmoke;
+    height: 130px;
+    font-weight: 700;
+    font-size:90px;
+    text-align: center;
+    padding-top:10%;
+}
+
+.gameOver{
+    text-align: center;
+    width: 50%;
+    height: 90px;
+    color: dark palevioletred;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:15px;
+}
+
+button{
+    background:linear-gradient(132deg,#83a4d4, #b6fbff  );
+    font-weight: 700;
+    padding: 7px;
+    /* border: 5px solid navy; */
+    border-radius: 8px;
+    color: white;
+    margin-top:16px;
+    float: left;
+    width: 25%;
+    /* font-family: 'Press Start 2P', cursive; */
+    color:violet;
+ 
+}
+
+#result {
+    width: 45%;
+    float: left;
+    margin-left: 15%;
+    font-size: 21px;
+    padding-right: 26px;
+    padding-top: 5px;
+}
+
+span {
+    color: powderblue;
+}
+.strike{
+    text-decoration: line-through;
+    color: gray;
+    }
+
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+    .title img{
+        margin-left: 20.5%;
+        width: 59%;
+    }
+    .whosTurn{
+        padding: 15px;
+    }
+
+    .game{
+        width: 80%;
+        height:456px;
+        margin-top:20px;
+    }
+    .box{
+        height:151px;
+    }
+    button{
+       width: 60%;
+       font-size:20px;
+       padding:20px;
+       margin-left: 20%;
+    }
+    #result{
+        width:100%;
+        margin-left:0;
+        font-size:40px;
+        padding-right:0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .title img{
+        margin-left:19.5%;
+        width:60%;
+    }
+    .title{
+        height:100px;
+    }
+    .whosTurn{
+        font-size: 10px;
+        padding-top:5px;
+        padding-bottom:10px;
+    }
+    .game{
+        margin-top:2px;
+        width:80%;
+        height: 450px;
+    }
+    .columns{
+        height:100%
+    }
+    .box{
+        height: 33.333%;
+        font-size: 60px;
+        padding-top: 50%;
+    }
+    .gameOver{
+        height: 200px;
+    }
+    button{
+        width:100%;
+        padding: 14px;
+        margin-bottom:20%;
+    }
+    #result{
+        width:100%;
+        margin-left:0;
+        padding: 0;
+        font-size: 25px;
+    }
+
+}
