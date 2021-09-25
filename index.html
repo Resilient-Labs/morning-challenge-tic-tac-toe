@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="center">Tic-Tac-Toe: Mean Girls Edition</h1>
+  <section class="container">
+    <section class="containerInner">
+      <section class="table">
+        <h2 class="playInfo">Player <span id="player">X</span> it's your turn</h2>
+        <h2 id="message" class="hidden">
+           <span id="winner"></span> is the winner!
+        </h2>
+        <table class="centerOne" id="board">
+          <tr>
+            <td><section class="box" id="00"></section></td>
+            <td><section class="box" id="01"></section></td>
+            <td><section class="box" id="02"></section></td>
+          </tr>
+          <tr>
+            <td><section class="box" id="10"></section></td>
+            <td><section class="box" id="11"></section></td>
+            <td><section class="box" id="12"></section></td>
+          </tr>
+          <tr>
+            <td><section class="box" id="20"></section></td>
+            <td><section class="box" id="21"></section></td>
+            <td><section class="box" id="22"></section></td>
+          </tr>
+        </table>
+
+        <button id="reset">Reset</button>
+      </section>
+    </section>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>

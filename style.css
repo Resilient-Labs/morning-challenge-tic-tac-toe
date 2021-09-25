@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+  clear: both;
+}
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+body {
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cosmo-meangirls-header-19-04-29-13-1556549131.jpg?crop=0.704xw:0.937xh;0.202xw,0.0171xh&resize=640:*);
+  background-size: cover;
+}
+.center {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(253, 161, 216);
+  background-color: black;
+  border: 10px double;
+  width: 600px;
+  margin: auto;
+}
+.centerOne {
+  border: 1px solid ghostwhite;
+  background-color: #ddcad9;
+}
+.title {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  margin: 2px;
+  width: 225px;
+  height: 150px;
+  background: white;
+  color: black;
+  border-radius: 4%;
+  border-style: none;
+  cursor: pointer;
+}
+
+.box:hover {
+  background: #afa2ff;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+.winningTiles {
+  background: yellow;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#reset {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  width: 20%;
+  background-color: #d1b1cb;
+}
+
+#instructions {
+  line-height: 0;
+  padding-top: 1%;
+}
