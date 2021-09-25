@@ -1,0 +1,90 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .alignright {
+    float: right;
+    padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  }
+  
+  .alignleft {
+    float: left;
+    padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url('/bobsfamily.png');
+    background-size: 86.5%;
+    background-repeat: no-repeat;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+  .titleContainer{
+    width: 65%;
+    margin-left: 25px;
+  }
+
+
+  h1{
+    font-size: 4rem;
+    
+    
+    
+  }
+ 
+ 
+  #container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width:52%;
+    margin-top: 25px;
+    /* margin-left: 47%; */
+    margin-right: 25px;
+  }
+  section{
+    font-size: 4rem;
+    text-align: center;
+    height: 150px;
+    border: 1px solid;
+  }
+  
+  main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
