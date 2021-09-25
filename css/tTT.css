@@ -1,13 +1,17 @@
 *{
     box-sizing: border-box;
 }
-
+body{
+    background-image: url("img/theend.jpeg");
+}
 section{
     border: 2px brown dotted;
     width: 100px;
     height: 100px;
     border-radius: 20px;
 }
+
+
 
 .hide{
     display: none;

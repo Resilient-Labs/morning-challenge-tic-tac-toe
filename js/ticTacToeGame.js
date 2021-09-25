@@ -109,6 +109,7 @@ class Board {
             box.innerText = ''
         })
         this.board = new Array(9)
+        this.winner = false
     }
  
 }
