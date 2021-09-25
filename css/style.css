@@ -1,0 +1,117 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	color: #000;
+	font-size: 12px;
+	line-height: 1.4;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+	background: linear-gradient(to right, #b9743b, #9785af);
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	padding: 15px 0;
+}
+
+.containerInner {
+	width: 95%;
+	margin: 0 auto;
+}
+.table {
+	margin: 10 auto;
+	text-align: center;
+}
+
+.box {
+	min-width: 80px;
+	min-height: 80px;
+	background: whitesmoke;
+	text-align: center;
+	vertical-align: center;
+	font-size: 50px;
+	font-weight: 850;
+	cursor: pointer;
+}
+
+.box:hover {
+	opacity: 0.8;
+}
+
+.hidden {
+	color: #1f1a20;
+	display: none;
+}
+
+.table button {
+	border: none;
+	background: black;
+	color: white;
+	border-radius: 3px;
+	padding: 5px 7px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 15px;
+}
+
+.table button:hover {
+	opacity: 0.7;
+}
+
+.table button:focus {
+	outline: none;
+}
+
+.win {
+	background: green;
+	color: white;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Your description goes here" />
+		<meta name="keywords" content="one, two, three" />
+
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<h1 class="center">Tic-Tac-Toe</h1>
+
+		<div class="container">
+			<div class="containerInner">
+				<div class="table">
+					<h2 class="playInfo">Player <span id="player">X</span> your turn</h2>
+					<h2 id="message" class="hidden">
+						Player <span id="winner"></span> Wins
+					</h2>
+					<h2 id="tieMessage" class="hidden">It's a Tie!</h2>
+					<table class="center" id="board">
+						<tr>
+							<td><div class="box" id="00"></div></td>
+							<td><div class="box" id="01"></div></td>
+							<td><div class="box" id="02"></div></td>
+						</tr>
+						<tr>
+							<td><div class="box" id="10"></div></td>
+							<td><div class="box" id="11"></div></td>
+							<td><div class="box" id="12"></div></td>
+						</tr>
+						<tr>
+							<td><div class="box" id="20"></div></td>
+							<td><div class="box" id="21"></div></td>
+							<td><div class="box" id="22"></div></td>
+						</tr>
+					</table>
+
+					<button id="reset">Reset</button>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/index.js"></script>
+		<!-- 
+		<script type="text/javascript" src="js/main.js"></script> -->
+	</body>
+</html>
