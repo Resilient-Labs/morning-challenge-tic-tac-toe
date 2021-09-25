@@ -1,0 +1,119 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+/*
+1px  = 0.0625rem
+10px = 0.625rem
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+30px = 1.875rem
+32px = 2rem
+*/
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #fff;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Prata', Helvetica, Arial, sans-serif;
+     background:center / cover no-repeat url('img/the-barn.jpeg');
+     background-color: #000;
+     text-align: center;
+}
+h1 {
+     font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 4vw;
+    width: 50%;
+    margin-left: 25%;
+}
+h2 {
+     text-decoration: underline;
+     font-size: 2.5vw;
+     font-weight: bold;
+     width: 20%;
+     margin-left: 40%;
+}
+p {
+     width: 60%;
+     font-size: 1.5vw;
+     margin-left: 20%;
+     line-height: 1.75;
+     padding: 2%;
+}
+h1, h2, p {
+     background-color: rgba(0, 0, 0, 0.6);
+}
+.box {
+     height: 20vh;
+     width: 20vh;
+     border: 2px solid #fff;
+     background-color: rgba(255, 255, 255, 0.5);
+}
+.topRow,
+.middleRow,
+.bottomRow {
+     display: flex;
+     flex-direction: row;
+}
+.x {
+     background: center / cover no-repeat url('img/candiace.jpeg');
+     background-color: blue;
+}
+.o {
+     background: center / cover no-repeat url('img/monique.jpeg');
+     background-color: red;
+}
+.reset {
+     font-size: 1vw;
+     border: none;
+     padding: 0.5% 1%;
+     text-transform: uppercase;
+     border-radius: 24px;
+     margin: 1% 0 5% 0;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
