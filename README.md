@@ -1,22 +1,19 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# ❌ ⭕️ Tic-Tac-Toe ⭕️ ❌
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+This Object Oriented Tic Tac Toe game is a two-player application that continuously tracks the state of the game board.
 
-### How to submit your code for review:
+## Link to Project: 
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![Tic Tac Toe Demo](https://github.com/cat-goncalves/morning-challenge-tic-tac-toe/blob/answer/css/img/tic-tac-toe-demo.gif)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+## How It's Made:
+Tech used: HTML, CSS, JavaScript
+
+
+## Optimizations:
+I planned ofr use cases to improve the experience of game play. Specifically I solved for the case of a draw of 'Tie' and prevented the continuation of game play once a winner is found.
+
+
+## Lessons Learned:
+To create this project I used Opject Oriented Programming for the first time to approach this problem
