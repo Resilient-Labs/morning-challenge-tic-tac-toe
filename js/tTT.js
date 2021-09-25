@@ -37,6 +37,7 @@ function playGame(e) {
 
 function clearBoard(){
     gameBoard.clear()
+    results.innerText = 'new game'
 }
 
 // function deleteBoard(){
