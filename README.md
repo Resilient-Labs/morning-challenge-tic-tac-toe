@@ -1,22 +1,19 @@
 # 📊 Morning Challenge: Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
-
 ### How to submit your code for review:
+# project title
+**link to project**
+![words for image](https://i.imgur.com/tJ8nvwe.png)
+### How It’s Made
+Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+**Langs used**
+HTML
+JAVASCRIPT (OOP)
+CSS
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+### optimizations
+### Lessons Learned
+prototype is a fallback source for prop & methods
+classes are the containers for properties/methods
+how to nest arrarys and directly target indexes
