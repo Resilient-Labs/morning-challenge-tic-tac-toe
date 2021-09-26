@@ -1,4 +1,4 @@
-<img src=“img/TICTactoe.png”>
+<img src=“TICTactoe.png”>
 
 
 
