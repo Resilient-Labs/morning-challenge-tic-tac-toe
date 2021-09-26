@@ -1,5 +1,5 @@
 
-<img src=“TICTactoe.png”>
+<img src=“tics.jpg”>
 
 I completed the challenge: 4
 I feel good about my code: 5
