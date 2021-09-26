@@ -44,7 +44,7 @@ class Game {
                 // checkWin method is called to see if the clicked tiles have a matching win combination
                 tictactoe.checkWin();
                 // checkCurrentPlayer method is called to display who the current player is
-                tictactoe.checkCurrentPlayer();
+                tictactoe.showCurrentPlayer();
                 // removes instructions from display 
                 document.getElementById('instructions').style.display = 'none';
             };
@@ -59,7 +59,7 @@ class Game {
         }
     }
     // object method that displays what player's turn it is
-    checkCurrentPlayer(){
+    showCurrentPlayer(){
         document.getElementById('whoseTurn').innerHTML = 'CURRENT PLAYER: ' + this.currentPlayer;
     }
     // object method that checks who won by running a for loop to iterate through the array of winning combinations. 
@@ -114,13 +114,20 @@ class Game {
     }
 }
 
-// creates
+// creates new game object and assigns it to tictactoe variable
 const tictactoe = new Game();
 
+// with tictactoe as a new Game object, we can use the methods from the object to start a new round of tic tac toe upon page load
+
+// shows game instructions on load
 tictactoe.instructions();
-tictactoe.checkCurrentPlayer();
+// shows current player on load
+tictactoe.showCurrentPlayer();
+// sets new game on load
 tictactoe.setBoard();
 
 
 // adds event listener on reset button, if clicked, game.reset() method is called
 document.getElementById('reset').onclick = tictactoe.reset;
+
+
