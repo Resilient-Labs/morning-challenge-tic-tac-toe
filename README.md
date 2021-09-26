@@ -1,7 +1,7 @@
 
 I completed the challenge: 5
 I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
+I'd appreciate a feedback on Javascript especially the OOP part
 ```
-<img src=“img/live_screenshot.png”>
+<img src=“img/Screen Shot 2021-09-24 at 6.30.45 PM.png”>
 
