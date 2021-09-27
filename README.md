@@ -2,21 +2,19 @@
 
 ### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
 
-### How to submit your code for review:
+## LEON VS JEON. 
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+THE ULTIMATE GAME TO SEE WHO EATS FLEX'S PASTA DURING GAME NIGHT. With the original Tic Tac Toe game!
+Click on any of the 9 squares of the grid to start.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Link to game:** https://tictactoe-nktruong.netlify.app/
+
+## Players
+2 (you do not have to be Leon or Jeon)
+
+## A Picture of the Exciting Website:
+![Image of Tic Tac Toe Game](https://i.imgur.com/4nMLCLa.png)
+
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript (OOP)
