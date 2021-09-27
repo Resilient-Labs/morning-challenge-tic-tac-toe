@@ -1,6 +1,6 @@
 # Tic-Tac-Toe ❌⭕
 
-Alternate between player one (x) and player two (o) to place their respective symbol, in order to win get three in a row diagonally, horizontally, or vertically.
+Alternate between player one (x) and player two (o) to place their respective symbol - in order to win get three in a row diagonally, horizontally, or vertically.
 
 **Live Demo:** link to be created
 
