@@ -28,10 +28,11 @@ class Game { // pascal casing for classes
 
     }
     switchPlayer(){
-        if (this.activePlayer === 'X'){
-            this.activePlayer = 'O'
+        
+        if (this.activePlayer === 'Leon'){
+            this.activePlayer = 'Jeon'
         } else {
-            this.activePlayer = 'X'
+            this.activePlayer = 'Leon'
         }
     }
     checkIfWon(){
@@ -54,34 +55,40 @@ class Game { // pascal casing for classes
         return false
     }
     endGame(){
+        // if they won
         if (this.checkIfWon()){
-            alert(`Player ${this.activePlayer} won!`)
-            this.clearGrid()
+            document.querySelector('.status').innerText = `${this.activePlayer} has won!`
         } else if (this.counter === 9){
-            alert("You both tied")
-            this.clearGrid()
+            document.querySelector('.status').innerText = 'You both tied!'
         }
     }
     clearGrid(){
         // resets # of tries, player selection and grid
         this.counter = 0
-        this.activePlayer = 'x'
+        this.activePlayer = 'Leon'
         this.board = [
                     ['', '', ''],
                     ['', '', ''],
                     ['', '', '']]
         // reset grid on website
+        document.querySelectorAll('section').forEach(box => box.innerText = "")
+        document.querySelector('.status').innerText = 'No one has won yet.'
     }
 }
 
 // run game
 
 document.querySelector('.container').addEventListener('click', play)
+document.querySelector('.reset').addEventListener('click', clear)
 
-let TicTacToe = new Game('X', 'O')
+let TicTacToe = new Game('Leon', 'Jeon')
 
 function play(e) {
     e.target.innerText = TicTacToe.choose()
+    if (TicTacToe.activePlayer === 'Leon'){
+        e.target.innerHTML = `<img src="img/leon.png"></img>`
+    } else if (TicTacToe.activePlayer === 'Jeon'){ e.target.innerHTML = `<img src="img/jeon.jpg"></img>`
+    }
 
     let choice = Number(e.target.id) // gets which box in the grid they chose
     let row = Math.floor(choice / 3)
@@ -90,4 +97,8 @@ function play(e) {
     
     TicTacToe.endGame()
     TicTacToe.switchPlayer()
+    document.querySelector('.currentPlayer').innerText = TicTacToe.activePlayer
+}
+function clear(){
+    TicTacToe.clearGrid()
 }
