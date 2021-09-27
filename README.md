@@ -3,7 +3,7 @@ I feel good about my code: 5
 I'd appricate if i get a feedback on my OOP
 
 A Tic Tac Toe game.
-<img src=“TICTactoe.png”>
+![TICTactoe picture](image.url)<img src=“TICTactoe.png”>
 
 
 
