@@ -87,7 +87,8 @@ function play(e) {
     e.target.innerText = TicTacToe.choose()
     if (TicTacToe.activePlayer === 'Leon'){
         e.target.innerHTML = `<img src="img/leon.png"></img>`
-    } else if (TicTacToe.activePlayer === 'Jeon'){ e.target.innerHTML = `<img src="img/jeon.jpg"></img>`
+    } else if (TicTacToe.activePlayer === 'Jeon'){ 
+        e.target.innerHTML = `<img src="img/jeon.jpg"></img>`
     }
 
     let choice = Number(e.target.id) // gets which box in the grid they chose
