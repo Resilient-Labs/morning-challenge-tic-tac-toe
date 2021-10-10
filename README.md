@@ -16,3 +16,12 @@ Click on any of the 9 squares of the grid to start.
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript (OOP)
+
+# Lessons Learned
+
+* How to easily detect which row/column a player clicks on using simple math equations
+* Using event.target.id for click events on the grid
+* Checking win conditions using for loops and conditional statements
+* Creating a grid with CSS
+* Switching between players with a simple function
+* Converting a game to OOP
