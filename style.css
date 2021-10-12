@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+       background-image: linear-gradient(to right, #6200ff, #00ff4e);
+}
+
+.rows {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: inline;
+    list-style-type: none;
+    border: 2px solid red;
+    padding: 0px 145px 270px 145px;
+    background-size: cover;
+}
+
+#clearBoard{
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 500px;
+    height: 150px;
+    font-size: 75px;
+    padding: 20px;
+}
+.game{
+  margin-top: 1rem;
+  text-align: center;
+}
+li{
+  margin: 0.2rem;
+  transition: 3s;
+}
+.game > section{
+  display: inline-block;
+  margin-left: 1rem;
+}
