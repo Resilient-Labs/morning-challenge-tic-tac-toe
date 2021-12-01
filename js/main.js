@@ -12,7 +12,7 @@ function fillBox(e) {
     const index = [...boxes].indexOf(e.target);
     if (e.target.className !== 'box' || !board.isValidMove(index)) return
     board.fillBox(index)
-    e.target.innerText = board.playe
+    e.target.innerText = board.player
     if (board.isWon || board.emptyBoxes === 0) displayWinner()
 }
 
