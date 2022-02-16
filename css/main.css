@@ -1,0 +1,55 @@
+* {
+   box-sizing: border-box;
+   font-family: 'Rubik', 'Arial', sans-serif;
+   color: white;
+}
+body {
+   background-size: cover;
+   background-image: url(../img/starbucks-bg.jpg);
+}
+.hidden {
+   display: none;
+}
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+section {
+   border: 6px solid rgb(0,112,66);
+   height: 250px;
+   width: 250px;
+   text-align: center;
+   font-size: 50px;
+   background: rgb(0,112,66, 50%);
+   border-radius: 10%;
+}
+h1, p {
+   text-align: center;
+}
+.reset {
+   font-size: 24px;
+   background: darkred;
+   color: white;
+   margin: auto 46%;
+   border: 0;
+   border-radius: 5px;
+   height: 40px;
+   width: 150px;
+   box-shadow: 0 0 15px -5px rgb(160, 160, 160);
+   margin-top: 12px;
+}
+.reset:hover {
+   background: red;
+   cursor: pointer;
+}
+.reset:active {
+   background: rgb(83, 1, 1);
+}
+img {
+   width: 100%;
+   border-radius: 10%;
+}
+.win {
+   background: white;
+}
