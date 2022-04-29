@@ -16,7 +16,7 @@
 
 Example:
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
+The project partial complete. I need to fix the win conditions and the X's O's. I'm going to send an improve version later today.
+I'm getting used to constructors a bit. It was confusing earlier due to jumping straight to class instead of working my way up through constructor instead.
+After I get the code and project done, I'll go through and clean it up a bit.
 ```

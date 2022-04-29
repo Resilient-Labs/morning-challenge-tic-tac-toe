@@ -1,0 +1,157 @@
+:root {
+    --background-light-color: #E6E6FA;
+    --background-dark-color: #800080;
+    --content-background-color: #800080;
+    --primary-color: #E6E6FA;
+    --primary-color-saturated: green;
+    --primary-brighter: darkblue;
+    --primary-saturated-brighter: lightblue;
+    --accent-color: darkgrey;
+    --accent-darker: #872356;
+    --overlay-color:rgba(0, 0, 0, 0.3);
+
+    --primary-gradient: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color-saturated) 100%);
+    --primary-highlight-gradient: linear-gradient(to right, var(--primary-brighter) 0%, var(--primary-saturated-brighter) 100%);
+    --default-primary-boarder: 0.25vmin solid var(--primary-color);
+    --default-border-radius: 2vmin;
+    --box-shadow: 0 1vmin 2vmin -1vmin rgba(0,0,0,0.75);
+    --default-accent-border: 0.25vmin solid var(--accent-darker);
+    --main-title-font-size: 4vmin;
+
+    --selection-animation-duration: 350ms;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center center;
+    background: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: pink;
+    text-align: center;
+    margin-bottom: 2vmin;
+    font-size: var(--main-title-font-size);
+}
+
+#mainGame {
+    background: var(--content-background-color);
+    border-radius: var(--default-border-radius);
+    padding: 3vmin;
+    box-shadow: var(--box-shadow);
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    grid-gap: 1vmin;
+    margin: 2vmin;
+}
+
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vmin;
+    font-weight: bold;
+    color: var(--accent-color);
+    border: var(--default-primary-border);
+    border-radius: var(--default-border-radius);
+    outline: none;
+    box-shadow:var(--box-shadow);
+}
+
+.space:active, .space:hover, .space.wins{
+    cursor:pointer;
+    color: var(--content-background-color);
+    background: var(--primary-highlight-gradient)
+}
+
+.spaceitems {
+    overflow: hidden;
+    width:0;
+    height: 0;
+    transition: width var(--selection-animation-duration), height var(--selection-animation-duration);
+}
+
+.spaceitems.symbols {
+    width: 12vmin;
+    height: 12vmin;
+}
+
+#overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--overlay-color);
+    place-items: stretch center;
+}
+
+#resultColor {
+    display: grid;
+    row-gap: 76vmin;;
+
+    --overlay-items-border-radius: 1vmin;
+}
+
+#resultBox {
+    display: flex;
+    align-items: flex-end;
+}
+
+#winBox {
+    margin-bottom: 4vmin;
+    width: 30vmin;
+    height: 8vmin;
+    background: var(--accent-color);
+    border: var(--default-accent-border);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--overlay-items-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#winBox > span {
+    font-size: var(--main-title-font-size);
+    font-weight: bold;
+    color: black;
+}
+
+#restartGame {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2.5vmin;
+}
+
+#restartGame > #restartButton {
+    font-size: 3vmin;
+    padding: 3.5vmin;
+    color: var(--accent-color);
+    background: var(--primary-gradient);
+    border: var(--default-primary-border);
+    border-radius: var(--overlay-items-border-radius);
+    outline: none;
+    box-shadow: var(--box-shadow);
+}
+
+#restartGame > #restartButton:active, #restartGame > #restartButton:hover {
+    color: var(--content-background-color);
+    cursor: pointer;
+    background: var(--primary-highlight-gradient);
+}
