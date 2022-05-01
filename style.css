@@ -1,0 +1,17 @@
+/* css grid */
+body{
+  background: black;
+  color: white;
+}
+
+.boxes{
+display: grid;
+grid-template-columns: 200px 200px 200px ;
+grid-template-rows: 200px 200px 200px;
+
+
+}
+
+section > section{
+border: 1px solid white;
+}
