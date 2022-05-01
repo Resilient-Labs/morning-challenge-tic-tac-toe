@@ -1,0 +1,10 @@
+section{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 5%;
+  }
+  div{
+    border: 2px solid black;
+    height: 200px;
+    width: 30%;
+  }
