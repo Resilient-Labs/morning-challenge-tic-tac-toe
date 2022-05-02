@@ -3,7 +3,7 @@ A two-player Tic Tac Toe game
 
 **Link to project:** https://lofi-tictactoe.netlify.app/
 
-![alt tag][Capture](https://user-images.githubusercontent.com/102004376/166243941-ab38fced-b19d-408b-aa93-a075ccc5ce63.JPG))
+
 ![Capture](https://user-images.githubusercontent.com/102004376/166244526-9c4bbcd3-a549-4fda-9e37-57c42eb124d6.JPG)
 
 ## How It's Made:
