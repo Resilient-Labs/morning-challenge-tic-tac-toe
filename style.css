@@ -1,0 +1,79 @@
+body{
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-image: url("peace.gif");
+    font-size: 50px;
+    /* font-family: 'Grape Nuts', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lobster', cursive; */
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+h1{
+    width: 100%;
+}
+.divHolder{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 310px;
+    width: 310px;
+    border-radius: 15px;
+}
+
+div{
+    border: 2px solid rgb(255, 255, 255);
+    height:100px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+button{
+    margin-top: 10px;
+    background: transparent;
+    font-weight: bold;
+    color: white;
+    border-color: white;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.one{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.two{
+
+    margin-bottom: 5px;
+}
+.three{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.four{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.five{
+
+    margin-bottom: 5px;
+}
+.six{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.seven{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.eight{
+
+    margin-bottom: 5px;
+}
+.nine{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
