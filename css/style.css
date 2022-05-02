@@ -1,0 +1,91 @@
+/******************************************
+/* CSS
+/*******************************************/
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+background-image: url(../img/tic\ tac\ toe.gif) ;  
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+font-family: sans-serif, Helvetica, sans-serif;
+}
+
+h1{
+  font-size: 3em;
+  color: #473f57;
+  margin: 10px auto;
+}
+
+h2{
+  font-size: 1.5em;
+  color: #fdfcfd;
+  margin: 20px auto;
+}
+
+#clear{
+  background-color: #d698b9;
+  width: 200px;
+  height: 50px;
+  font-size: 1em;
+  color: #473f57;
+  box-shadow: 2px 2px 2px 2px #fec1a3;
+  border: 2px solid #d698b9;
+}
+
+section{
+  color: #604360;
+}
+
+#clear:hover{
+  color: black;
+
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 2px 2px rgb(214 152 185);
+  border: 2px solid #473f57;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+}
+
+
+section{
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  width: 306px;
+  margin: 10px auto;
+}
+
+span{
+font-weight: bold;
+display: block;
+margin-top: 10px;
+}
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
