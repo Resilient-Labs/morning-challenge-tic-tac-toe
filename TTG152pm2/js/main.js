@@ -1,10 +1,10 @@
-// Create a two player Tic-Tac-Toe game. 
+// Create a two player Tic-Tac-Toe game.
 // users should be able to click to place their X or O
 //     after every click auto switch players
-//     click places x or o 
+//     click places x or o
 //       alert if x or o is already there
 //       cant click if there is a winner
-// tell who wins 
+// tell who wins
 //    3 in a row in any direction of xs or o's
 //     //vertical/horizontal/diagonal
 //   if all cards are filled and theres no winner= TIE
@@ -12,12 +12,11 @@
 // button to reset the game
 // keep track of score & display in DOM *OPTIONAL*
 // keep track & display in DOM of whose turn it is *OPTIONAL*
-// make the game as OOP as possible. 
+// make the game as OOP as possible.
 
 // CLear and Results
 const button = document.querySelector('#clear')
 const result = document.querySelector('#result')
-
 //Boxes
 const box1 = document.querySelector('#one')
 const box2 = document.querySelector('#two')
@@ -47,9 +46,9 @@ class Game {
       console.log(this.turnCounter)
       return this.turnCounter
     }
-  
+
     playerTurn() {
-          
+
         if( this.player === this.player1) {
             this.player = this.player2
             console.log(this.player)
@@ -59,7 +58,7 @@ class Game {
         }
     }
     placeMarker() {
-       
+
         console.log(this.turnCounter)
         if( this.player === this.player1) { //when this.player is equal to this.player1 then it will return 'X'
             return 'X'
@@ -168,28 +167,27 @@ class Game {
         ) {
           return result.innerText = "Player two is the Winner!!"
         }
-      
-      this.tie()
-        
+
     }
-  
- clearGame() {
-  // e.preventDefault()
-  box1.innerText = "";
-  box2.innerText = "";
-  box3.innerText = "";
-  box4.innerText = "";
-  box5.innerText = "";
-  box6.innerText = "";
-  box7.innerText = "";
-  box8.innerText = "";
-  box9.innerText = "";
-  result.innerText = "";
-  // this.result.innerText = "";
-  // this.player = this.player1
-   return this.turnCounter = 0
-}
-  
+
+     clearGame() {
+      // e.preventDefault()
+      box1.innerText = "";
+      box2.innerText = "";
+      box3.innerText = "";
+      box4.innerText = "";
+      box5.innerText = "";
+      box6.innerText = "";
+      box7.innerText = "";
+      box8.innerText = "";
+      box9.innerText = "";
+      result.innerText = "";
+      // this.result.innerText = "";
+      // this.player = this.player1;
+      tic.player = tic.player1;
+      // return this.turnCounter = 0
+    }
+
 }
 
 let tic = new Game('Tic Tac Toe', 'Dan', 'Alexa')
@@ -198,14 +196,12 @@ function firstMove(e) {
     e.preventDefault()
     if (e.target.innerText === ''){
     e.target.innerText = tic.placeMarker() // It will prints the return from the placeMarker() method
-     tic.count()
+    tic.count()
     tic.playerTurn() // changes the turn whenever it is called and also determines what marker is gonna be placed
     tic.checkWhoWon()
-  
+
     }  console.dir(tic)
 }
 
 boxAll.addEventListener('click', firstMove)
 button.addEventListener("click", tic.clearGame);
-
-// <!-- house Hayden -->
