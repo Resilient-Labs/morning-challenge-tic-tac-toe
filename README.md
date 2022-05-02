@@ -1,5 +1,4 @@
 House Cass Tic-tac-Toe Project
-@@ -1,22 +1,3 @@
 # 📊 Morning Challenge: Tic-Tac-Toe
 House Cass Tic-tac-Toe Project
 
