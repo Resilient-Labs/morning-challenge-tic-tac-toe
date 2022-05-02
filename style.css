@@ -2,16 +2,35 @@
 body{
   background: black;
   color: white;
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.playerTurn{
+  text-align: center;
+  font: 2rem;
 }
 
 .boxes{
-display: grid;
-grid-template-columns: 200px 200px 200px ;
-grid-template-rows: 200px 200px 200px;
-
-
+  display: grid;
+  grid-template-columns:12vw 12vw 12vw   ;
+  grid-template-rows:20vh 20vh 20vh;
+ margin: 3vh 0 0 32vw;
+  
 }
 
 section > section{
-border: 1px solid white;
+  border: 1px solid white;
+}
+
+.whoWon {
+  text-align: center;
+}
+button {
+  margin: auto;
+  display: block;
 }
