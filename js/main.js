@@ -52,10 +52,10 @@ const game = {
                 game.stopGame()
                 //Then, depending on the turn (since the winning move is the last move) the computer will report back the winner!
                 if (this.turn % 2 !== 0){
-                    document.querySelector('#whoWon').innerText = 'Player X is the Winner!'
+                    document.querySelector('#whoWon').innerText = '🎉Player X is the Winner🎉'
                     console.log('Player X is the Winner!')
                 } else {
-                    document.querySelector('#whoWon').innerText = 'Player O is the Winner!'
+                    document.querySelector('#whoWon').innerText = '🎉Player O is the Winner🎉'
                     console.log('Player O is the Winner!')
                 }
             }
@@ -64,7 +64,7 @@ const game = {
     //This method will check if there is a tie after 9 turns (maximum) have been played. It also makes sure a winner was not already declared by cheking the contents of the whoWon section of the DOM.
     isTie() {
         if (this.turn === 9 && document.querySelector('#whoWon').innerText === ''){
-            document.querySelector('#whoWon').innerText = 'Issa Tie T_T'
+            document.querySelector('#whoWon').innerText = 'Issa Tie 😭'
             game.stopGame()
         } else {
             return
