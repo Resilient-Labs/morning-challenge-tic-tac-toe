@@ -1,0 +1,124 @@
+
+body{
+  background: black;
+  color: white;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+
+}
+h1{
+  font-size: 4rem;
+  margin-bottom: 0;
+  color:#e0585e;
+}
+#crossroads{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  display: block;
+  color:#e0585e;
+}
+/* main{
+  width:min-content;
+} */
+#intro{
+  font-style: italic;
+  color: lightgrey;
+  font-size: 1.1rem;
+}
+header{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+button{
+  margin: auto;
+  width: 100px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  background-color: gray;
+}
+
+p{
+  text-align: center;
+  font-size: 2rem;
+
+}
+.whoWon, #whichPlayer{
+  font-size: 2rem;
+  margin-bottom: 0;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: lightgray;
+}
+.boxes{
+display: grid;
+grid-template-columns: 200px 200px 200px ;
+grid-template-rows: 200px 200px 200px;
+background-image: url(../media/ist.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+width: fit-content;
+margin: auto;
+}
+
+.box{
+  box-shadow: 1px 1px 1px 1px lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  line-height: 12rem;
+  font-size: 7rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: lightgrey;
+}
+
+.dispNone{
+  display: none;
+}
+
+.stopClick{
+  pointer-events: none;  
+}
+
+@media all and (max-width:700px){
+  .boxes{
+    display: grid;
+    grid-template-columns: 90px 90px 90px ;
+    grid-template-rows: 90px 90px 90px;
+    background-image: url(../media/ist.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+  }
+  .box {
+    font-size: 2rem;
+    line-height: 4rem;
+    box-shadow: 0.3px 0.3px 0.3px 0.3px lightgrey;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  #intro{
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  #crossroads{
+    font-size: 1.3rem;
+  }
+  .whoWon, #whichPlayer{
+    font-size: 1rem;
+    font-style: bold;
+    /* width: fit-content; */
+  }
+  button{
+    font-size: 0.7rem;
+    width: 80px;
+
+  }
+}
