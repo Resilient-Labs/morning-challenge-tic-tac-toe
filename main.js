@@ -12,6 +12,7 @@ Symbol
 winning condition
 
 */
+//this var corresponds to conditional on line 39, why is it in global scope? b/c it can then be used/ referenced outside from any function instead of it's existence being confined within the scope of just 1 function
 let clicks = 1
 
 class HTMLGameBoard { 
@@ -27,9 +28,14 @@ class HTMLGameBoard {
   gridDraw(x, y, symbol) {
     // function with the ability - change inner text of that element- on click of the interface
     Array.from(document.querySelectorAll('.col')).forEach(cell => {
+      //cell is a param of the anon arrow function, representing each div with a 'col class 
       cell.addEventListener('click',(e) => {
+        //(e) event object ( with built in properties) is the param passed to this function 
         if (this.active){
+      /*event.target provides us access to the <li> element that was clicked. 
+      data attribute through the dataset object, get the property by the part of the attribute name after data-*/
           console.log(e.target.dataset.cell)
+          // this conditonal increments the # of clicks and makes all the even # of clicks X and odd #'s O's & checks for the winning condition ( by running the winning condition function) after every players draws 
           if(clicks % 2 === 0){
             e.target.innerText = "X"
             this.winningCondition()
@@ -40,12 +46,13 @@ class HTMLGameBoard {
             clicks += 1
           }
         }
-      },{once:true})
+        },{once:true})
     })
   }
   
   winningCondition(){
     const winningCombinations = [
+      //note: potentially different strategy to compare the winning combinations array to the array corresponding the boards cells/ grid layout, see Kelly's example  
       //rows
       [0, 1, 2],
       [3, 4, 5],
@@ -58,11 +65,13 @@ class HTMLGameBoard {
       [0, 4, 8],
       [2, 4, 6]
     ]
-    const oArray = []
-    console.log(oArray)
-    const xArray = []
-    console.log(xArray)
+    // //set variable to em'pty array for another function to 'push' into them
+    // const oArray = []
+    // console.log(oArray)
+    // const xArray = []
+    // console.log(xArray)
 
+    // targe the inner text of each cell to check for winning condition, if characters match 3 in a row 
     const box0 = document.querySelector('[data-cell="0"]').innerText
     // console.log('box0 value',box0)
     const box1 = document.querySelector('[data-cell="1"]').innerText
@@ -74,7 +83,10 @@ class HTMLGameBoard {
     const box7 = document.querySelector('[data-cell="7"]').innerText
     const box8 = document.querySelector('[data-cell="8"]').innerText
 
+    // does this 'local' variable declared before, it is called/reference ? 
     let winningSymbol;
+
+    // 8 possible winning conditions 
 
     if (box0 === box1 && box1 === box2){
       winningSymbol = box0
@@ -94,18 +106,28 @@ class HTMLGameBoard {
     } else if (box2 === box4 && box4 ===box6){
       winningSymbol = box2
     }
-  
+    //assign winning symbol to the corresponding click ( (even or odd) / player 1 or player 2) if the winning condition is met 
+
+    //if either winning condition is met, stop the game by making  objects 'active' property = false 
     if(winningSymbol=== 'O'){
       this.active= false
       document.querySelector('.outcome').innerText= "Player 1 Wins!" 
     } else if(winningSymbol==='X'){
       this.active= false
       document.querySelector('.outcome').innerText= "Player 2 Wins!" 
+      //accounting for a tie, only AFTER all the cells have been filled AND there is not "winning Symbol" value 
+    }else if (clicks>=9 && (winningSymbol !== 'X'||winningSymbol !== 'O')){
+      document.querySelector('.outcome').innerText= "It's a tie!"
     }
     
-  } //function to restart the game
+  } //function to clear the board and restart the game 
+    //note: not able to play again after restart!!!!  how do I make it "active" again ?! 
     resetGame(){
       document.querySelectorAll('.col').forEach(cell => cell.innerHTML='')
+      this.active= true
+      //instantiating a new game to 'restart'
+      htmlBoard = new HTMLGameBoard();
+
       //  box0 = document.querySelector('[data-cell="0"]').innerText= ''
       //  box1 = document.querySelector('[data-cell="0"]').innerText= ''
       //  box2 = document.querySelector('[data-cell="0"]').innerText= ''
@@ -120,7 +142,13 @@ class HTMLGameBoard {
   
 }
 
-const htmlBoard = new HTMLGameBoard();
+//creating a new HTMLGameBoard 'global' object, with the 'new' key word 
+let htmlBoard = new HTMLGameBoard();
+
+//create a new 'state of the game' by removing event listeners and calling the function that draws again 
+// & embedding that in the reset method 
+
+//why does the event listener for reset button have to be outside the scope of the class object/ reset method ? 
 document.querySelector('.reset').addEventListener('click', htmlBoard.resetGame)
 
 
