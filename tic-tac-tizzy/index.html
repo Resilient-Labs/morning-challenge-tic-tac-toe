@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Tic Tac Tizzy</title>
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,500;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+			</style>
+
+		<!-- external CSS link -->
+		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/main.js" defer></script>
+	</head>
+	<body>
+		<section class="main">
+			<!-- top section  -->
+			<header>
+				<h1>Tic Tac Tizzy</h1>
+	
+			  <button type="button" id="clear" name="button">CLEAR GAME</button>
+
+				<!-- <span id="instructions">Player 1 = "X" & Player 2 = "O"</span> -->
+
+				<h4 id="counterTxt"></h4>
+	  
+			  <section class="winnerMessage">
+				
+			  </section>
+			  <!-- ^ this can be moved to after the container section if we want the result to show below the cells instead  -->
+			</header>
+	
+			<p id="result">&nbsp</p>
+
+			<!-- tic tac toe cells = 9 (3X3) -->
+			<section class="container">
+			  <section id="one" class="box"></section>
+			  <section id="two" class="box Mid"></section>
+			  <section id="three" class="box"></section>
+			  <section id="four" class="box Hor"></section>
+			  <section id="five" class="box Mid Hor"></section>
+			  <section id="six" class="box Hor"></section>
+			  <section id="seven" class="box"></section>
+			  <section id="eight" class="box Mid"></section>
+			  <section id="nine" class="box"></section>
+			</section>
+
+			<!-- <p id="result">&nbsp</p> -->
+		</section>
+	
+		<div id="backgroundColorOverlay"></div>
+	</body>
+</html>
