@@ -1,22 +1,17 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic Tac Toe
+A two-player Tic Tac Toe game
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+**Link to project:** https://lofi-tictactoe.netlify.app/
 
-### How to submit your code for review:
+![alt tag][Capture](https://user-images.githubusercontent.com/102004376/166243941-ab38fced-b19d-408b-aa93-a075ccc5ce63.JPG)
+0)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Tech used:** HTML, CSS, JavaScript
+
+We built this using Object Oriented Programming. The gameboard was an object that had the properties and methods of players, winning conditions, and marks.
+
+## Lessons Learned:
+
+I learned more about how Event Listeners interact with objects and different ways of manipulating objects so that they're reusable.
