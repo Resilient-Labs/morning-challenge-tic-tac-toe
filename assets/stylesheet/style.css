@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 2%;
+}
+
+/* Clearfix Hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* Tic-Tac-Toe Table Styling */
+
+.playField {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid black;
+    height: 100px;
+    width: 30%
+}
