@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+.mainboard{
+    display: flow-root;
+    border: 10px solid rgb(255, 255, 8);
+    width: 40%;
+    margin-left: 400px;
+    margin-top: 200px;
+    height: 504px;
+}
+.row1,.row2,.row3{
+    width: 33.3333%;
+    border: 5px solid rgb(253, 74, 223);
+    float: left;
+    height: 162px;
+}
+body{
+    background-image: url('./images/dawg.gif');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.buttons{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 120px;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(251, 27, 255),
+    0 0 82px rgb(255, 24, 251),
+    0 0 92px rgb(255, 24, 251),
+    0 0 102px rgb(255, 24, 251),
+    0 0 151px rgb(255, 24, 251)
+}
+
+
+#endResult{
+    font-size: 120px;
+  
+    margin-top: -630px;
+    text-align: center;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(255, 247, 0),
+    0 0 82px rgb(255, 247, 0),
+    0 0 92px rgb(255, 247, 0),
+    0 0 102px rgb(255, 247, 0),
+    0 0 151px rgb(255, 247, 0)
+
+}
+#playerName{
+    font-size: 120px;
+    text-align: center;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(0, 68, 255),
+        0 0 82px rgb(14, 122, 4),
+        0 0 92px rgb(214, 229, 131),
+        0 0 102px rgb(21, 255, 177),
+        0 0 151px #0fa;
+}
+#buttonReset{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 50px;
+    margin-left: 160px;
+    margin-top: 20px;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(0, 68, 255),
+        0 0 82px rgb(14, 122, 4),
+        0 0 92px rgb(214, 229, 131),
+        0 0 102px rgb(21, 255, 177),
+        0 0 151px #0fa;
+  
+}
