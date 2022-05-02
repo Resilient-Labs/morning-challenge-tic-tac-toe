@@ -6,6 +6,8 @@
 html {
     font-size: 62.5%;
     margin: 2%;
+    font-family: 'Dosis', 'Libre Baskerville', Arial, Helvetica, sans-serif;
+    background: black;  
 }
 
 /* Clearfix Hack */
@@ -19,16 +21,61 @@ html {
     height: 0;
 }
 
+/* Header Styling */
+.gameName {
+    font-size: 5rem;
+    color: white;
+    font-weight: 700;
+    /* text-decoration: underline overline plum; */
+}
+
+.generalText {
+    color: white;
+    font-size: 2rem;
+}
+  
+
 /* Tic-Tac-Toe Table Styling */
 
 .playField {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 60%;
+    margin-left: 21%;
 }
 
 .box {
-    border: 1px solid black;
-    height: 100px;
-    width: 30%
+    border: 1px solid white;
+    height: 90px;
+    width: 30%;
+    font-size: 6rem;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn {
+    color: white;
+    font-size: 2rem;
+    padding: 1%;
+    border-radius: 45%;
+    background: red;
+}
+
+a {
+    color: red;
 }
