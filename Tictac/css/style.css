@@ -1,0 +1,42 @@
+
+body{
+  text-align: center;
+  background-color: rgb(219, 97, 203);
+}
+
+section{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div{
+  height: 200px;
+  width: 30%;
+  border-radius: 10%;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
+	color: white;
+  font-size: 150px;
+}
+.text-glow{
+  font-family: satisfy, Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
+	font-size: 350%;
+}
+div:hover {
+  background-color: black;
+}
+button{
+  border-radius: 100%;
+  border-color: black;
+  width: 25%;
+  height: 100px;
+  background-color: rgb(219, 97, 203);
+  font-family: satisfy, Arial, Helvetica, sans-serif;
+  font-size: 200%;
+}
+.winner{
+  font-size: 300%;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
+	color: white;
+}
