@@ -32,6 +32,7 @@ const box6 = document.querySelector('#six')
 const box7 = document.querySelector('#seven')
 const box8 = document.querySelector('#eight')
 const box9 = document.querySelector('#nine')
+const boxAll = document.querySelector('.container')
 
 //The goal is to create objects
 //objects for game
@@ -182,6 +183,7 @@ class Game {
 let tic = new Game('Tic Tac Toe', 'Dan', 'Alexa')
 
 function firstMove(e) {
+  console.log(e)
     e.preventDefault()
     if (e.target.innerText === ''){
     e.target.innerText = tic.placeMarker() // It will prints the return from the placeMarker() method
