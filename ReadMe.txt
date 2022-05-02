@@ -1,0 +1,3 @@
+This project is called TicTacToe. I worked on it with a group of 10 software engineers. We used HTML, CSS, and Javascript to create this project.
+
+This is a two person interactive game. The first player will be "eels" and click on a spot to mark their eels. The next person will be "escalators." They will pick a spot to mark their escalators. The first person to get three in a row (horizontally, vertically, or diagonally) will win the game. If neither are able to get 3 in a row by the end, it will result in a draw. Simply refresh the page to start a new game. 
