@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 2%;
+    font-family: 'Dosis', 'Libre Baskerville', Arial, Helvetica, sans-serif;
+    background: url('../images/FeistyJaggedBuffalo-size_restricted.gif'); 
+    background-size: cover; 
+}
+
+/* Clearfix Hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* Header Styling */
+.gameName {
+    font-size: 7rem;
+    color: white;
+    font-weight: 700;
+    /* text-decoration: underline overline plum; */
+}
+
+.generalText {
+    color: white;
+    font-size: 3rem;
+}
+  
+
+/* Tic-Tac-Toe Table Styling */
+
+.playField {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 75%;
+    margin-left: 13%;
+}
+
+.box {
+    border: 1px solid white;
+    height: 150px;
+    width: 30%;
+    font-size: 10rem;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn {
+    color: white;
+    font-size: 3rem;
+    padding: 1%;
+    border-radius: 45%;
+    background: red;
+}
+
+a {
+    color: red;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 654px) {
+    .gameName {
+        font-size: 5rem;
+    }
+
+    .generalText {
+        font-size: 2rem;
+    }
+
+    .box {
+        height: 125px;
+        width: 27%;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+}
+
+@media all and (max-width: 481px) {
+    .box {
+        height: 100px;
+        width: 33%;
+        font-size: 7rem;
+    }
+
+    .playField {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media all and (max-width: 383px) {
+    .gameName {
+        font-size: 4rem;
+    }
+}
