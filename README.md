@@ -4,6 +4,7 @@
 
 In this project I created a two player Tic-Tac-Toe game using JavaScript Object Oriented Programming. The users are able to click to place their X or O and if they win the program declares their win in the DOM. I decided to take a spin on it and actually the design inspired by one of my favorite Anime, Hunter x Hunter.
 
+![6gica9](https://user-images.githubusercontent.com/102037717/168888598-162c72b7-2b50-4d4c-b6e5-279c27a94f87.gif)
 
 
 ## How It's Made:
