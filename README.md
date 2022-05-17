@@ -1,22 +1,17 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic x Tac x Toe
 
 ### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
 
-### How to submit your code for review:
+In this project I created a two player Tic-Tac-Toe game using JavaScript Object Oriented Programming. The users are able to click to place their X or O and if they win the program declares their win in the DOM. I decided to take a spin on it and actually the design inspired by one of my favorite Anime, Hunter x Hunter.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript, OOP
+
+This was the first time using OOP in JavaScript. I used a simple CSS design, where originally I wanted to use Gon & Killua's faces as the "X" and "O", but I could not figure it out quite yet! I enjoyed putting OOP into practice, and hope I can do so more as well. 
+
+## Lessons Learned:
+
+I want to continue  to practice using JavaScript OOP in my future projects. I think technically this project is not fully OOP, but hopefully I can make some edits to do so.
