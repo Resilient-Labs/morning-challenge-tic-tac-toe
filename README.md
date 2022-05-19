@@ -14,4 +14,4 @@ I used OOP for this project. I created a class called Game. I put all of the win
 
 ## Lessons Learned:
 
-I realized OOP can make your code a lot easier and smooother. Any Class you make will have a constructor in Javascript. 
+I realized OOP can make your code a lot easier to read and smooother to work with. Any Class you make will have a constructor in Javascript. 
