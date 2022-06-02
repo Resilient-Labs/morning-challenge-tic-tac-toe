@@ -1,6 +1,6 @@
 # Retro-Time Tic Tac Toe 
 
-A simple to-do list Application. This app includes the ability for a user to add and/or delete a task and to mark a task complete. 
+A Retro-themed tic tac toes Application. This app includes the ability for a user to play tic tac toe with another human player. Using X's and O's players can enjoy a game of tic tac toe! 
 
 **Try it out here:** https://retrotimetictactoe.netlify.app/
 
@@ -19,6 +19,3 @@ An array could be used as we learned more about those and objects. Will be looki
 ## Reflections:
 
 I really enjoyed the CSS aspect of this project - it was fun to design. I enjoyed working in team, brainstorming different ideas, and working together to understand OOP principles. 
-
-
-
