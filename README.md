@@ -1,6 +1,6 @@
 # Retro-Time Tic Tac Toe 
 
-A Retro-themed tic tac toes Application. This app includes the ability for a user to play tic tac toe with another human player. Using X's and O's players can enjoy a game of tic tac toe! 
+A Retro-themed tic tac toes Application. This app includes the ability for a user to play tic tac toe with another human player. Using X's and O's players can enjoy the game! 
 
 **Try it out here:** https://retrotimetictactoe.netlify.app/
 
