@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Game!
 
-##Tic-Tac-Toe game (inspired by hit show 'Spongebob Squarepants') made using Object Orientated Programming concepts. Two users can play together and see who wins! 
+## Tic-Tac-Toe game (inspired by hit show 'Spongebob Squarepants') made using Object Orientated Programming concepts. Two users can play together and see who wins! 
 
 *Project completed using HTML, CSS, and Javascript.*
 
