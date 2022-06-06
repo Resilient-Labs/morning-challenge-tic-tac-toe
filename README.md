@@ -1,6 +1,10 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe Game!
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+##Tic-Tac-Toe game (inspired by hit show 'Spongebob Squarepants') made using Object Orientated Programming concepts. Two users can play together and see who wins! 
+
+![Tic-Tac-Toe](images/tictactoeimg)
+
+<!-- ### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
 
 ### How to submit your code for review:
 
@@ -20,3 +24,4 @@ I completed the challenge: 5
 I feel good about my code: 4
 I'm not sure if my constructors are setup cleanly...
 ```
+ -->
