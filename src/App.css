@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+
+.background {
+    background-color: #002853;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+.display {
+    color: orange;
+    font-size: 25px;
+    font-family: Manrope;
+    font-weight: 'bold;';
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
+}
+
+.played {
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 40px;
+}
+
+.cell {
+    border: 3px solid #ff4820;
+    border-radius: 8px;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: greenyellow;
+    font-size: 25px;
+    font-family: Manrope;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.playerO {
+    color: #498AFB;
+    font-size: 25px;
+    font-weight: 'bold';
+    font-family: Manrope;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.button_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.button_div button {
+    background: #000;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.restart {
+    background-color: #ff4820;
+}
+
+#restart {
+    background-color: #ff4820;
+}
