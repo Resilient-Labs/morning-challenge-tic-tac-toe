@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+.board-area {
+    width: 70%;
+    height: 750px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.sub-section-one, .sub-section-second, .sub-section-third {
+    height: 33.3333%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+}
+.sub-section-one section, .sub-section-second section, .sub-section-third section  {
+    height: 100%;
+    width: 33.3333%;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 15rem;
+}
+.form-area {
+    font-size: 5rem;
+}
