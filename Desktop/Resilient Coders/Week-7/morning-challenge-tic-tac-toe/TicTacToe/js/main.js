@@ -1,4 +1,4 @@
-//I need couple listeners in my life
+//I need couple listeners in my lifE
 //listeners inspired by Elvin, Zain, Suf, Gang
 // document.querySelector(".box-one").addEventListener("click", playerThrowsXO);
 // document.querySelector(".box-two").addEventListener("click", playerThrowsXO);
