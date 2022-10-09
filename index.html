@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href ="style.css">
+  <title>Tic-Tac-Toe</title>
+</head>
+<body>
+ <div class="grid">
+  <!-- <h1>Tic-Tac-Toe</h1>
+  <div class = "row"></div>
+    <div class= "col border-right"><img class="X" src="X.png"><img class = "O" src="O .png"></div>
+    <div class=" col border-right"><img class="X"src="X.png"><img class = "O" src="O .png"></div>
+    <div class="col"><img class="X" src="X.png"><img class = "O" src="O .png"></div>
+  <div class = "row border-bottom"></div>
+    <div class= "col border-right"><img class="X"src="X.png"><img class = "O" src="O .png"></div>
+    <div class= "col border-right"><img class="X"src="X.png"><img class = "O" src="O .png"></div>
+    <div class= "col"><img class="X" src="X.png"><img class = "O" src="O .png"></div>
+  <div class = "row border-bottom"></div>
+    <div class= "col border-right"><img class="X"src="X.png"><img class = "O" src="O .png"></div>
+    <div class= "col border-right"><img class="X"src="X.png"><img class = "O" src="O .png"></div>
+    <div class="col"><img class="X" src="X.png"><img class = "O" src="O .png"></div>
+  </div>
+</div>  -->
+
+ <section class="grid">
+  <h1>Tic-Tac-Toe</h1>
+  <section class="row"></section>
+    <div data-cell="0" class= "col border-right"></div>
+    <div data-cell="1" class="col border-right"></div>
+    <div data-cell="2" class="col"></div>
+  
+
+  <section class="row border-bottom"></section>
+    <div data-cell="3" class= "col border-right"></div>
+    <div data-cell="4" class= "col border-right middle"></div>
+    <div data-cell="5" class= "col"></div>
+  
+ 
+  <section class = "row border-bottom"></section>
+    <div data-cell="6"class= "col border-right"></div>
+    <div data-cell="7" class= " col border-right"></div>
+    <div data-cell="8"class="col"></div>
+</section> 
+<div class="players"><span>Player 1: 0</span>  Player 2: X</div>
+
+<div class="outcome">Outcome:</div>
+
+<input class="reset" type="reset" value="Reset">
+
+</body>
+
+<!-- // //////
+// //event listener - change the innerText 
+// debugger;
+
+// const result = document.querySelectorAll(".col");
+// //result.addEventListener("click", drawX);
+
+// const resultArr = Array.from(result)
+
+// // .forEach()
+
+// for (let i = 0; i < resultArr.length; i++) {
+//   resultArr[i].addEventListener("click", drawX);
+
+//   // How to read the index notation:
+//   // * pedantic: "Get the element at index `i` of `resultArr`
+//   // * cheeky: "Get the `i`-th element of resultArr" : Why `i`-th? Because 
+//   //   if i was a number, it would be 4 or 5 or 6, and we'd call that the 4th, or 5th, or 6th. Since it's a variable, it's just the i-th or the `index`th
+// }
+
+// function drawX(clickEvent){
+//   // debugger;
+//   if (clickEvent.target.innerText === ''){
+//     clickEvent.target.innerText="X"
+//   }else{
+//     return;
+//   }
+// }
+
+
+// for (let i = 0; i < resultArr.length; i++) {
+//   resultArr[i].addEventListener("click", drawO);
+// }
+
+// function drawO(clickEvent){
+//   // debugger;
+//   if (clickEvent.target.innerText === ''){
+//     clickEvent.target.innerText="O"
+//   }else{
+//     return;
+//   }
+// }
+
+
+
+// // //event 'callback'
+// // function drawX(clickEvent){
+// //   debugger;
+// //   if (clickEvent.target.innerText === ''){
+// //     clickEvent.target.innerText="X"
+// //   }else{
+// //     return;
+// //   }
+// // } -->
+
+
+<script src="main.js" type="text/javascript"></script>
+</html>
