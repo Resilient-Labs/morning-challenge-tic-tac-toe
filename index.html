@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="tic tac toe" />
+    <meta name="keywords" content="game, 1v1, fun" />
+
+    <title>Tic x Tac x Toe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- header -->
+    <header>
+        <h1>Tic x Tac x Toe</h1>
+        <img id="gon" src="gon.png" alt="">
+        <img id="killua"   src="killu.png" alt="">
+        <p>Grab a friend to play this classic game! Hunter x Hunter style. Player X, you go first.</p>
+    </header>
+    <!-- Player turn counter -->
+    <section class="turns"> 
+        <p class="playerTurn">Player <span id="whichPlayer"></span></p>
+    </section>
+    <!-- actual grid -->
+    <section class="boxes">
+      <section class="box" id="0"></section>
+      <section class="box" id="1"></section>
+      <section class="box" id="2"></section>
+      <section class="box" id="3"></section>
+      <section class="box" id="4"></section>
+      <section class="box" id="5"></section>
+      <section class="box" id="6"></section>
+      <section class="box" id="7"></section>
+      <section class="box" id="8"></section>
+    </section>
+    <!-- reset button -->
+    <section class="btn">
+        <button id="clear">New Game</button>
+    </section>  
+    <!-- winning message -->
+    <section class="msg">
+        <h2 class="whoWon"></h2>
+    </section>
+
+
+
+    <!-- js -->
+    <script type = "text/javascript" src="js/main.js"></script>
+  </body>
+</html>
