@@ -37,7 +37,7 @@ section {
 .row > div {
   width: 33.333%;
   float: left;
-  font-size: 15rem;
+  font-size: 15em;
   text-align: center;
   height: 20rem;
 }
@@ -69,7 +69,7 @@ div > .noBorder {
   bottom: 0;
   background-color: rgba(0, 0, 0, .9);
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 5em;
   color: white;
   display: flex;
   justify-content: center;
@@ -80,4 +80,11 @@ div > .noBorder {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 768px){
+  section {
+    margin: 10% auto;
+    width: 100%;
+  }
 }
