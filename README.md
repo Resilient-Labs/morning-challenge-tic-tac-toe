@@ -1,21 +1,21 @@
-# Level Ground Mockup
+# Tic-tac-toe
 
-This is a fully responsive mockup website for Level Ground, a mixed martiel arts business.
+Two player Tic-Tac-Toe game. 
 
-**Link to project:** https://level-ground-mockup.netlify.app/
+**Link to project:** [https://level-ground-mockup.netlify.app/](https://tictactoeelvin.netlify.app/)
 
 
-<img width="1678" alt="Screen Shot tic tac toe" src="https://user-images.githubusercontent.com/91163017/195220181-58980ccc-7e96-4ae8-b8ff-3bb24ec9350a.png">
+<img width="700" alt="Screen Shot tic tac toe" src="https://user-images.githubusercontent.com/91163017/195220181-58980ccc-7e96-4ae8-b8ff-3bb24ec9350a.png">
 
 
 
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS
+**Tech used:** HTML, CSS and JavaScript
 
-This layout was created with floats, REM and media queries to make it responsive.
+Applied all the JavaScript knowledge we've learned so far. I used a for forEach loop to add event listener to all the cells, and practised creating arrow functions. 
 
 ## Lessons Learned:
 
-When making websites responsive you need to make decisions on what content to move or even replace based on the users screen. Media queries helps us apply those decisions we make.  
+I would definitely want to come back to this project and add OOP. 
