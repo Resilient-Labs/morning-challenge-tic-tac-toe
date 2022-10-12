@@ -1,22 +1,21 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Level Ground Mockup
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+This is a fully responsive mockup website for Level Ground, a mixed martiel arts business.
 
-### How to submit your code for review:
+**Link to project:** https://level-ground-mockup.netlify.app/
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+<img width="1678" alt="Screen Shot tic tac toe" src="https://user-images.githubusercontent.com/91163017/195220181-58980ccc-7e96-4ae8-b8ff-3bb24ec9350a.png">
+
+
+
+
+## How It's Made:
+
+**Tech used:** HTML, CSS
+
+This layout was created with floats, REM and media queries to make it responsive.
+
+## Lessons Learned:
+
+When making websites responsive you need to make decisions on what content to move or even replace based on the users screen. Media queries helps us apply those decisions we make.  
