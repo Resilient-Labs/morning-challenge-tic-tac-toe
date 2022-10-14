@@ -14,7 +14,7 @@ const tictactoe = {
         if (this.array.includes('') == false){
             this.updateStatus('its a draw')
         }
-    },
+    }, 
 
     updateStatus(msg){
         document.querySelector('#result').innerHTML = msg
