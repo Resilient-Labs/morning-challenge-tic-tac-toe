@@ -1,0 +1,90 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+section {
+  margin: 10% auto;
+  width: 50%;
+}
+
+.row > div {
+  width: 33.333%;
+  float: left;
+  font-size: 15em;
+  text-align: center;
+  height: 20rem;
+}
+
+.row > div:hover {
+  cursor: pointer;
+}
+
+.row1 > div, .row2 > div {
+  border-bottom: .5px solid black;
+  border-right: .5px solid black;
+}
+
+.row3 > div {
+  border-right: .5px solid black;
+
+}
+
+div > .noBorder {
+  border-right: none;
+}
+
+/* Display the winner div*/
+.displayWinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .9);
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  section {
+    margin: 10% auto;
+    width: 100%;
+  }
+}

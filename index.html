@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<title>Tic Tac Toe</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<section>
+
+			<div class="row row1 clearfix" id="lineThrough">
+				<div id="cell"></div>
+				<div id="cell"></div>
+				<div id="cell" class="noBorder"></div>
+			</div>
+
+			<div class="row row2 clearfix">
+				<div id="cell"></div>
+				<div id="cell"></div>
+				<div id="cell" class="noBorder"></div>
+			</div>
+
+			<div class="row row3 clearfix">
+				<div id="cell"></div>
+				<div id="cell"></div>
+				<div id="cell" class="noBorder"></div>
+			</div>
+		</section>
+
+		<div class="displayWinner hidden">
+			<h1 class="winnerMessage"></h1>
+			<button id="btn" type="button">Restart</button>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
