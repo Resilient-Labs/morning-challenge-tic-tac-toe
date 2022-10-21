@@ -17,6 +17,13 @@
 	clear: both;
 }
 
+body {
+  background-color: lightgray;
+}
+
+h1 {
+  margin-left: 634px;
+}
 
 main {
   width: 30%;
@@ -78,6 +85,7 @@ main {
   border-bottom: none;
 
 }
+
 
 
 
