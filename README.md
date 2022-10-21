@@ -3,9 +3,9 @@
 
 ## Link to project 
 
-<a href="tictaactooe.netlify.app" rel="nofollow"><img src="ttt.png" alt=""></a>
+<a href="https://tictaactooe.netlify.app" rel="nofollow"><img src="ttt.png" alt=""></a>
 
-<a href="tictaactooe.netlify.app" rel="nofollow">Visit Website</a>
+<a href="https://tictaactooe.netlify.app" rel="nofollow">Visit Website</a>
 
 
 
