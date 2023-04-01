@@ -1,22 +1,19 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# TicTacToe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+# Tic Tac Toe
 
-### How to submit your code for review:
+Users are able to paly with the computer against a game of tic tac toe. One player will put in eels, one will put in escalators. First person to reach three in a row will win. 
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![image](https://user-images.githubusercontent.com/102040536/172032340-9fa3344a-d339-4d01-af18-09bf30957a80.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+
+## How It's Made:
+
+Languages/frameworks use: HTML, CSS, JavaScript
+
+## Thoughts:
+
+This one was a bit tough to get working. It was somewhat similar to the to-do list where it things were registered on click, and similar to the slot machine where you had to make all three equal to each other in order for it to count as a win. It was mostly trying to figure out how to make this happen on a bigger scale (with 9 slots instead of just 3). 
+
+Shoutout Gabby for the amazing CSS. 
