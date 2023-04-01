@@ -1,0 +1,58 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.scoreboard{
+  width: 40%;
+  margin: 10px;
+  font-size: 2rem;
+}
+.scoreboard tr, .scoreboard td{
+  font-size: 2rem;
+}
+
+h1{
+  width: 50%;
+  text-align: center;
+}
+
+#gameBoard{
+  width: 50%;
+  border: black solid .5px;
+  height: 669px;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 20px;
+}
+
+#gameBoard input{
+  width: 33.33%;
+  height: 222px;
+  border: black solid 2px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
