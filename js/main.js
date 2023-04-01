@@ -10,14 +10,14 @@ class Game{
         this.grid = new Array(9).fill(null);
     }
 
-    // nextPlayer(){
-    //     this.turn = this.turn === 'X' ? this.turn = 'O' : this.turn = 'X'
-    // }
+    nextPlayer(){
+        this.turn = this.turn === 'X' ? this.turn = 'O' : this.turn = 'X'
+    }
 
-    // move(i){
-    //     this.grid[i] = this.grid[i] != null ? this.grid[i] = this.grid[i] : this.grid[i] = this.turn 
-    //     this.nextPlayer()
-    // }
+    move(i){
+        this.grid[i] = this.grid[i] != null ? this.grid[i] = this.grid[i] : this.grid[i] = this.turn 
+        this.nextPlayer()
+    }
 
 
 }
