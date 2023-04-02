@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+
+/**__________^css reset^____________**/
+
+* {
+    box-sizing: border-box;
+}
+
+#board {
+    width: 400px;
+    height: 338px;
+    margin-left: 39%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    margin: 2px;
+    border: 4px groove teal;
+    background: rgba(128, 128, 128, 0.764);
+    color: #ab0303;
+    font-weight: 800;
+    text-shadow: 2px 4px 4px black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 4px dashed rgb(255, 255, 255);
+    font-family: 'Bungee Shade';
+    background: linear-gradient(to bottom, #003333, #004040, #005555, #006666, #007777, #008888, #028383, #008d8d, #016f6f, #006868, #006f6f, #015555, #007979);
+    color: white;
+
+}
+
+
+
+
+h3 {
+    font-size: 3rem;
+    margin-left: 164px;
+    border: 10px groove goldenrod;
+    width: 233px;
+    text-align: center;
+    font-family: 'Vast Shadow';
+    text-shadow: 2px 4px 4px black;
+    color: #ab0303;
+    background: rgba(0, 0, 0, 0.711);
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+p {
+    margin-top: 20px;
+    width: 8%;
+    margin: auto;
+}
+
+#reset {
+    width: 174px;
+    height: 36px;
+    margin-left: 645px;
+    background: #03c77c99;
+    border-radius: 20px;
+    border: 2px groove goldenrod;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 17px;
+}
+
+
+.scoreBoard {
+    margin-left: 450px;
+}
+
+#XScore,
+#OScore {
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 3px orange;
+}
+
+span {
+    font-size: 1.3rem;
+    font-family: 'Oregano';
+    font-weight: 800;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+}
+
+table {
+    display: inline-block;
+    height: 106px;
+    width: 114px;
+    margin-left: 228px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    color: orange;
+    text-shadow: 1px 1px 1px whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+body {
+    background: url('../css/pictures/liquid.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
