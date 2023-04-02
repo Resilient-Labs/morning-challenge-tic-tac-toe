@@ -2,9 +2,9 @@
 This mini project was a huge challenge for me. (tenzin, 4-2-23)
 instantiating Gameboard class and using Node List Method!
 
-**Link to project:** ##.com
+**Link to project:** <a href="https://anothergamefromtenzin.netlify.app" target= _blank>anotherGameFromTenzin.com</a>
 
-![alt tag](http://placecorgi.com/1200/650)
+
 
 ## How It's Made:
 
