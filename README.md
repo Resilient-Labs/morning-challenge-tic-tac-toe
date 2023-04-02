@@ -1,22 +1,32 @@
 # 📊 Morning Challenge: Tic-Tac-Toe
+This mini project was a huge challenge for me. (tenzin, 4-2-23)
+instantiating Gameboard class and using Node List Method!
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+**Link to project:** ##.com
 
-### How to submit your code for review:
+![alt tag](http://placecorgi.com/1200/650)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Tech used:** HTML, CSS, JavaScript, 
+
+Created a GameBoard class,
+assigned X to the click/ Eventlistener
+used the teranary operator to swtich between x and o
+used conditionals within winner method to alert player
+
+## Optimizations
+*My second attempt at stopwatch practice*
+
+## Lessons Learned:
+
+With prime pseudo code and a visual of the direction-- you are able to write omre complex code.
+I learned that instead of thinking of the project as a final product, 
+its better to break it down and understand what must be computed in order for the
+game to function properly. after gathering my thoughts with psuedo code and scrambled up variable, I was
+able to cut and paste the functions in a beter format. This allows the functions to be run in
+an orderly fashion as needed. The -process- was a bit messier than the previous JS projects. 
+**Although the process was messy, Im extremely proud of my result.**
+**I was able to clean up my code at the end and gain a final understanding of what was happening, and most importantly, when it was happening**
+*Hell yeah! Let's goo!* 
+

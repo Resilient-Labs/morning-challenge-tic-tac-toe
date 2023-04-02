@@ -24,13 +24,9 @@ cells.forEach(element => {
         }
         const gameBoard = new GameBoard()
         element.innerText= player1;  
-
-        gameBoard.checkDraw()
-       
-        gameBoard.checkWinner()
-        
-
         player1 = player1 == '❌' ? '⭕️' : '❌';
+        gameBoard.checkDraw()
+        gameBoard.checkWinner()
     })
 
 })
