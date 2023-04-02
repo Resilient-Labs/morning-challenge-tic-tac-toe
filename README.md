@@ -26,7 +26,9 @@ its better to break it down and understand what must be computed in order for th
 game to function properly. after gathering my thoughts with psuedo code and scrambled up variable, I was
 able to cut and paste the functions in a beter format. This allows the functions to be run in
 an orderly fashion as needed. The -process- was a bit messier than the previous JS projects. 
+
 **Although the process was messy, Im extremely proud of my result.**
 **I was able to clean up my code at the end and gain a final understanding of what was happening, and most importantly, when it was happening**
-*Hell yeah! Let's goo!* 
 
+
+*Hell yeah! Let's goo!* 

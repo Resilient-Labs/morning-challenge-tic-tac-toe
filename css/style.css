@@ -22,6 +22,7 @@ header{
   align-items: flex-end;
   height: 220px;
   margin-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
 }
 #cells{
   border: white 2.5px solid;
