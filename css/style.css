@@ -157,7 +157,10 @@ h2{
   }
   h2{
     width: 100%;
+    font-size: 4rem;
   }
+  .scoreboard tr, .scoreboard td, .scoreboard tfoot{
+    font-size: 4rem;
 }
 @media screen and (max-device-width: 700px){
   main{
@@ -171,7 +174,10 @@ h2{
   }
   h2{
     width: 100%;
+    font-size: 4rem;
   }
+  .scoreboard tr, .scoreboard td, .scoreboard tfoot{
+    font-size: 4rem;
 }
 @media screen and (max-width: 505px){
   main{
