@@ -1,0 +1,51 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main{
+   width: 45%;
+   position: relative;
+   left: 27%   
+}
+h1{
+  margin:40px auto;
+  font-size: 55px;
+}
+
+#block{
+  border: 1.5px solid black;
+  width:33%;
+  height:200px;
+  float:left;
+  text-align: center;
+  font-size: 120px;
+}
+body{
+  background: cornflowerblue;
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Snowburst One', cursive;
+}
+#startOver{
+ margin: 30px auto;
+ font-size: 25px;
+ border: none;
+ background:none;
+ color: whitesmoke;
+}
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
