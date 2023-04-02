@@ -11,7 +11,11 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+html{
+  margin-top: 40px;
+}
 body{
+  margin-top: 50px;
   background: url('../img/bg0.png');
   background-repeat: no-repeat;
   background-size: cover;
