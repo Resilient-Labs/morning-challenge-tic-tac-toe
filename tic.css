@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: pink;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  cursor: crosshair;
+}
+
+#gameboard{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  background: pink ;
+  border: 2px rgb(255, 105, 130) solid;
+  }
+
+.square{
+  width: 100px;
+  height: 100px;
+  border: 2px rgb(255, 105, 130) solid;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  /* button{
+    background-color:rgb(255, 105, 130) ;
+    color: white;
+    border-radius: 50%;
+    border-color: white;
+
+  } */
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
