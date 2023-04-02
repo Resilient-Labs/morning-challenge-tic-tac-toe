@@ -1,0 +1,144 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  background-color: pink;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body 
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 
+{
+  text-shadow: 2px 4px 4px rgb(58, 120, 234);
+}
+
+h2 
+{
+  text-shadow: 2px 4px 4px rgb(95, 143, 233);
+}
+
+h3
+{
+  text-shadow: 2px 4px 4px rgb(150, 182, 239);
+}
+
+span
+{
+  font-style: bold;
+}
+
+main
+{
+  display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-evenly;
+}
+.column
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+div
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: .5rem;
+}
+
+tr, td
+{
+  height: 100px;
+  width: 100px;
+  border-radius: 5%;
+  border: blanchedalmond dotted 3px;
+  font-size: xxx-large;
+  text-align: center;
+}
+
+.sideBySide
+{
+  width: 33.33333%;
+  display: flex;
+}
+
+.playerScore
+{
+  width: 33.33333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playerLayout1
+{
+  width: 100%;
+  display: flex;
+}
+
+.playerNumber
+{
+  width: 98%;
+  align-self: center;
+}
+
+.playerNumber
+{
+  display: flex;
+  justify-content: center;
+  width: 98%;
+}
+
+.playerScoreText
+{
+  width: 48%;
+}
+
+.results > span
+{
+  font-size: x-large;
+}
+
+.endingMessage
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.message
+{
+  width: 100%;
+  text-align: center;
+}
