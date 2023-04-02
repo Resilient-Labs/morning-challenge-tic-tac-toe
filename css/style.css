@@ -5,32 +5,49 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+body{
+  background: url('../img/bg2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 header{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 150px;
+  align-items: center;
+  height: 200px;
 }
 #cells{
-  border: black 2px solid;
-  width: 20%;
-  height: 200px
+  border: black .5px solid;
+  width: 15%;
+  height: 150px
+  
 }
+
+
 #one{
   display: flex;
   justify-content: center;
+  font-size: 120px;
+  text-align: center;
 }
 #two{
   display: flex;
   justify-content: center;
+  font-size: 120px;
+  text-align: center;
 }
 #three{
   display: flex;
   justify-content: center;
+  font-size: 120px;
+  text-align: center;
 }
 /* button{
   text-align: center;
