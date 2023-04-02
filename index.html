@@ -2,57 +2,51 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
-
-		<title>Title in the tab</title>
-
+    	<meta name="description" content="Play a game of tic tac toe">
+    	<meta name="keywords" content="tic, tac, toe">
+		<title>X's & O's</title>
+		<script src="https://kit.fontawesome.com/504ea75c01.js" crossorigin="anonymous"></script>		
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Phudu:wght@400;500;600;800&display=swap" rel="stylesheet">
 	</head>
 	<body>
-
-		<div class="scoreboard">
-			<table>
-			  <thead>scoreboard</thead>
-			  <tbody>
-				<tr>
-				  <td id="Player1">0</td>
-				  <td id="Player2">0</td>
-				</tr>
-			  </tbody>
-			  <tfoot>
-				<tr>
-				  <th>X's</th>
-				  <th>O's</th>
-				</tr>
-			  </tfoot>
-			</table>
+		<div class="grid">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
 		</div>
-
-		<main>
-			<h1>TIC-TAC-TOE</h1>
-			
-			<div id="gameBoard">
-				<input type="text" id="1"></input>
-				<input type="text" id="2"></input>
-				<input type="text" id="3"></input>
-				<input type="text" id="4"></input>
-				<input type="text" id="5"></input>
-				<input type="text" id="6"></input>
-				<input type="text" id="7"></input>
-				<input type="text" id="8"></input>
-				<input type="text" id="9"></input>
+		<h2 id="whoWon" class="sneaky">PLAYER X GOES FIRST</h3>
+		<div class="side">
+			<div class="alerts">
 			</div>
-
-			<button id="reset">RESET</button>
-		</main>
-
-
-
-		
-
+			<div class="scoreboard">
+				<table>
+				  <tbody>
+					<tr>
+					  <td id="X">0</td>
+					  <td id="O">0</td>
+					</tr>
+				  </tbody>
+				  <tfoot>
+					<tr>
+					  <th>X's</th>
+					  <th>O's</th>
+					</tr>
+				  </tfoot>
+				</table>
+			</div>
+			<button id="reset"><i class="fa-solid fa-rotate-right"></i></button>
+		</div>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
