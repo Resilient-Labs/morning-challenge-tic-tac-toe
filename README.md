@@ -2,7 +2,7 @@
 This mini project was a huge challenge for me. (tenzin, 4-2-23)
 instantiating Gameboard class and using Node List Method!
 
-**Link to project:** <a href="https://anothergamefromtenzin.netlify.app" target= _blank>anotherGameFromTenzin.com</a>
+**Link to project:** <a href="https://anothergamefromtenzin.netlify.app" target= "_blank">anotherGameFromTenzin.com</a>
 
 
 
@@ -16,15 +16,15 @@ used the teranary operator to swtich between x and o
 used conditionals within winner method to alert player
 
 ## Optimizations
-*My second attempt at stopwatch practice*
+*null*
 
 ## Lessons Learned:
 
-With prime pseudo code and a visual of the direction-- you are able to write omre complex code.
+With prime pseudo code and a visual of the direction-- you are able to write more complex code resulting in learning more.
 I learned that instead of thinking of the project as a final product, 
 its better to break it down and understand what must be computed in order for the
 game to function properly. after gathering my thoughts with psuedo code and scrambled up variable, I was
-able to cut and paste the functions in a beter format. This allows the functions to be run in
+able to cut and paste the functions in a better format. This allows the functions to be run in
 an orderly fashion as needed. The -process- was a bit messier than the previous JS projects. 
 
 **Although the process was messy, Im extremely proud of my result.**
