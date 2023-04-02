@@ -23,11 +23,17 @@ body{
   width: 80%;
   background: black;
 }
-/* .sneaky{
-  display: none;
-} */
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 220px;
+
+}
 .grid{
-  width: 35%;
+  width: 45%;
   border: black solid .5px;
   display: flex;
   flex-flow: row wrap;
@@ -36,7 +42,8 @@ body{
   align-items: center;
   flex-shrink: 9;
   margin-bottom: 0px;
-  margin: 30px;
+  padding-bottom: 0px;
+  margin-top: 50px;
   aspect-ratio: 1/1;
   background: white;
   
@@ -74,7 +81,7 @@ div.side{
 }
 .scoreboard{
   width: 60%;
-  margin: 30px;
+  margin-right: 30px;
   font-size: 2rem;
   color: rgb(79	79	79);
 }
@@ -86,6 +93,7 @@ div.side{
 }
 .scoreboard table{
   display: inline;
+
 }
 button{
   margin: 30px;
@@ -104,12 +112,11 @@ div.alerts{
   justify-content: center;
   align-items: center;
 }
-h1{
+h2{
   width: 50%;
   text-align: center;
-}
-h2{
   font-size: 2rem;
+  margin: 1px;
 }
 .grid div.win{
   border: outset 15px yellowgreen
@@ -120,3 +127,93 @@ h2{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (max-width: 1200px){
+  main{
+   margin-left: 180px;
+  }
+  .grid{
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1200px){
+  main{
+   margin-left: 180px;
+  }
+  .grid{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  main{
+   margin-left: 150px;
+  }
+  .grid{
+    width: 75%;
+  }
+  div.side{
+    width: 35%;
+  }
+  h2{
+    width: 100%;
+  }
+}
+@media screen and (max-device-width: 700px){
+  main{
+   margin-left: 150px;
+  }
+  .grid{
+    width: 75%;
+  }
+  div.side{
+    width: 35%;
+  }
+  h2{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 505px){
+  main{
+   margin-left: 75px;
+  }
+  .grid{
+    width: 100%;
+  }
+  div.side{
+    width: 35%;
+  }
+  h2{
+    width: 100%;
+  }
+  div.side{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .scoreboard{
+    width: 100%;
+  }
+}
+@media screen and (max-device-width: 505px){
+  main{
+   margin-left: 75px;
+  }
+  .grid{
+    width: 100%;
+  }
+  div.side{
+    width: 35%;
+  }
+  h2{
+    width: 100%;
+  }
+  div.side{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .scoreboard{
+    width: 100%;
+  }
+}
