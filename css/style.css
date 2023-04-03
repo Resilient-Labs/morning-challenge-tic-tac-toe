@@ -1,0 +1,86 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+html{
+  font-size:62.5%;
+  font-family: 'Comic Neue',Impact,'Arial Narrow Bold', sans-serif;
+
+}
+.playArea{
+  float:left;
+  border: 5px double white;
+  margin-left: 17%;
+  margin-top: 20px;
+  height:100px;
+  width:11%;
+  background-color: rgba(0, 0, 0, 0.404);
+  color:white;
+  text-align: center;
+  font-size:2em;
+  padding-top:20px;
+}
+body{
+  width:100%;
+  background-image:url("../css/images/background.jpg");
+}
+.gameboard{
+  width:100%;
+  margin-top:75px;
+
+}
+
+h1{
+  font-size:4em;
+  text-align:center;
+  margin-top:150px;
+  color:white;
+}
+
+button{
+  margin-left:50%;
+  margin-top:50px;
+  font-size:2em;
+  background: black;
+  color:white;
+  cursor: url('../css/images/cursor.png'), pointer;
+}
