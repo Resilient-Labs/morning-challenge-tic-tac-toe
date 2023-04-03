@@ -1,8 +1,8 @@
 Jojo's Bizzare Tic-Tac-Toe
 
-
-![jojo readme image](https://user-images.githubusercontent.com/126501848/229387651-7c7724c5-fe1b-4c0a-bc77-d7bb2a168c07.png)
 https://jojosbizzarettt.netlify.app/
+![jojo readme image](https://user-images.githubusercontent.com/126501848/229387651-7c7724c5-fe1b-4c0a-bc77-d7bb2a168c07.png)
+
 How It's Made:
 Tech used: HTML, CSS, JavaScript, OOP
 
