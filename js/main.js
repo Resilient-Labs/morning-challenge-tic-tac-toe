@@ -52,9 +52,7 @@ class TicTacToe {
       }
     }
     checkRow(a, b, c) {
-      return this.cellBody[a].innerText === this.currentPlayer && 
-             this.cellBody[b].innerText === this.currentPlayer && 
-             this.cellBody[c].innerText === this.currentPlayer;
+      return this.cellBody[a].innerText === this.currentPlayer && this.cellBody[b].innerText === this.currentPlayer && this.cellBody[c].innerText === this.currentPlayer;
     }
   }
   
