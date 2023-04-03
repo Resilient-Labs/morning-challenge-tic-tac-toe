@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+margin: 0;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+body{
+background: url(../images/green.jpeg.crdownload);
+background-repeat: no-repeat;
+background-size: 100rem;
+}
+
+button{
+text-align: center;
+margin-left:40%;
+}
+
+.options{
+margin-left:37%;
+}
+
+/*.mainOne{
+height:700px; 
+width:900px;
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+background: rgb(210, 149, 69);
+}*/
+
+.box{
+border:1px solid black;
+display:flex;
+flex-direction:row;
+}
+
+#tic{
+height:96px;
+width:96px;
+margin:2px;
+display:flex;
+justify-content:space-evenly;
+border:1px solid black;
+font-size:3rem;
+}
