@@ -35,12 +35,14 @@
 body{
   background-image: url(../1.jpg);
   background-size: 1100px;
+  font-family: 'Lily Script One', cursive;
 }
 
 h1{
   color: whitesmoke;
   font-size: 56px;
-  text-decoration:underline;
+  
+  font-family: 'Fasthand', cursive;
 }
 
 p{
