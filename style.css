@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+
+div{
+    height: 100px;
+    width: 80%;
+    float: left;
+    margin-left: 130px;
+}
+
+h1{
+  text-align: center;
+  color: teal;
+}
+
+body{
+  background-color: lightcoral
+}
+
+
+section{
+    height: 100px;
+    width: 33.33%;
+    border: 1px solid black;
+    float: left;
+}
+
+.x {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/LetterX.svg/1200px-LetterX.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+.o {
+    background-image: url("https://w7.pngwing.com/pngs/330/555/png-transparent-letter-case-o-english-alphabet-letter-background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+/* small desktop */
+@media only screen and (min-width: 801px) and (max-width: 1100px) {
+
+}
+
+
+/*Tablet view */
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+
+
+
+}
+
+
+
+
+
+/*mobile view */
+@media only screen and (max-width: 600px) {
+
+}
