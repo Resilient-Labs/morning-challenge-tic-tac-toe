@@ -31,6 +31,7 @@ class TTTGame {
     constructor() {
         this.active = true // use this.active to tell us if the game is in progress, if it's not in progress then the game is over
     }
+    
     checkDraw() {
        if(! this.active){
         return
@@ -73,16 +74,15 @@ class TTTGame {
     }
 
     runAgain() {
-        // window.location.reload()
+        window.location.reload()
         this.active = true
         cell.forEach(element => element.innerText = "")
-        // document.querySelector('announcement').innerText = ""
+        // document.querySelector('#announcement').innerText = ""
     }
 }
 
 
 //reset function for reset button 
-
 
 const tttgame = new TTTGame()
 restart.addEventListener('click', tttgame.runAgain)
