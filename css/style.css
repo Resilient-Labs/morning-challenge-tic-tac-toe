@@ -1,0 +1,29 @@
+body{
+    background-color: #FF7F50;
+}
+h1{
+    font-family: 'Permanent Marker';
+    font-size: 2.3em;
+}
+#cell{
+    width: 75px;
+    height: 75px;
+    border: double white;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 4em;
+    cursor: pointer;
+    background-color: tan;
+    font-family: 'Montserrat', sans-serif;
+}
+#cell:hover{
+    background-color: #c0a47f;
+}
+#container{
+    text-align: center;
+}
+#cellContainer {
+    display: flex;
+    width: 225px;
+    margin: auto;
+}
