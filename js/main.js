@@ -38,7 +38,7 @@ function checkScore(){
     })
 
     if(win){
-        info.textContent = `${player == "X" ? "O" : "X"} WINS!!`
+        info.textContent = `${player == "X" ? "O" : "X"} WINS! Hit restart to play again`
     }
 
     else if (allCells.every(cell => cell.innerText === "X" || cell.innerText === "O")){
