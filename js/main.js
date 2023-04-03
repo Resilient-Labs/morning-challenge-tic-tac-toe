@@ -2,17 +2,17 @@
 class TicTacToe {
     //creates an object factory for X
     constructor() {
+      //declares variable for player
         this.currentPlayer = 'X';
-        //change from an array to a nodelist
         this.cellBody = Array.from(document.querySelectorAll('#cell')); //Converts NodeList into array (Array.from) 
     }
   
     start() {
         this.cellBody.forEach(cell => {
-        //Add event listener to all the cells
+        //Adds event listener to all the cells which is trigger when users click on it
         cell.addEventListener('click', () => {
-            //check if the cell already has innerText. If it does it means cell has already been selected
-          if (cell.innerText !== '') {
+          //if the cell variable has inner text the function returns and does nothing (but if cell is empty it continues to rest of the code)
+          if (cell.innerText !== '') { 
             return;
           }
           //adds text to each cell
