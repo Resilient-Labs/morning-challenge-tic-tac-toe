@@ -1,0 +1,37 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background: url("background.png") no-repeat;
+    background-size:cover;
+    /* -color:rgb(21,32,54) */
+    color:white;
+}
+
+
+.gameboard{
+    border: 1px solid black;
+    height:400px;
+    width:400px;
+}
+
+.gameboard section{
+    border: 1px solid black;
+    display:flex;
+    height:133.33px;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    font-size:3rem;
+}
+
+button{
+    background-color:transparent;
+    color:white;
+    padding:10px;
+    border:1px solid white;
+}
