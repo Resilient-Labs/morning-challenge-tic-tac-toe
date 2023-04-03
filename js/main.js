@@ -13,8 +13,9 @@ playArea.forEach(box => {
       return
     }
     box.innerText = player
-    player = player == playerX.icon ? playerO.icon : playerX.icon;
     gameLogic.whoWon()
+    player = player == playerX.icon ? playerO.icon : playerX.icon;
+  
   });
 });
 
