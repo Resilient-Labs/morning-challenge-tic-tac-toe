@@ -6,7 +6,7 @@ body{
     display:flex;
     flex-direction:column;
     align-items:center;
-    background: url("background.png") no-repeat;
+    background: url("backgroundFour.png") no-repeat;
     background-size:cover;
     /* -color:rgb(21,32,54) */
     color:white;
@@ -14,13 +14,13 @@ body{
 
 
 .gameboard{
-    border: 1px solid black;
+    /* border: 1px solid white; */
     height:400px;
     width:400px;
 }
 
 .gameboard section{
-    border: 1px solid black;
+    border: 2px solid rgb(246,205,197);
     display:flex;
     height:133.33px;
     width:100%;
@@ -32,6 +32,28 @@ body{
 button{
     background-color:transparent;
     color:white;
-    padding:10px;
-    border:1px solid white;
+    padding:10px 30px 10px 30px;
+    font-size:1.5rem;
+    border:1px solid rgb(246,205,197);
+    box-shadow: 10px 5px 5px rgb(246,205,197);
+
+}
+
+.cells:hover{
+    box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:active{
+    transform: translateY(4px);
+} 
+
+h1{
+    font-size:2rem;
+    margin-bottom:0;
+    font-weight:bolder;
+}
+
+p{
+    font-size:1.5rem;
+    font-weight:bolder;
 }
