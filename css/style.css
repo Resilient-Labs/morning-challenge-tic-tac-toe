@@ -1,0 +1,78 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font:62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+header{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+body {
+  background-color: bisque;
+  color:brown;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/Users/malikc./Desktop/ticTacToe/img/backgPhoto.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+table{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  border: groove 3px black;
+
+}
+.howToPlay{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.squares{
+  border: double 4px black;
+  height:250px;
+  width:250px; 
+  font-size: 4rem;
+  padding-left:110px;
+  
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
