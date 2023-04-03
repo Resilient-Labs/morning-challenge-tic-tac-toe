@@ -12,11 +12,18 @@ class Box {
         
     }
 
-        PickOne(){
+        
+        pickOne(){
+            if(this.owner != ''){
+                return
+            }
         document.querySelectorAll('.box')[this.boxNum].src = player+'.png'
         this.owner = player
         CheckIfWin()
+        // e.target.removeEventListener('click', pickOne() )
         togglePlayer()
+        
+    
     } 
 
 }
@@ -63,12 +70,11 @@ for(let i = 0; i<=8; i++){
     arr.push(boxes)
     console.log(boxes)
     document.querySelectorAll('.box')[i].addEventListener('click', function(){
-    boxes.PickOne()
+    boxes.pickOne()
     })
+   
+
 }
-
-
-
 
 
 
