@@ -69,11 +69,10 @@ class Board {
     // restart
     restartGame = () => {
         this.gameActive = true
-        this.Player = '🗡️'
+        this.player = '🗡️'
         this.game = ["", "", "", "", "", "", "", "", ""]
         document.querySelector('#statusText').innerText = `player ${this.player} goes first`
         document.querySelectorAll('.box').forEach(box => box.innerText = "");
-
     }
 }
 
@@ -90,7 +89,7 @@ boxClick = (event) => {
         }
         board.game[clickedBoxIndex] = board.player
         clickedBox.innerText = board.player
-        board.validateResults ()
+        board.validateResults()
         // displayText.innerText = `${currentPlayer} turn`
         board.togglePlayer()      
     }

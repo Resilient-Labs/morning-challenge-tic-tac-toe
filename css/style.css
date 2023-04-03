@@ -16,11 +16,17 @@ body {
   width: 100%;
   margin: 0 auto;
   background: url("../img/zelda.jpg");
-  background-size: cover;
+  background-size:100%;
   font-family: 'Chakra Petch', sans-serif;
   font-size: 1.5em;
 }
 
+.zelda {
+  padding: 6px 6px;
+  margin: 0 auto 12px auto;
+  width: 80px;
+  height: 80px;
+}
 .box{
   /* background:  #e7ce88; */
   width: 105px;
@@ -56,8 +62,12 @@ h2, h1 {
   color: #31281a;
 }
 
+h1 {
+  margin: 0;
+}
+
 h2 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 
