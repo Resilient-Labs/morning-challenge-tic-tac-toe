@@ -4,27 +4,7 @@
 // let currentGame = ["", "", "", "", "", "", "", "", ""]
 // let gameActive = true
 // const restartButton = document.querySelector('#restartBtn')
-// const displayText = document.querySelector('#statusText')
-
-
-
-//create a click event for boxes
-boxClick = (event) => {
-    const clickedBox = event.target
-    const clickedBoxIndex = parseInt(clickedBox.getAttribute('cellIndex'))
-        if (Board.game[clickedBoxIndex] !== "" || !Board.gameActive) {
-            return;
-        }
-        Board.game[clickedBoxIndex] = Board.player
-        clickedBox.innerText = Board.player
-        Board.validateResults ()
-        // displayText.innerText = `${currentPlayer} turn`
-        Board.togglePlayer()      
-    }
-
-document.querySelectorAll('.box').forEach(box => box.addEventListener('click', boxClick));
-document.querySelector('#restartBtn').addEventListener('click', Board.restartGame)
-
+const displayText = document.querySelector('#statusText')
 
 
 class Board {
@@ -34,10 +14,10 @@ class Board {
         this.gameActive = gameActive
     }
 
+    // static get displayText() { return this.displayText = `player ${this.player} goes first`; }
+
     //initial Status
-    initialStatus () {
-        displayText.innerText = `player ${this.player} goes first`
-    }
+    // this.displayText.innerText = `player ${this.player} goes first`
 
     //create a function to toggle players
     togglePlayer() {
@@ -47,39 +27,39 @@ class Board {
 
     // checking if someone won
     validateResults() {
-        if (this.Game[0] === this.Game[1] && this.Game[2] === this.Game[0] && this.Game[0] === this.player) {
+        if (this.game[0] === this.game[1] && this.game[2] === this.game[0] && this.game[0] === this.player) {
             document.querySelector('#statusText').innerText = `player ${this.player} won`
             this.gameActive = false
         }
-        else if (this.Game[3] === this.Game[4] && this.Game[4] === this.Game[5] && this.Game[3] === this.player) {
+        else if (this.game[3] === this.game[4] && this.game[4] === this.game[5] && this.game[3] === this.player) {
             document.querySelector('#statusText').innerText = `player ${this.player} won`
             this.gameActive = false
         }
-        else if (this.Game[6] === this.Game[7] && this.Game[7] === this.Game[8] && this.Game[6] === this.player) {
+        else if (this.game[6] === this.game[7] && this.game[7] === this.game[8] && this.game[6] === this.player) {
             document.querySelector('#statusText').innerText = `player ${this.player} won`
             this.gameActive = false
         }
-        else if (this.Game[6] === this.Game[7] && this.Game[7] === this.Game[8] && this.Game[6] === this.player) {
+        else if (this.game[6] === this.game[7] && this.game[7] === this.game[8] && this.game[6] === this.player) {
             document.querySelector('#statusText').innerText = `player ${this.player} won`
             this.gameActive = false
         }
-        else if (this.Game[0] === this.Game[3] && this.Game[3] === this.Game[6] && this.Game[3] === this.player) {
+        else if (this.game[0] === this.game[3] && this.game[3] === this.game[6] && this.game[3] === this.player) {
             document.querySelector('#statusText').innerText = `player ${this.player} won`
             this.gameActive = false
         }
-        else if (this.Game[1] === this.Game[4] && this.Game[4] === this.Game[7] && this.Game[1] === this.player) {
+        else if (this.game[1] === this.game[4] && this.game[4] === this.game[7] && this.game[1] === this.player) {
             document.querySelector('#statusText').innerText = `player ${this.player} won`
             this.gameActive = false
         }
-        else if (this.Game[2] === this.Game[5] && this.Game[5] === this.Game[8] && this.Game[2] === this.player) {
+        else if (this.game[2] === this.game[5] && this.game[5] === this.game[8] && this.game[2] === this.player) {
             document.querySelector('#statusText').innerText = `player ${this.player} won`
             this.gameActive = false
         }
-        else if (this.Game[0] === this.Game[4] && this.Game[4] === this.Game[8] && this.Game[0] === this.player) {
+        else if (this.game[0] === this.game[4] && this.game[4] === this.game[8] && this.game[0] === this.player) {
             document.querySelector('#statusText').innerText = `player ${this.player} won`
             this.gameActive = false
         }
-        else if (this.Game[2] === this.Game[4] && this.Game[4] === this.Game[6] && this.Game[2] === this.player) {
+        else if (this.game[2] === this.game[4] && this.game[4] === this.game[6] && this.game[2] === this.player) {
             document.querySelector('#statusText').innerText = `player ${this.player} won`
             this.gameActive = false
         }
@@ -90,16 +70,36 @@ class Board {
     restartGame = () => {
         this.gameActive = true
         this.Player = '🗡️'
-        this.Game = ["", "", "", "", "", "", "", "", ""]
+        this.game = ["", "", "", "", "", "", "", "", ""]
         document.querySelector('#statusText').innerText = `player ${this.player} goes first`
         document.querySelectorAll('.box').forEach(box => box.innerText = "");
 
     }
 }
 
+const board = new Board ('🗡️', ["", "", "", "", "", "", "", "", ""], true)
 
-const board = new Board () 
-let currentPlayer = new Board.player('🗡️')
-let game = new Board.game(["", "", "", "", "", "", "", "", ""])
-let gameActive = new Board.gameActive(true) 
+displayText.innerText = `player ${board.player} goes first`
+
+//create a click event for boxes
+boxClick = (event) => {
+    const clickedBox = event.target
+    const clickedBoxIndex = parseInt(clickedBox.getAttribute('cellIndex'))
+        if (board.game[clickedBoxIndex] !== "" || !board.gameActive) {
+            return;
+        }
+        board.game[clickedBoxIndex] = board.player
+        clickedBox.innerText = board.player
+        board.validateResults ()
+        // displayText.innerText = `${currentPlayer} turn`
+        board.togglePlayer()      
+    }
+
+document.querySelectorAll('.box').forEach(box => box.addEventListener('click', boxClick));
+document.querySelector('#restartBtn').addEventListener('click', board.restartGame)//create a click event for boxes
+
+
+
+
+
 

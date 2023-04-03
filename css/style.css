@@ -23,7 +23,7 @@ body {
 
 .box{
   /* background:  #e7ce88; */
-  width: 75px;
+  width: 105px;
   height: 75px;
   border: 2px solid #31281a;
   box-shadow: 0 0 0 2px;
@@ -47,7 +47,7 @@ body {
 #boxContainer{
   display: grid;
   grid-template-columns: repeat(3, auto);
-  width: 225px;
+  width: 300px;
   margin: auto;
 }
 
