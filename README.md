@@ -1,22 +1,16 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+Jojo's Bizzare Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
 
-### How to submit your code for review:
+![jojo readme image](https://user-images.githubusercontent.com/126501848/229387651-7c7724c5-fe1b-4c0a-bc77-d7bb2a168c07.png)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+How It's Made:
+Tech used: HTML, CSS, JavaScript, OOP
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+This project is a'JOJO's bizzare adventure' themed game of tic-tac-toe in which there are two players, X always goes first. When a winner is found each box will fill with an announcement saying who won! 
+
+Optimizations
+
+the GaneLogic class was created to host the whoWon() method. orginally there was also a method for checking draw games but it was creating a bug in which if the last click would have  won when all of the other boxes were full, it would still consider it a draw. to remedy this I removed the method entirely and added the draw functionality to the 'else' of the whoWon() method. 
+
+Lessons Learned:
+Using Object Oriented Programming can really clean up and organize your code. I've also realized that creating comments not only lets me increase my understanding of my own code but allows me to explain my code better to other engineers.
