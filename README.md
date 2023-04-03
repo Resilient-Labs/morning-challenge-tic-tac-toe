@@ -1,22 +1,6 @@
 # 📊 Morning Challenge: Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+![Screen Shot 2023-04-02 at 9 08 09 PM](https://user-images.githubusercontent.com/126503921/229392041-aefcd4c6-a857-4b4a-b448-7e39eb60beda.png)
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
-
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+The object of the challenge was to create a tic-tac-toe game for 2 users. They would be able to click on the space, and either 'x' or 'o' will appear. And if there is a winner, a message letting them know will appear. I also added a "its a draw" message if neither players win. A class was created for the game, along with two methods. One method to check the winner, and the other is to check if there was a draw. Two buttones were put in place, when user clicks for x or o, and when user clicks on the restart button. Which a restart method was also added for users to begin another round of the game. 
