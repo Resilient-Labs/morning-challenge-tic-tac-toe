@@ -23,7 +23,7 @@ cells.forEach(cell => {
 
         // could add || statement to this if to also stop the game from going further if someone has already won
         if(cell.innerText != "" ){
-
+            return
         }
 
         cell.innerText = currentPlayer
