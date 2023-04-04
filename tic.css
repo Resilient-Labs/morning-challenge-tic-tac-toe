@@ -31,6 +31,24 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+.circle{
+  border: 15px solid blue;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cross{
+  border: 15px solid red;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  box-sizing: border-box;
+}
   /* button{
     background-color:rgb(255, 105, 130) ;
     color: white;

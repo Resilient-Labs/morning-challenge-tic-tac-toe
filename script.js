@@ -3,7 +3,6 @@ const infoDisplay = document.querySelector("#info")
 const startCells = [ 
     "","","","","","","","","",
 ]
-
 let go = "circle" 
 infoDisplay.textContent = "Circle goes first"
 
@@ -19,9 +18,9 @@ function createBoard() {
 
 createBoard()
 
-function addGo(e) {
+function addGo(e){
     const goDisplay = document.createElement('div')
-    goDisplay.classList.add('cross')
+    goDisplay.classList.add(go)
     e.target.append(goDisplay)
     go = go === "circle" ? "cross" : "circle"
     infoDisplay.textContent = "it is now " + go + " 's turn."
@@ -30,19 +29,17 @@ function addGo(e) {
 }
 
 function checkScore(){
-    document.querySelectorAll(".square")
+    
     const winningCombos = [
-        [0,1,2] [3,4,5] [6,7,8]
-        [0,3,6] [1,4,7] [2,5,8]
-        [0,4,8] [2,4,6]
+        [0,1,2], [3,4,5], [6,7,8],
+        [0,3,6], [1,4,7], [2,5,8],
+        [0,4,8], [2,4,6]
     ]
-}
-
-console.log(allSquares[4])
+let allSquares = document.querySelectorAll(".square")
 
       winningCombos.forEach(array => {
            const circleWins = array.every(cell => 
-                  allSquares[cell].firstchild?.classlist.contains('circle'))
+                  allSquares[cell].firstChild?.classList.contains('circle'))
      
 
       if (circleWins) {
@@ -54,7 +51,7 @@ console.log(allSquares[4])
 
 winningCombos.forEach(array => {
       const crossWins = array.every(cell => 
-             allSquares[cell].firstchild?.classlist.contains('cross'))
+             allSquares[cell].firstChild?.classList.contains('cross'))
 
 
  if (crossWins) {
@@ -63,3 +60,4 @@ winningCombos.forEach(array => {
        return 
  }
 })
+}
