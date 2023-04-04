@@ -10,6 +10,8 @@ body{
     background-size:cover;
     /* -color:rgb(21,32,54) */
     color:white;
+    min-height:100vh;
+    margin:0px;
 }
 
 .gameboard{
@@ -29,7 +31,6 @@ body{
 }
 
 button{
-    margin-bottom:400px;
     background-color:transparent;
     color:white;
     padding:10px 30px 10px 30px;
