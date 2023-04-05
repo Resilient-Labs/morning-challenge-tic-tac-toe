@@ -16,20 +16,49 @@
 .clear {
 	clear: both;
 }
-
+button{
+  margin-top: 29%;
+  background-color: red
+  ;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
 .outline{
-  border: 1px solid black;
-  width: 50%;
-  
+  width: 30%;
+  margin-left: 33%;
+  margin-top: 9%;
 }
 .box {
- border: 1px solid black;
- width: 33.3333%;
- height: 250px;
- float: left;
+  border: 3px solid red;
+  width: 33.3333%;
+  height: 150px;
+  float: left;
+  border-style: dashed;
+}
+
+h1{
+  padding-left: 44%;
+    font-size: 2em;
+    margin: 0.67em 0;
+    
+}
+h2{
+  padding-left: 32%;
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+body{
+  background: black;
+    color: white;
 }
 
 
