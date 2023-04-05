@@ -87,7 +87,7 @@
     height: 33.33%;
     }
     
-    #cells {
+    #cell {
     border: 5px solid black;
     width: 33.33%;
     height: 100%;
@@ -146,18 +146,8 @@
     background: lightgray;
     cursor: pointer;
     }
+    h3{
+      font-size: 2rem;
+      color: green;
+    }
   
-  /* HOW TO FLEX THIS PROJECT*/
-  /* #row1, #row2, #row3{
-    display: flex;  
-    justify-content: center;
-  }
-  #cells{
-    height: 100px;
-    width: 50%;
-    border: 1px solid black;
-  }
-  #gameboard{
-    margin: 150px;
-    border: 1px solid black;
-  } */
