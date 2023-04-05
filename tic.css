@@ -33,7 +33,7 @@ body{
 }
 
 .circle{
-  border: 15px solid blue;
+  border: 15px solid white;
   border-radius: 50%;
   height: 80px;
   width: 80px;
@@ -42,7 +42,7 @@ body{
 }
 
 .cross{
-  border: 15px solid red;
+  border: 15px solid hotpink;
   border-radius: 50%;
   height: 80px;
   width: 80px;
