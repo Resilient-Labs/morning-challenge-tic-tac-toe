@@ -54,35 +54,3 @@ function restart(){
     allCells.forEach(cell => cell.innerText = "")
     info.textContent = "Player 1: Begin selecting a cell. Player 2: You're next ~"
 }
-
-// class Cell {
-//     constructor(position) {
-//         this.content = null
-//         this.position = position
-//         // to create new cell
-//     }
-//     getContent() {
-//         return this.content
-//         // get the content of cells
-//     }
-//     setContent(newContent) {
-//         this.content = newContent
-//         document.querySelector("#cell" + this.position).innerText = newContent
-//         // change cell
-//     }
-// }
-
-// class Board {
-//     constructor() {
-//         this.player = "X"
-//         this.cellArray = []
-//         for (let i = 0; i < 9; i++) {
-//             this.cellArray[i] = new Cell(i)
-//             const cellId = "cell" + i
-//             const section = document.getElementById(cellId)
-//             section.addEventListener("click", () => {
-//                 this.cellArray[i].setContent(this.player)
-//             })
-//         }
-//     }
-// }
