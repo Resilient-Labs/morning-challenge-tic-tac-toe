@@ -1,4 +1,4 @@
-//sat with my house with a mentor, Cory, and worked through this code
+//sat with my house with a mentor, Cory, and worked through this code a bit
 
 //the player will be playing an animal emoji tictactoe
 //these are the animal emoji's that will be used 🐯&🦁
@@ -11,14 +11,14 @@ const playScore2 = document.querySelector('.playScore2')
 const rstBtn = document.querySelector('.btnReset')
 const clrBtn =document.querySelector('.btnClear')
 
-//players have the option to pick between the emoji's
-const player1 = '🐯'
-const player2 = '🦁'
+//players have the option between the emoji's
+const player1 = '🐯'   //X
+const player2 = '🦁'   //O
 
 
 //turn the table to an array
 let cells = document.querySelectorAll('.square')
-console.log(cells)
+console.log(cells) //tester
 cells = Array.from(cells)
 
 
@@ -41,14 +41,14 @@ class Game{
     //actually toggles between each player
     switchTurns(e){
         //checks to see if a player selected the square
-        if(e.target.innerHTML != '🐯' && e.target.innerHTML != '🦁'){
+        if(e.target.innerText != '🐯' && e.target.innerText != '🦁'){
             //when checked it then switches the players
             this.player === '🐯' ? this.player = '🦁' : this.player = '🐯'
-            // the e. target will then update the square  with the emoji of whoever's turn it is
-            e.target.innerHTML = `${this.player}`
+            // the e. target will then update the square with the emoji of whoever's turn it is
+            e.target.innerText = `${this.player}`
             //next you have to check for a winner or tie
-            const winner = this.checkWin()
-            const cellsFilled = this.cells.every(cell => cell.innerHTML !== '')
+            const winner = this.checkWin() //winner
+            const cellsFilled = this.cells.every(cell => cell.innerText !== '') //tied
             if (winner) {
             // disable cells so game can't continue
                 for (let cell of this.cells) {
@@ -89,22 +89,22 @@ class Game{
         [0, 4, 8],
         [2, 4, 6]
         ]
-        //the winner variable is set to null because 
-        let winner = null;
-        //loop through each of the winner cells
+        //the winner variable is set to null because there is no winner yet 
+        let winner = null
+        //loop through each of the cells to find winning combo
         for (let i = 0; i < winningCells.length; i++) {
+            //wanted to know what this was called specifically and it's called destructuring assignment statement
+            const [a, b, c] = winningCells[i] //compares the winning indexs to what is on my board
             //
-            const [a, b, c] = winningCells[i]
-            //
-            const cellA = cells[a].innerHTML
-            const cellB = cells[b].innerHTML
-            const cellC = cells[c].innerHTML
+            const cellA = cells[a].innerText //retrieves input in cell and assigns it to the variable (ex:🐯 = cellA )
+            const cellB = cells[b].innerText
+            const cellC = cells[c].innerText
             //tells the program to skip the cells that are empty ang go to next combo
              if (cellA === '' || cellB === '' || cellC === '') {
-                //continue keeps going through the combos until it finds cells that hold the same value
+                //continue keeps going through the combos until it finds cells that hold the same value; learned about this through watching a youtube video and reading MDN
                  continue
              }
-             //tells the computer that if all cells have the same valu, then it's a winner
+             //tells the computer that if all cells have the same value, then it's a winner
              if (cellA === cellB && cellB === cellC) {
                 winner = cellA
                 //add break to get out of the loop, just learned about this through watching a youtube video and reading MDN
@@ -117,7 +117,7 @@ class Game{
     reset(){
         //loop through the cells and clears them
         for (let cell of this .cells){
-            cell.innerHTML = ''
+            cell.innerText = ''
         }
         //player one then has there turn first every new game
         //*** this needs to get fixed to whoever won the last game
@@ -136,8 +136,8 @@ rstBtn.addEventListener('click', () => {
     score1 = 0
     score2 = 0
     //updates the score display
-    playScore1.innerHTML = score1
-    playScore2.innerHTML = score2
+    playScore1.innerText = score1
+    playScore2.innerText = score2
 })
 
 // add an event listener to the clear button
@@ -145,7 +145,7 @@ clrBtn.addEventListener('click', () =>{
     // loops through the cells and clears the emoji's from them
     for (let cell of cells){
         //clears the emoji's from the current cells
-        cell.innerHTML =''
+        cell.innerText =''
     }
 })
 

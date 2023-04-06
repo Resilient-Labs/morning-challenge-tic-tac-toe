@@ -1,25 +1,30 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    background-image: url(../IMG/background.jpg);
-    background-size: cover
-
-    }
-    h1 , p{
-    text-align: center;
-    }
-    section, table{
-        float: left;
-        height: 400px;
-        width: 33.333%;
-        border: 1px solid black;
-    }
-        td{
-            border: 1px solid black;
-            border-radius: 4px;
-        }
-        .square{
-            text-align: center;
-            font-size: 3rem;
-        }
+body {
+  background-image: url(../IMG/background.jpg);
+  background-size: cover;
+}
+h1,
+p {
+  text-align: center;
+}
+section,
+table {
+  float: left;
+  height: 400px;
+  width: 33.333%;
+  border: 1px solid black;
+}
+td {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 33.333%;
+  height: 130px;
+  overflow: hidden;
+}
+.square {
+  text-align: center;
+  font-size: 3rem;
+  
+}
