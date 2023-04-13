@@ -1,84 +1,82 @@
-// Variables
-const gameBoard = document.querySelector("#gameboard")
-const infoDisplay = document.querySelector("#info")
-
-// Create Board
-const startCells = [ 
-    "","","","","","","","","",
-]
-
-// Who starts
-let go = "white" 
-
-// Display of who goes first. 
-infoDisplay.textContent = "White goes first"
-
-// Create function that creates the board.
-function createBoard() {
-
-    // grab the squaes array for each element gab the quare and th eindex and create an element.
-    startCells.forEach((cell, index) => {
-       const cellElement = document.createElement("div")
-    //    add class for each square
-       cellElement.classList.add("square")
-    //    assign an ID to the square, numbering them individially. 
-       cellElement.id = index
-    // listen for the click .
-       cellElement.addEventListener('click', addGo)
-    //    put the squares on the board.
-       gameBoard.append(cellElement)
-})
-}
-
-createBoard()
-
-// this the function that adds the circles.
-function addGo(e){ 
-    // creates the circle element 
-    const goDisplay = document.createElement('div')
-    // create a class for the div to display a cicrle. 
-    goDisplay.classList.add(go)
-    // ttargets the event & adds the circle. 
-    e.target.append(goDisplay)
-    // if go = the string white then change to pink, otherswise white.
-    go = go === "white" ? "pink" : "white" 
-    infoDisplay.textContent = `it is now ${go}'s turn.`
-    // removes event listener after the one click, so that the same box cannot be chosen again.
-    e.target.removeEventListener("click", addGo)
-    checkScore()
-}
-
-// function to check the score. 
-function checkScore(){
-    
-    const winningCombos = [
-        [0,1,2], [3,4,5], [6,7,8],
-        [0,3,6], [1,4,7], [2,5,8],
-        [0,4,8], [2,4,6]
-    ]
-    // checking all squares for winningCombos
-const allSquares = document.querySelectorAll(".square")
-
-      winningCombos.forEach(array => {
-           const whiteWins = array.every(cell => 
-                  allSquares[cell].firstChild?.classList.contains('white'))
-    // condition if white wins
-      if (whiteWins) {
-            infoDisplay.textContent = "WHITE WINS!"
-            allSquares.forEach(square => square.removeWith(square.cloneNode(true)))
-            return 
+// Define the Board class
+class Board {
+    constructor() {
+      this.cells = Array(9).fill("");
+      this.turn = "white";
+      this.winningCombos = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+      ];
+    }
+  
+    // Method to create the board
+    create() {
+      const gameBoard = document.querySelector("#gameboard");
+  
+      this.cells.forEach((cell, index) => {
+        const cellElement = document.createElement("div");
+        cellElement.classList.add("square");
+        cellElement.id = index;
+        cellElement.addEventListener("click", () => {
+          this.addGo(cellElement);
+        });
+        gameBoard.append(cellElement);
+      });
+    }
+  
+    // Method to add the go
+    addGo(cellElement) {
+      if (cellElement.firstChild) {
+        return;
       }
-})
-// doing the same for pink
-winningCombos.forEach(array => {
-      const pinksWins = array.every(cell => 
-             allSquares[cell].firstChild?.classList.contains('pink'))
-
-
- if (pinkWins) {
-       infoDisplay.textContent = "PINK WINS!"
-       allSquares.forEach(square => square.removeWith(square.cloneNode(true)))
-       return 
- }
-})
-}
+  
+      const goDisplay = document.createElement("div");
+      goDisplay.classList.add(this.turn);
+      cellElement.append(goDisplay);
+      this.cells[cellElement.id] = this.turn;
+  
+      if (this.checkScore()) {
+        this.endGame();
+      } else {
+        this.turn = this.turn === "white" ? "pink" : "white";
+        document.querySelector(
+          "#info"
+        ).textContent = `it is now ${this.turn}'s turn.`;
+      }
+    }
+  
+    // Method to check the score
+    checkScore() {
+      for (const combo of this.winningCombos) {
+        const cellsInCombo = combo.map((index) => this.cells[index]);
+        if (cellsInCombo.every((cell) => cell === "white")) {
+          this.winner = "white";
+          return true;
+        } else if (cellsInCombo.every((cell) => cell === "pink")) {
+          this.winner = "pink";
+          return true;
+        }
+      }
+  
+      return false;
+    }
+  
+    // Method to end the game
+    endGame() {
+      document.querySelector("#info").textContent = `${this.winner.toUpperCase()} WINS!`;
+      const gameBoard = document.querySelector("#gameboard");
+      gameBoard.innerHTML = "";
+      this.cells = Array(9).fill("");
+      this.create();
+    }
+  }
+  
+  // Create a new instance of the Board class and call its create() method
+  const board = new Board();
+  board.create();

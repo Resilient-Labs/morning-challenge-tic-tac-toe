@@ -32,7 +32,7 @@ body{
   align-items: center;
 }
 
-.circle{
+.white{
   border: 15px solid white;
   border-radius: 50%;
   height: 80px;
@@ -41,8 +41,8 @@ body{
   box-sizing: border-box;
 }
 
-.cross{
-  border: 15px solid hotpink;
+.pink{
+  border: 15px solid rgb(190, 0, 95);
   border-radius: 50%;
   height: 80px;
   width: 80px;
