@@ -1,22 +1,12 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe Game
+A two player Tic-Tac-Toe game. Users are able to click to place their X or O and if they win an alert pops up.
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+Link to project: https://menahassan-tic-tac-toe.netlify.app/
 
-### How to submit your code for review:
+# How It's Made
+Tech Used: HTML, CSS, and JavaScript
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# Lessons Learned
+This project was a chance to apply some knowledge on a programming paradigm called object-oriented programming (OOP). I learned that, in JavaScript, most things are objects and classes are like templates for objects. Classes define what methods (functions) and properties (variables) an object has. A helpful analogy I learned was that classes are like recipes for a cake. If you make a cake with that recipe, the cake is an object and an instance of the recipe. 
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+<img src="tic-tac-toe-project-screenshot.JPG">
