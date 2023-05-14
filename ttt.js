@@ -9,7 +9,6 @@
 //1 board object - the #gameBoard
 //9 squares (#cells) - object properties
 //a reset button, which allows 2 players to start the game over (should be clearing the board)
-//append innerText (run function when square is clicked depending on player turn)
 
 //_____________________________________________________________________________________________
 
