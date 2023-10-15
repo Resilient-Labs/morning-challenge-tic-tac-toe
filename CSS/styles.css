@@ -1,0 +1,15 @@
+html {
+    font-size: 62.5%;
+}
+
+.boardContainer{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding:1rem;
+}
+
+.square {
+    border: 1px solid black;
+    height: 10rem;
+    width: 10rem;
+}
