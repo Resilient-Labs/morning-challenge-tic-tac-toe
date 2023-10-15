@@ -208,13 +208,13 @@ class Game {
     //Designate x and o to a player
     this.player_1 = new Player(
       "🦖",
-      "Hold on to your diapies, babies, I'm the new REPTAR",
+      "Hold on to your diapies, babies, I'm the WINNER",
       "https://i.gifer.com/embedded/download/1t0.gif"
     );
 
     this.player_2 = new Player(
       "🍼",
-      "Hold on to your diapies, babies, REPTAR is mine",
+      "Hold on to your diapies, babies, I'm the WINNER",
       "img/chuckie-win.gif"
     );
     //Designate which player starts and whos turn it is
