@@ -96,7 +96,7 @@ class Map {
 
   /* This method to be able to update the cell at the currrent index where current player places there symbol which could be X or O 
    * if  there already is a symbol there then it does nothing.
-   * @param index string:  is the id of the html element that the user is trying to update for example: "1"
+   * @param target object:  is the DOM element user selected to update
    *  corresponding to cell 2 or "0" corresponding to cell 1
    * @param  symbol string: the symbol of the current user (each player has either an X or an O)
    * @return true or false  Boolean 
@@ -122,7 +122,13 @@ class Map {
     cellItems.forEach((cellItem) => {
       cellItem.innerText = ""
     });
-    console.log()
+    
+    document.querySelector("#player-text").innerText = "";  
+    if (document.querySelector("#visual-reptar")){
+      document.querySelector("#visual-reptar").remove()
+    }
+
+    // document.querySelector("#visual-reptar").remove();
     /* check if board was cleared*/
     console.log(this.board);
   }
@@ -194,6 +200,7 @@ class Map {
  *
  * --------------------------------------------------------------------------------- */
 class Game {
+
   constructor() {
     //clear x's and os if there was a previoud game played
 
@@ -208,7 +215,7 @@ class Game {
     this.player_2 = new Player(
       "🍼",
       "Hold on to your diapies, babies, REPTAR is mine",
-      "tic-tac-toe/img/chuckie-win.gif"
+      "img/chuckie-win.gif"
     );
     //Designate which player starts and whos turn it is
     this.turn = this.player_1.designatedSymbol();
@@ -235,7 +242,7 @@ class Game {
 
   /* This method will allow current player to make their move to place their symbol
    * then update whos turn it is to let the next player go by updating the 'turn' (property)
-   * @param id string the id refers back to the element in dom of cell example is "1" or "2" or "0" etc.. (index for cells)
+   * @param target DOM element that user targeted by selecting. is needed to update and get id
    * */
   takeTurn(target) {
     //check to see if game is active
@@ -255,7 +262,19 @@ class Game {
 // if this players turn went successfully we want to confirm its there turn if they didnt win 
 // notify that they won and prevent the loser from clicking anything else
       if (this.board.checkToSeeWinner(this.turn)) {
-        document.querySelector('h3').innerText = "hey player with" + this.turn + " you won"    
+
+        let currentPlayer = this.player_1.designatedSymbol() === this.turn ? this.player_1 : this.player_2;     
+        
+        document.querySelector('h3').innerText = currentPlayer.sayTaunt();
+
+        let visual = document.createElement("img"); 
+        visual.id = "visual-reptar"
+        visual.src = currentPlayer.displayVisualTaunt(); 
+        document.querySelector("#visual-taunt").appendChild(visual);    
+
+        // document.querySelector("#visual-taunt")
+
+
         this.gameActive = false;
         
       }
