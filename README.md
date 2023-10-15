@@ -2,8 +2,7 @@
 
 I created a cute Panda Tic Tac Toe game that allows two player to play against each other and notifies the players who won or if they tied. 
 
-Link to project: [](pandicpandacpandoe.netlify.app)
-
+Link to project: [Pandic Pandac Pandoe](pandicpandacpandoe.netlify.app)
 
 ![Pandic Pandac Pandoe Gif](<assets/img/pandic pandac pandoe.gif>)
 
