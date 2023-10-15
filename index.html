@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="video game">
+    <meta name="keywords" content="fifa">
+
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>TIC TAC TOE</h1>
+
+    <!-- created a board to store all elements within (also added an id to access for js and class for css) -->
+    <div class="board" id="board">
+        <!-- created 9 different cells for each place in the tic tac toe board -->
+        <div class="cell" id="0"></div>
+        <div class="cell" id="1"></div>
+        <div class="cell" id="2"></div>
+        <div class="cell" id="3"></div>
+        <div class="cell" id="4"></div>
+        <div class="cell" id="5"></div>
+        <div class="cell" id="6"></div>
+        <div class="cell" id="7"></div>
+        <div class="cell" id="8"></div>
+    </div>
+
+
+    <!-- this section wll display the result and give the user an option to restart -->
+    <div class="winning-message" id="winningMessage">
+        <div class="winMes"></div>
+    </div>
+
+    <div class="restartDiv">
+        <button class="restartButton" id="restartButton">Restart</button>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
