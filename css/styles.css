@@ -1,0 +1,72 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+    font-family: Tilt Neon;
+  }
+
+  html{
+    font-size: 62.5%
+  }
+
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  body{
+    background-image: url("https://i.postimg.cc/BQ1DWcPd/Pink-Gradient-Keep-Going-Desktop-Wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 5rem;
+    color:rgb(255, 246, 232);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 130px 130px 130px ;
+    grid-template-rows: 130px 130px 130px;
+  }
+
+  #grid-item{
+    border: 1px solid rgb(255, 246, 232);
+
+
+  }
+  
+  div{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    font-size: 6rem;
+    color: rgb(255, 246, 232)
+  }
+
+  #results{
+    text-align:center;
+    font-size: 3.5rem;
+    color:rgb(255, 246, 232);
+  }
+
+  .button{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+  }
+
+  .button > button {
+    border: 3px solid rgb(255, 246, 232);
+    background-color: transparent;
+    height: 40px;
+    width: 10%;
+    color: rgb(255, 246, 232);
+  }
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
