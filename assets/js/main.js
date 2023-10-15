@@ -14,6 +14,10 @@ let currentPlayer = 'X'
 
 let winLoseTie = document.querySelector('p')
 
+//Give instructions to the players 
+
+winLoseTie.innerText = 'Player 1: Please place your mark! Player 2: Be ready to place next!'
+
 //Next I want to make the cells into an array so i can use index to target each cell.
 
 let cells = document.querySelectorAll('.cells')
@@ -27,21 +31,29 @@ cells = Array.from(cells) //Turns nodeList into an array for me to work with
 console.log(cells)
 
 
+//create new gameboard object to initalize it -DOESNT WORK OUTSIDE LOOP?
+//const ticTacToeBoard = new GameBoard()
+
+
 //Now I want to loop through each cell
 
 cells.forEach(cell => {
     //create a smurf (or event listener) for when player clicks on a cell of the board
     cell.addEventListener('click', () => {
+
         ///I want to make it so when a player chooses a cell, if the cell is already filled they can't place their mark.
         if (cell.innerText != '') {
             return
+        } else {
+            // when the player clicks on a cell, the click inserts the player's mark (X || O)
+            cell.innerText = currentPlayer
         }
 
         //create new gameboard object to initalize it 
         const ticTacToeBoard = new GameBoard()
 
         // when the player clicks on a cell, the click inserts the player's mark (X || O)
-        cell.innerText = currentPlayer
+        //cell.innerText = currentPlayer
 
         //check board for a win 
         ticTacToeBoard.checkForWin()
@@ -50,12 +62,26 @@ cells.forEach(cell => {
         ticTacToeBoard.checkforDraw()
 
 
-        //Then once the current player places their mark I want to switch players
+
+        //Then once the current player places their mark I want to switch players and when there is a winner stop the players from taking turns
         if (currentPlayer === 'X') {
-            return currentPlayer = 'O'
+            //if a player has won, reset current player to empty 
+            if (winLoseTie.innerHTML.includes('wins!')) {
+                return currentPlayer = ''
+            } else {
+                //else change player to next player's mark and notify players of who is next!
+                winLoseTie.innerHTML = 'It\'s Player O\'s Turn Next\!'
+                return currentPlayer = 'O'
+            }
         } else {
-            return currentPlayer = 'X'
+            if (winLoseTie.innerHTML.includes('wins!')) {
+                return currentPlayer = ''
+            } else {
+                winLoseTie.innerHTML = 'It\'s Player X\'s Turn Next\!'
+                return currentPlayer = 'X'
+            }
         }
+
 
     })
 })
@@ -70,7 +96,7 @@ document.querySelector('#new-game').addEventListener('click', () => {
     //reset player back to X 
     currentPlayer = 'X'
     //reset winlosetie annoucement
-    winLoseTie.innerHTML = ''
+    winLoseTie.innerHTML = 'Player 1: Please place your mark! Player 2: Be ready to place next!'
     console.log('resetting')
 })
 
@@ -80,7 +106,7 @@ document.querySelector('#new-game').addEventListener('click', () => {
 
 class GameBoard {
     //No parameters needed for this that I can think of, can you have a class without a constructor? 
-    constructor() {}
+    constructor() { }
 
     //I want to make a method to check for win, specific cells need to be have the same values for a win.
 
@@ -103,6 +129,8 @@ class GameBoard {
         } else if (cells[7].innerText === currentPlayer && cells[8].innerText === currentPlayer && cells[6].innerText === currentPlayer) {
             winLoseTie.innerHTML = `Player ${currentPlayer} wins!`
         }
+
+
         //console.log('check for win working')
     }
 
@@ -113,10 +141,12 @@ class GameBoard {
 
         //found array method .every() on MDN https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 
-       const drawCowboy = cells.every((e) => e.innerText === 'X' || e.innerText === 'O')
+        const drawCowboy = cells.every((e) => e.innerText === 'X' || e.innerText === 'O')
         if (drawCowboy) {
             winLoseTie.innerHTML = 'Oh Shoot! It\'s a tie'
         }
+
+        //console.log('check for draw working')
 
     }
 
