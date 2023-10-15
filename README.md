@@ -1,22 +1,17 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Pandic Pandac Pandoe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+I created a cute Panda Tic Tac Toe game that allows two player to play against each other and notifies the players who won or if they tied. 
 
-### How to submit your code for review:
+Link to project: 
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![Pandic Pandac Pandoe Gif](<assets/img/pandic pandac pandoe.gif>)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How It's Made:
+Tech used: HTML, CSS, JavaScript
+
+
+
+
+## Lessons Learned:
+
+I learned a couple of things while building this project, it was definitely more difficult than I thought as this was my first time using classes in JS in a practical manner. I learned that classes can have constructors that don't need to take in any parameters or create properites if they are not needed. I learned about the every() method for arrays and how to turn elements into a nodeList and then into an array. I learned a little more about how to psuedo code my code and break down the logic of a task such as tic tac toe. I gained a better understanding of loops, specifically forEach and how it can be used to loop through arrays. I also learned how to use arrow functions propery in order to reduce the lines of code I create. 
