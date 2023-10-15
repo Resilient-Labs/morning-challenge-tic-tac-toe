@@ -8,4 +8,4 @@ Let's play a game! This project consisted of a two player basic tic tac toe game
 
 <b>Tech Used:</b> HTML5, CSS3 and Javascript
 
-Lessons Learned: Creating classes using OOP challenged my thinking in terms of how I created projects using JavaScript in the past. I also learned that collaboration while doing this project was very helpful. It was exciting to see how impactful using classes with properties and methods can be when trying to create what seemed like a "simple game". I will never cease to be amazed by what incredible things I can create using JavaScript.
+<b>Lessons Learned:</b> Creating classes using OOP challenged my thinking in terms of how I created projects using JavaScript in the past. I also learned that collaboration while doing this project was very helpful. It was exciting to see how impactful using classes with properties and methods can be when trying to create what seemed like a "simple game". I will never cease to be amazed by what incredible things I can create using JavaScript.
