@@ -1,0 +1,41 @@
+/* Rest of your CSS styles */
+/* Center everything horizontally and vertically on the page */
+.centered-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* This makes the container take up the entire viewport height */
+}
+
+/* Style for the game container (contains the game board) */
+.game-container {
+	text-align: center; /* Center-align the contents of the game container */
+}
+
+/* Style for the game board */
+.game-board {
+	display: grid;
+	grid-template-columns: repeat(3, 100px); /* Three columns, each 100px wide */
+	gap: 5px; /* Gap between cells */
+}
+
+/* Style for individual cells */
+.cell {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black; /* Border around the cell */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	cursor: pointer; /* Change cursor on hover for a clickable effect */
+}
+
+/* Additional styles for other elements if needed */
+#status,
+#turn,
+#score,
+#reset {
+	margin-top: 10px; /* Add some space between these elements and the game board */
+}
