@@ -5,21 +5,11 @@ const boxArray = Array.from(gameBoard.querySelectorAll('.square'));
 let currentPlayer = 'O';
 // Create a class for the game board
 
-//does it need a constructor? added an empty one but that didnt do anyything//
 class GameBoard {
-    constructor(boxArray) {
+    constructor(boxArray) { //constructor with boxArray set into it to give access to boxArray
         this.boxArray = boxArray
     }
-    checkForDraw() {
-        //check every element in boxArray to see if there was a tie//
-        const tie = boxArray.every((e) => e.innerText === 'O' || e.innerText === 'X');
-
-        if (tie) {
-            gameStatus.innerText = 'Tie game, no winners';
-        }
-    }
-    //Need to fix conditionals most likely since player wins messages are not populating.////////////
-    checkForWin() {//use this keyword to allow access to boxArray in each instance of GameBoard; if im correct????????????///
+    checkForWin() {//conditionals showing 8 win combos on board and also else statement showing tie result. use this keyword to link boxArray in each instance of GameBoard ///
         if (this.boxArray[0].innerText === currentPlayer && this.boxArray[1].innerText === currentPlayer && this.boxArray[2].innerText === currentPlayer) {
             gameStatus.innerText = `Player ${currentPlayer} wins!`;
         }
@@ -44,7 +34,7 @@ class GameBoard {
         else if (this.boxArray[2].innerText === currentPlayer && this.boxArray[4].innerText === currentPlayer && this.boxArray[6].innerText === currentPlayer) {
             gameStatus.innerText = `Player ${currentPlayer} wins!`;
         } else {
-            const tie = boxArray.every((e) => e.innerText === 'O' || e.innerText === 'X');
+            const tie = boxArray.every((event) => event.innerText === 'O' || event.innerText === 'X');
             if (tie) {
                 gameStatus.innerText = 'Tie game, no winners';
             };
@@ -52,7 +42,6 @@ class GameBoard {
     }
 
 }
-
 
 
 boxArray.forEach(box => {
@@ -67,7 +56,6 @@ boxArray.forEach(box => {
         currentPlayer = currentPlayer === 'O' ? 'X' : 'O'; //alternates players each turn
         gameStatus.textContent = `Current Turn: ${currentPlayer}`; //shows current player.
         gameBoardCall.checkForWin(); //checking for win after turn and lets me use the function inside class of GameBoard
-        gameBoardCall.checkForDraw();//checking for tie after turn and lets me use the function inside class of GameBoard
     }
 });
 // Create an instance of the GameBoard class
@@ -78,25 +66,24 @@ gameStatus.textContent = `Current Turn: ${currentPlayer}`;//starts with 'O'
 
 
 
-
 //RESTART BUTTON NOT FUNCTIONING PROPERLY///////
 
-const reset = document.querySelector('#resetButton').addEventListener('click', restart)
+// const reset = document.querySelector('#resetButton').addEventListener('click', restart)
 
-//restarts the board but isnt working. I think im just refreshing the page when i click. maybe remove default?//
+// //restarts the board but isnt working. I think im just refreshing the page when i click. maybe remove default?//
 
-function restart() {
-    // Clear each box individually
-    boxArray.forEach(box => {
-        box.innerText = ''; //?????????// clear the whole board or clear each box individually?/////
-    });
+// function restart() {
+//     // Clear each box
+//     this.boxArray.forEach(box => {
+//         box.innerText = ''; //?????????// clear the whole board or clear each box individually?/////
+//     });
 
-    // Reset the current player to 'O'
-    currentPlayer = 'O';
+//     // Reset the current player to 'O'
+//     currentPlayer = 'O';
 
-    // Clear the winner message
-    gameStatus.innerText = 'Current Turn: O'; // You can also set it to the initial state
-}
+//     // Clear the winner message
+//     gameStatus.innerText = 'Current Turn: O'; // You can also set it to the initial state
+// }
 
 
 
