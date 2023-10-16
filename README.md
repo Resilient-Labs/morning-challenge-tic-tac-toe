@@ -20,6 +20,8 @@ It was very confusing trying to figure out how the different methods in a class 
 ### Examples:
 Take a look at similar projects!
 
+NASA Picture of the Day Selector: https://github.com/JacinthaDev/NASA
+
 Avatar The Last Airbender Slot Machine: https://github.com/JacinthaDev/Slot-Machine/tree/answer
 
 To-do List: https://github.com/JacinthaDev/Todo-list/tree/answer
