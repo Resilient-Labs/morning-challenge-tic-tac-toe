@@ -10,6 +10,23 @@ html {
 
 .square {
     border: 1px solid black;
-    height: 10rem;
-    width: 10rem;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+h1, 
+#restart,
+.square {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.square {
+    font-size: 11rem;
 }
