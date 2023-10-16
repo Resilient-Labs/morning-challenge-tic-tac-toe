@@ -24,7 +24,7 @@ main {
   text-align: center;
 }
 
-.grid {
+.board{
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-gap: 10px;
@@ -51,3 +51,26 @@ main {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.cell.x::before {
+  content: 'X';
+  color: blue;
+  font-size: 2em;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.cell.o::before {
+  content: 'O';
+  color: red;
+  font-size: 2em;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
