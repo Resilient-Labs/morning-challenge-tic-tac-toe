@@ -8,7 +8,7 @@ This project implements a basic Tic-Tac-Toe game using vanilla JavaScript. It al
 - Real-time feedback on the game status
 - Proper handling of win and draw scenarios
 
-<img src="">
+<img src="tic-tac-toe.png">
 
 ### Tech Used
 - HTML
