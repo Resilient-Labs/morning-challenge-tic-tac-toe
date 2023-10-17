@@ -17,7 +17,7 @@ This Tic-Tac-Toe is primarily a Javascript exercise. This is my first project ex
 ## Lessons Learned:
 It was very confusing trying to figure out how the different methods in a class interact and communicate with each other without getting tangled up. Getting comfortable with the _this_ keyword and how to access and call different methods all while understanding what is happening was also quite a challenge. Although I stumbled quite a bit in this project, I am excited to keep trying because I know there is so much power in OOP.
 
-### Examples:
+## Examples:
 Take a look at similar projects!
 
 NASA Picture of the Day Selector: https://github.com/JacinthaDev/NASA
