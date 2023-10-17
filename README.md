@@ -18,3 +18,4 @@ This project implements a basic Tic-Tac-Toe game using vanilla JavaScript. It al
 ### Lessons Learned
 - How to use constructors to create objects and methods.
 - Trick: Make an independent element equal "false" and use it as a conditional to prevent certain functions from running.
+- How to create CSS animations.
