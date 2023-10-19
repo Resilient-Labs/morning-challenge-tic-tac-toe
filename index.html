@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="tic-tac-toe">
+    	<meta name="keywords" content="game, 2 player game, tic-tac-toe">
+
+		<title>tic-tac-toe</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- //Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible. -->
+
+		<h1>Tic-tac-toe</h1>
+		<!-- tic tac toe is a 3x3  game -->
+		<!-- we want 9 cells that will be clickable that adds x's and o's depending on the player-->
+		<!-- we want a display to show if player 1 won or player 2 won -->
+		<section class="row1 container">
+			<div class="cell" id="1"></div>
+			<div class="cell" id="2"></div>
+			<div class="cell" id="3"></div>
+		</section>
+		<section class="row2 container">
+			<div class="cell" id="4"></div>
+			<div class="cell" id="5"></div>
+			<div class="cell" id="6"></div>
+		</section>
+		<section class="row3 container">
+			<div class="cell" id="7"></div>
+			<div class="cell" id="8"></div>
+			<div class="cell" id="9"></div>
+		</section>
+		<h2 class="displayWinner"></h2>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
