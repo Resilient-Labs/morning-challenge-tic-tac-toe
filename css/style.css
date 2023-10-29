@@ -1,0 +1,160 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+html{
+  background-image: url(../img/background.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+h1, h2{
+  font-size: 4rem;
+  color: white;
+}
+h1{
+  margin-bottom: 0px;
+}
+h2{
+  margin-top: 2px;
+}
+/* h2{
+  font-size: 6rem;
+  color: blue;
+  background-color: white;
+  opacity: 0.5;
+} */
+.main{
+  text-align: center;
+}
+#gameboard{
+  border: 1px solid black;
+  height: 400px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: white;
+  opacity: 0.5;
+}
+#row1, #row2, #row3{
+  /* border: 1px solid black; */
+  float: left;
+  width: 100%;
+  height: 33.33%;
+}
+#cells{
+  border: 1px solid black;
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  font-size: 6rem;
+  color: red;
+  padding-top: 25px;
+}
+
+
+/* MODAL*/
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(255, 255, 255);
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  background: rgb(238, 77, 77);
+}
+
+/* Close Button */
+.closeOne, .closeTwo{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+p{
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+.resetButton{
+  height: 38px;
+  font-size: 2rem;
+  color: red;
+  border-radius: 7px;
+  border-style: hidden;
+  width: 81px;
+  background: lightgray;
+  cursor: pointer;
+}
+
+/* HOW TO FLEX THIS PROJECT*/
+/* #row1, #row2, #row3{
+  display: flex;  
+  justify-content: center;
+}
+#cells{
+  height: 100px;
+  width: 50%;
+  border: 1px solid black;
+}
+#gameboard{
+  margin: 150px;
+  border: 1px solid black;
+} */
+
+* {cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Game_of_ThronesLongclawSwordCursor.png), auto !important;}
