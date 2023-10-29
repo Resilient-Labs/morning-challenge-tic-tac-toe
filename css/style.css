@@ -1,0 +1,86 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background: url("../img/zelda.jpg");
+  background-size:100%;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5em;
+}
+
+.zelda {
+  padding: 6px 6px;
+  margin: 0 auto 12px auto;
+  width: 80px;
+  height: 80px;
+}
+.box{
+  /* background:  #e7ce88; */
+  width: 105px;
+  height: 75px;
+  border: 2px solid #31281a;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+#gameContainer{
+  margin: 10% auto;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  background: hsla(43, 100%, 89%, 0.9);
+  border-radius: 20px;
+  border: 15px ridge #58482f;
+  border-radius: 8px;
+
+}
+
+#boxContainer{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 300px;
+  margin: auto;
+}
+
+
+h2, h1 {
+  color: #31281a;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+
+button {
+  text-decoration: none;
+  color: #31281a;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #e7ce88;
+  -webkit-box-shadow: 2px 2px 0px 1px #58482f; 
+  box-shadow: 2px 2px 0px 1px #58482f;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
