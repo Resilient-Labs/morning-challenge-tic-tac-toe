@@ -1,0 +1,225 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 62.5%;
+  font-family: 'Changa One', cursive;
+  font-family: 'Phudu', cursive;
+  color: yellowgreen;
+  width: 80%;
+  background: black;
+}
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 220px;
+
+}
+.grid{
+  width: 45%;
+  border: black solid .5px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 9;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 50px;
+  aspect-ratio: 1/1;
+  background: white;
+  
+}
+
+.grid div{
+  width: 33.33%;
+  border: black solid 2px;
+  background: white;
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-shrink: 3;
+  aspect-ratio: 1/1;
+}
+
+div.X{
+  background: url(img/x.png);
+  background-size: contain;
+}
+
+div.O{
+  background: url(img/o.png);
+  background-size: contain;
+}
+
+div.side{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 0px;
+  margin: 30px;
+  margin-top: 0px;
+}
+.scoreboard{
+  width: 60%;
+  margin-right: 30px;
+  font-size: 2rem;
+  color: rgb(79	79	79);
+}
+.scoreboard tr, .scoreboard td, .scoreboard tfoot{
+  font-size: 2rem;
+}
+.scoreboard th + th, .scoreboard td + td  {
+  padding-left: 20px;
+}
+.scoreboard table{
+  display: inline;
+
+}
+button{
+  margin: 30px;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  border: none;
+  background: rgba(255, 255, 255, 0.309);
+}
+button:hover{
+  background: yellowgreen
+}
+div.alerts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2{
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 1px;
+}
+.grid div.win{
+  border: outset 15px yellowgreen
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1200px){
+  main{
+   margin-left: 180px;
+  }
+  .grid{
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1200px){
+  main{
+   margin-left: 180px;
+  }
+  .grid{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  main{
+   margin-left: 150px;
+  }
+  .grid{
+    width: 75%;
+  }
+  div.side{
+    width: 35%;
+  }
+  h2{
+    width: 100%;
+    font-size: 4rem;
+  }
+  .scoreboard tr, .scoreboard td, .scoreboard tfoot{
+    font-size: 4rem;
+}
+@media screen and (max-device-width: 700px){
+  main{
+   margin-left: 150px;
+  }
+  .grid{
+    width: 75%;
+  }
+  div.side{
+    width: 35%;
+  }
+  h2{
+    width: 100%;
+    font-size: 4rem;
+  }
+  .scoreboard tr, .scoreboard td, .scoreboard tfoot{
+    font-size: 4rem;
+}
+@media screen and (max-width: 505px){
+  main{
+   margin-left: 75px;
+  }
+  .grid{
+    width: 100%;
+  }
+  div.side{
+    width: 35%;
+  }
+  h2{
+    width: 100%;
+  }
+  div.side{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .scoreboard{
+    width: 100%;
+  }
+}
+@media screen and (max-device-width: 505px){
+  main{
+   margin-left: 75px;
+  }
+  .grid{
+    width: 100%;
+  }
+  div.side{
+    width: 35%;
+  }
+  h2{
+    width: 100%;
+  }
+  div.side{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .scoreboard{
+    width: 100%;
+  }
+}

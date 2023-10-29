@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Play a game of tic tac toe">
+    	<meta name="keywords" content="tic, tac, toe">
+		<title>X's & O's</title>
+		<script src="https://kit.fontawesome.com/504ea75c01.js" crossorigin="anonymous"></script>		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Phudu:wght@400;500;600;800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<div class="grid">
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+			</div>
+			<h2 id="whoWon" class="sneaky">PLAYER X GOES FIRST</h3>
+			<div class="side">
+				<div class="alerts">
+				</div>
+				<div class="scoreboard">
+					<table>
+					  <tbody>
+						<tr>
+						  <td id="X">0</td>
+						  <td id="O">0</td>
+						</tr>
+					  </tbody>
+					  <tfoot>
+						<tr>
+						  <th>X's</th>
+						  <th>O's</th>
+						</tr>
+					  </tfoot>
+					</table>
+				</div>
+				<button id="reset"><i class="fa-solid fa-rotate-right"></i></button>
+			</div>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
