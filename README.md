@@ -1,22 +1,27 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+<img width="1428" alt="tic-taco" src="https://github.com/JacinthaDev/Tic-Tac-Toe/assets/129231721/9a31577e-d241-40bb-8c29-098c950a9c12">
 
-### How to submit your code for review:
+# Tic-Tac-Toe Game
+It's Tic-Tac-Toe!
+View my project here: https://tic-tac-toe-rc.netlify.app/
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How It's Made:
+Tech used: HTML, CSS, JavaScript
+
+This Tic-Tac-Toe is primarily a Javascript exercise. This is my first project experimenting with object oriented programming (OOP). I started by coding using procedural programming and then looking for patterns in my code to attempt to make it more object oriented. It was no easy task, but I'm glad I had the opportunity to flex my OOP muscles for the first time and give it a try.
+
+
+
+## Lessons Learned:
+It was very confusing trying to figure out how the different methods in a class interact and communicate with each other without getting tangled up. Getting comfortable with the _this_ keyword and how to access and call different methods all while understanding what is happening was also quite a challenge. Although I stumbled quite a bit in this project, I am excited to keep trying because I know there is so much power in OOP.
+
+## Examples:
+Take a look at similar projects!
+
+NASA Picture of the Day Selector: https://github.com/JacinthaDev/NASA
+
+Avatar The Last Airbender Slot Machine: https://github.com/JacinthaDev/Slot-Machine/tree/answer
+
+To-do List: https://github.com/JacinthaDev/Todo-list/tree/answer
