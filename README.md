@@ -1,4 +1,7 @@
 # Tic-Tac-Toe: Sweet or savory pancakes?
+
+Live preview: https://codedbycass.github.io/Tic-Tac-Toe/
+
 <img width="1466" alt="Screenshot 2023-10-22 at 11 19 01 PM" src="https://github.com/codedbycass/Tic-Tac-Toe/assets/122684139/0bb84f7a-a8a6-441c-81e5-7a7f44fb144a">
 
 <img width="1466" alt="Screenshot 2023-10-22 at 11 19 16 PM" src="https://github.com/codedbycass/Tic-Tac-Toe/assets/122684139/0897a1b8-a02a-4fee-84d7-1113cd9e7dc5">
