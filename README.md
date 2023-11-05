@@ -1,22 +1,13 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
-
 ### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
 
-### How to submit your code for review:
+<img src="img/tic-tac-toe-sc.png">
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+Link to project: https://alejandralondev.github.io/tic-tac-toe/ 
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+How It's Made:
+Tech used: HTML, CSS, JavaScript
+
+This project took a ton of pseudo coding as the javascript was tricky to nail down. I wanted to make sure I understood every aspect of logic on the game and every line of code. There was plenty learned along the way. One of the more challenging parts were checking if a player won. I used a for loop and checked the iterations by manipulating adding and multiplying my iterations to reach the desired 3 number pattern check. It was a lot of research!
+
+Lessons Learned:
+I learned that the more pseudo code I do, the better I can track my thought process and understand my code should I step away from it for awhie. I also learned to research, research, research and then research some more. I took in examples, documentation on for loops, videos on building similar apps, and more.

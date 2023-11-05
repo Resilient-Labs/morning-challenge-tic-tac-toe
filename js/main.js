@@ -47,10 +47,10 @@ cells.forEach(cell => {
             // // Style the x and o values
             // if (currentPlayer === 'X') {
             //     cell.textContent = 'X'
-            //     cell.classList.add('x'); // Adding class for x to style in CSS
+            //     cell.classList.add('x') // Adding class for x to style in CSS
             // } else {
-            //     cell.textContent = 'O';
-            //     cell.classList.add('o'); // Adding class for o to style in CSS
+            //     cell.textContent = 'O'
+            //     cell.classList.add('o') // Adding class for o to style in CSS
             //  }
         }
     });
