@@ -1,6 +1,6 @@
 # Alien Tic Tac Toe 🛸
 
-![Screenshot](link-to-screenshot.png) <!-- Replace with the actual link to your screenshot -->
+<img width="1279" alt="project" src="https://github.com/anaiscmateus/morning-challenge-tic-tac-toe/assets/75923327/bd201cd5-057c-41d0-8e65-2a013eebc434">
 
 ## Project Description
 
