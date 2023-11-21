@@ -1,0 +1,53 @@
+html {
+    font-size: 62.5%;
+    background: url(../IMAGES/Illustration\ by\ Meilan\ Solly\ Photos\ via\ Wikimedia\ Commons\,\ PxHere\,\ Flickr.webp);
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boardContainer{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding:1rem;
+}
+
+.square {
+    border: 1px solid black;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin: 1rem;
+    background: white;
+}
+
+h1, 
+#restart,
+.square,
+p {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.square {
+    font-size: 11rem;
+}
+
+h1 {
+    background: rgb(132, 255, 144);
+    font-size: 4rem;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+}
