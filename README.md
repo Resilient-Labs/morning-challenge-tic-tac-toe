@@ -1,22 +1,40 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Alien Tic Tac Toe 🛸
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+<img width="1279" alt="project" src="https://github.com/anaiscmateus/morning-challenge-tic-tac-toe/assets/75923327/bd201cd5-057c-41d0-8e65-2a013eebc434">
 
-### How to submit your code for review:
+## Project Description
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+Alien Tic Tac Toe is a two-player game that brings a fun twist to the classic tic-tac-toe experience. With an alien theme, users can enjoy battling each other in a game of wits. The primary objective of this project is to implement a two-player tic-tac-toe game using Object-Oriented Programming (OOP) principles. Users can play the game, make moves, and reset the board for a rematch.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How It's Made 🛠️
+
+- **Technologies Used:** HTML, CSS, Vanilla OOP JavaScript
+- **Project Organization:**
+  - Organized project into folders: assets (for images, fonts, etc.), css (for styles), js (for JavaScript files), and the root folder containing README and index.html.
+- **Styling:**
+  - Implemented a gamer-themed font called "Press Start 2P" to enhance the alien gaming experience.
+  - Utilized a keyframe shake animation for player pieces, creating a dynamic effect when users hover over them.
+
+## Optimizations 🚀
+
+- **Code Refactoring:**
+  - Refactored the code to enhance reusability.
+  - Structured the game logic into different steps, consolidating methods within the `runGame()` method for improved organization.
+
+## Lessons Learned 🧠
+
+- **Object-Oriented Programming:**
+  - Gained a deeper understanding of OOP principles through the development process.
+- **Challenges:**
+  - Overcame challenges, particularly in the process of checking for a winner.
+  - Implemented a solution using a nested array to efficiently check for winning combinations.
+
+## Getting Started 🚀
+
+To experience the alien-themed Tic Tac Toe game, follow these steps:
+
+1. Clone the repository.
+2. Open the `index.html` file in your preferred web browser.
+3. Start playing with a friend and enjoy the gaming experience!
+
+Feel free to contribute, report issues, or provide feedback to enhance the game further.
