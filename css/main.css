@@ -14,7 +14,7 @@ height: 100%;
 
 #gameContainer{
   margin: 5% auto;
-  width: 30%;
+  width: 35%;
   padding: 1.2rem;
   text-align: center;
   background: hsla(43, 100%, 45%, 0.9);
@@ -34,7 +34,10 @@ height: 100%;
 
 .cell-item{
   border: 1px solid yellowgreen;
-
+  font-size: 2rem;
+  width: 8.4rem;
+  height: 6.2rem;
+  margin: auto;
 }
 
 #visual-taunt{
@@ -48,6 +51,9 @@ height: 5rem;
 }
 
 button{
-  border: 1px solid rgb(224,70,58);
+  border: 1px solid #b3131b;
   background: rgb(224,70,58);
+  padding: 1rem 2rem;
+  border-radius: .2rem;
+  font-weight: 700;
 }
