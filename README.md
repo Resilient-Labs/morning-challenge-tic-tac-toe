@@ -1,7 +1,7 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe: Waffles Edition
 
 ### Description
-This project implements a basic Tic-Tac-Toe game using vanilla JavaScript. It allows two players to take turns placing their symbols on a 3x3 grid. The game checks for wins and draws and displays the results accordingly.
+This project implements a basic Tic-Tac-Toe game using vanilla JavaScript. It allows two players to take turns placing their symbols on a 3x3 grid. The game checks for wins and draws and displays the results accordingly. Check it out <a href="https://xsarahyu.github.io/tic-tac-toe/">here</a>!
 
 ### Features
 - Simple and intuitive user interface
