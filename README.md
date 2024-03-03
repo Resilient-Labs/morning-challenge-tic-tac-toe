@@ -1,9 +1,11 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# 📊 90's Rugrats Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+### Goal: Two player Rugrats Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program and will display winner on the screen. 
 
 ### How to play Rugurats Tic-Tac-Toe
-1) Click Play Game
-2) Select where current player wants to play their symbol
-3) Enjoy! 
+
+1) Select player: Chuckie or Tommy 
+2) Click Play Game
+3) Click in the cell box to place symbol
+4) May the best rugrat win! 
 **See who wins reptar**
