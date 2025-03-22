@@ -1,0 +1,116 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-family: 'Rock Salt';
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body {
+  text-align: center;
+  background-image: url('../img/paper.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button, input {
+  padding: 5px;
+}
+
+
+header {
+  padding: 50px 0px 0px 0px;
+}
+
+h1 {
+  font-family: 'Boldonse', Arial, Helvetica, sans-serif;
+}
+
+.player {
+  padding: 10px;
+}
+
+main {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* section.ticTacToe {
+} */
+
+section.ticTacToe > section {
+  height: 100px;
+  width: 300px;
+  display: flex;
+}
+
+div {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  height: 100px;
+  width: 33.333%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div#TL {
+  border-left: none;
+  border-top: none;
+}
+
+div#TC {
+  border-top: none;
+}
+
+div#TR {
+  border-right: none;
+  border-top: none;
+}
+
+div#BL {
+  border-left: none;
+  border-bottom: none;
+}
+
+div#BC {
+  border-bottom: none;
+}
+
+div#BR {
+  border-right: none;
+  border-bottom: none;
+}
+
+div#ML {
+  border-left: none;
+}
+
+/* div#MC {
+} */
+
+div#MR {
+  border-right: none;
+}
+
+span {
+  font-size: xx-large;
+}

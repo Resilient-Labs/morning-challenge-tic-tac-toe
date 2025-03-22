@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This is where your description goes">
+		<meta name="keywords" content="one, two, three">
+		<title>TicTacToe</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Rock+Salt&display=swap" rel="stylesheet">
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>TIC TAC TOE</h1>
+			<section class="setup">
+				<section class="player">
+					<input type="text" name="playerOneName" id="playerOneName" placeholder="Player One Name">
+					<input type="radio" id="x" name="playerOneShape" value="x">
+					<label for="x">❌</label>
+					<input type="radio" id="o" name="playerOneShape" value="o">
+					<label for="o">🟡</label>
+				</section>
+				<section class="player">
+					<input type="text" name="playerTwoName" id="playerTwoName" placeholder="Player Two Name">
+				</section>
+				<section class="player">
+					<button type="button" name="button" id="submitNames">Submit</button>
+				</section>
+			</section>
+		</header>
+
+		<section id="win">
+			<h2></h2>
+			<button id="nextGame">Reset Board</button>
+		</section>
+		<main>
+			<section class="ticTacToe" id="tic">
+				<section class="top">
+					<div id="TL"></div>
+					<div id="TC"></div>
+					<div id="TR"></div>
+				</section>
+				<section class="middle">
+					<div id="ML"></div>
+					<div id="MC"></div>
+					<div id="MR"></div>
+				</section>
+				<section class="bottom">
+					<div id="BL"></div>
+					<div id="BC"></div>
+					<div id="BR"></div>
+				</section>
+			</section>
+			<h3></h3>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
