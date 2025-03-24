@@ -1,0 +1,167 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     display: flex;
+  justify-content: center;
+  background: rgb(15, 56, 15);
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(139, 172, 15);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.background {
+
+  
+     padding: 10px;
+}         
+
+.typewriter h1 {
+     color: rgb(139, 172, 15);
+     font-family: "Press Start 2P", system-ui;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 5em;
+     overflow: hidden; /* Ensures the content is not revealed until the animation */
+     border-right: .15em solid rgb(139, 172, 15); /* The typwriter cursor */
+     white-space: nowrap; /* Keeps the content on a single line */
+     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+     letter-spacing: .15em; /* Adjust as needed */
+     animation: 
+       typing 3.5s steps(40, end),
+       blink-caret .75s step-end infinite;
+       margin-top: 100px;
+}
+   
+   /* The typing effect */
+   @keyframes typing {
+     from { width: 0 }
+     to { width: 100% }
+   }
+   
+   /* The typewriter cursor effect */
+   @keyframes blink-caret {
+     from, to { border-color: transparent }
+     50% { border-color: rgb(139, 172, 15); }
+   }
+main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     z-index: 2;
+}
+
+.app {
+   
+     border-radius: 10px;
+     margin: 100px auto 20px;
+     padding: 40px;
+     max-width: 550px;
+}
+.app h1 {
+     
+     font-size: 4em;
+     text-align: center;
+     
+}
+ul {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0;
+     padding: 0;
+
+}
+
+
+li {
+     flex: 1;
+     list-style: none;
+     border: 5px solid  rgb(139, 172, 15);;
+     width: 100px;
+     height: 100px;
+     text-align: center;
+     font-size: 6em;
+}
+.r1 {
+     border-top: none;
+}
+
+.r3 {
+     border-bottom: none;
+}
+
+.c1 {
+     border-left: none;
+}
+
+.c3 {
+     border-right: none;
+}
+
+.buttonRow {
+     display: flex;
+     justify-content: space-around;
+}
+
+.start {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top: 200px;
+     position: fixed;
+     flex-direction: column;
+     
+}
+.gameGuy{
+     display: block;
+     margin-left: 300px;
+     pointer-events: none;
+     padding-bottom: 50px;
+     
+}
+button {
+     background: none;
+     border: none;
+     color: rgb(139, 172, 15);
+     font-size: 3em;
+}
+.hidden {
+     display: none;
+}
+
+.congrats {
+     width: 100%;
+     position: fixed;
+     z-index: 1;
+     pointer-events: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

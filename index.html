@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main class="background">
+
+			<div class="typewriter">
+				<h1>Shall we play a game?</h1>
+			  </div>
+
+			<div class="app">
+				<h2>Tic-Tac-Toe</h2>
+				<div class="board">
+					<ul>
+						<li id="gOne" class="box r1 c1 d1"></li>
+						<li id="gTwo" class="box r1 c2 "></li>
+						<li id="gThree" class="box r1 c3 d2"></li>
+					</ul>
+
+					<ul>
+						<li id="gFour" class="box r2 c1"></li>
+						<li id="gFive" class="box r2 c2 d1 d2"></li>
+						<li id="gSix" class="box r2 c3"></li>
+					</ul>
+
+					<ul>
+						<li id="gSeven" class="box r3 c1 d2"></li>
+						<li id="gEight" class="box r3 c2"></li>
+						<li id="gNine" class="box r3 c3 d1"></li>
+					</ul>
+				</div>
+				<div class="buttonRow">
+					<button id="restart">restart</button> 
+					<div class="score">
+						<p>Player X score: <span id="playerX"></span><br> player O score: <span id="playerO"></span></p>
+					</div>
+				</div>
+
+			</div>
+			<div id="start" class="start">
+				<img src="dagj642-116a9d2a-7e1c-48b9-a5d4-1127c24ff650.gif" alt="" id="gameGuy" class="gameGuy">
+				<button id="play" class="play">PLAY</button>
+
+			</div>
+			
+			
+		</main>
+		<img src="fireworks_gameboy.gif" alt="" id="congratulations" class="congrats hidden" >
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
