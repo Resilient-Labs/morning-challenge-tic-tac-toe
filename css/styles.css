@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    border: none;
+    padding: none;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(1, 1, 68);
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    text-decoration: underline;
+    color: beige;
+
+}
+
+#gameBoard {
+    display: flex;
+    flex-wrap: wrap;  
+    width: 308px;  
+    height: 310px; 
+    background: blue;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    border: 2px solid black;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.square:hover {
+    background-color: lightblue;
+}
+
+#winMessage {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 5px;
+    color: beige
+}
+
+#reset {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    background-color: navy;
+}
