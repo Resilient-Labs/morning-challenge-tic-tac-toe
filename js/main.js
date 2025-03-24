@@ -61,7 +61,23 @@ What can the user see?
 // on click = is o true? display o
 // 9 event listeners
 
-/*function getXOrO(){
+// Original Work
+/*let playerOneTile = ""
+let playerTwoTile = ""
+let turnCounter = 0
+
+document.querySelector("#randomizer").addEventListener("click", getXOrO)
+document.querySelector("#boxOne").addEventListener("click", tileClick)
+document.querySelector("#boxTwo").addEventListener("click", tileClick)
+document.querySelector("#boxThree").addEventListener("click", tileClick)
+document.querySelector("#boxFour").addEventListener("click", tileClick)
+document.querySelector("#boxFive").addEventListener("click", tileClick)
+document.querySelector("#boxSix").addEventListener("click", tileClick)
+document.querySelector("#boxSeven").addEventListener("click", tileClick)
+document.querySelector("#boxEight").addEventListener("click", tileClick)
+document.querySelector("#boxNine").addEventListener("click", tileClick)
+
+function getXOrO(){
     let ranNum=Math.random()
     let playerTile = "x"
     if(ranNum<.5){
@@ -77,5 +93,5 @@ What can the user see?
     document.querySelector("#two").innerText = otherTile
     playerOneTile = playerTile 
     playerTwoTile = otherTile
-    turnCounter = playerOneTile
+}
 }*/
