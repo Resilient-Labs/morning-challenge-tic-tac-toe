@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+section{
+    clear: both;
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    height: 200px;
+    border: 1px solid black;
+
+}
+
+section div{
+    width: 33.33%;
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 150px;
+}
+
+/* The buttons */
+
+input{
+    width: 25%;
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    flex-flow: row wrap;
+}
