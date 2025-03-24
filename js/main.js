@@ -1,39 +1,70 @@
-class TicTacToeGame{
-    constructor(){
-        this.board = ["", "", "", "", "", "", "", "", ""]
-        this.player = "x"
-    }
+const tiles = document.querySelectorAll(".tile")
+let gameStatus = document.querySelector("#gameStatus")
+const resetButton = document.querySelector("#reset")
+const winPossibilities = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
+let spaces = ["", "", "", "", "", "", "", "", ""]
+let currentPlayer = "x"
+let playing = false;
 
-    playerMove(index) {
-        if(this.board[index] === ""){
-            this.board[index] = this.player
-            this.switchPlayer()
-            this.whoWon()
+startGame()
+
+function startGame(){
+    tiles.forEach(tile => tile.addEventListener("click", displayTile))
+    resetButton.addEventListener("click", resetGame)
+    playing = true
+}
+
+function displayTile(){
+    gameStatus.textContent = `It's ${currentPlayer}'s turn`
+    let index = this.getAttribute("index")
+    if (spaces[index] != "" || !playing){
+        return
+    }
+    updateTile(this, index)
+}
+
+function updateTile(tile, index){
+    spaces[index] = currentPlayer
+    tile.innerText = currentPlayer
+    checkWinner()
+    switchPlayer()
+}
+
+function switchPlayer(){
+    currentPlayer = (currentPlayer == "x") ? "o" : "x"
+    gameStatus.innerText = `It's ${currentPlayer}'s turn`
+}
+
+function checkWinner(){
+    let winnerWinner = false
+    for(let i = 0; i < winPossibilities.length; i++){
+        let possibility = winPossibilities[i]
+        let tileOne = spaces[possibility[0]]
+        let tileTwo = spaces[possibility[1]]
+        let tileThree = spaces[possibility[2]]
+        if(tileOne == "" || tileTwo == "" || tileThree == ""){
+            continue
         }
-    }
-
-    anotherMove(index) {
-        if (this.board[index] === '') {
-            this.board[index] = this.player;
-        }
-    }
-    
-    takeTurns(){
-    this.player = this.player === "x" ? "o" : "x"
-    }
-
-    whoWon(){
-        let winPossibilities = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
-    
-        for (strike of winPossibilities){ 
-            let [a, b, c] = strike
-            if (this.board[a] === this.board[b] && this.board[a] === this.board[c]) {
-            document.querySelector("h2").innerText = `Congratulations! ${this.board[x]} WINS!`
-            }
+        if(tileOne == tileTwo && tileTwo === tileThree){
+            winnerWinner = true
+            endStatus.textContent = `Congratulations! ${currentPlayer} won!`
+            console.log(endStatus.textContent)
+            playing = false
+            break
+        } else if(!spaces.includes("")){
+            endStatus.textContent = `It's a tie! Play again.`
+            playing = false
         }
     }
 }
 
+function resetGame(){
+    spaces = ["", "", "", "", "", "", "", "", ""]
+    currentPlayer = "x"
+    playing = true
+    tiles.forEach(tile => tile.innerText = "")
+    gameStatus.textContent = `It's ${currentPlayer}'s turn`
+}
 
 /* ### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
 
