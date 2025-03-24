@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:fantasy;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+main {
+    flex-direction: column;
+}
+
+main, main > div {
+    display: flex;
+    background: red;
+    width: 600px;
+    height: 600px;
+}
+
+main > div > div {
+    flex-basis: 33.3333%;
+    background: aqua;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}

@@ -1,22 +1,16 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic Tac Toe Game
+This is a one of a kind Tic-Tac-Toe game. Developed in Javascript, play it if you feel you can beat the computer
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+**Link to project:** https://github.com/jorge0510/tic-tac-toe/pull/new/answer
 
-### How to submit your code for review:
+## How It's Made:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+**Tech used:** HTML, CSS, JavaScript, Framework of choice
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+The game was developed with VanillaJS, and the challenge that I did to myself was: What would be the most straightforward way to make the game?
+
+## Optimizations
+At the moment, the game uses Math.radom to select where the computer is going to put his mark. This can be improved by looking at the innerText of the divs, then a loop can go through it and with a few conditions know where it ewould be better to place the mark.
+
+## Lessons Learned:
+Doing this game helped me to think in the terms of the DOM + VanillaJS, depending just on what is giving by the browser, while delivering accionable results
