@@ -20,3 +20,23 @@ I completed the challenge: 5
 I feel good about my code: 4
 I'm not sure if my constructors are setup cleanly...
 ```
+
+pseudocode: 
+what they can do:
+- make it so two players can click a space on the dom to place an 'x' or 'o'
+- mention if they win (alert if they win)
+  - when there are three x's or three o's in a row, the game ends
+- add a way to start a new game
+  - create a button to clear board
+
+what can the user expect:
+- player 1 is 'x' and goes first
+  - at the start of a new game:
+    - alert player 1 places x on a square
+    - alert player 2 places o on a square
+  - if there are no x's or o's in a row, alert the game is a draw
+- to win, they need three 'x's or 'o's in a row, diagonally, vertically, or horizontally
+
+what they can see:
+- 3x3x3 table as the board
+- img elements representing each x and o
