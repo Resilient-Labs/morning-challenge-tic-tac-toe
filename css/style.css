@@ -1,0 +1,36 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center ;
+    min-height: 50em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: powderblue;
+}
+
+.gameBoard{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 10em);
+    grid-template-rows: repeat(3, 10em);
+    border: .5px solid black;
+}
+
+.gameBoard button{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+}
+
+.players{
+    margin-top: 4em;
+    display: flex;
+    gap: 2em;
+}
