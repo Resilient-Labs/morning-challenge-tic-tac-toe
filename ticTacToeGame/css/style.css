@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+section{
+  border: 1px solid black;
+  height: 200px;
+  width: 100%; 
+  float: left; 
+}
+
+div{
+  border: 1px solid black;
+  height: 200px;
+  width: 33.333%; 
+  float: left; 
+  
+}
+/*
+#one {
+  background: red; 
+}
+#two {
+  background: orange; 
+}
+#three {
+  background: yellow; 
+}
+#four {
+  background: green; 
+}
+#five{
+  background: blue; 
+}
+#six {
+  background: indigo; 
+}
+ 
+  #seven {
+    background: violet; 
+  }
+  #eight {
+    background: darkmagenta; 
+  }
+  #nine {
+    background: darkgrey; 
+  }*/
+ 
