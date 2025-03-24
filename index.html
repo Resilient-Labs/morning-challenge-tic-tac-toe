@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Tic Tac Toe - Enhanced</title>
+        <!--link to external css file -->
+        <link rel="stylesheet" href="ticTak.css">
+    <head>
+        <body>
+            <header>
+            
+            <h1>TIC-TAC-TOE</h1>
+            <button id="theme-toggle">Toggle Theme</button>
+            <button id="help-btn">Help</button>
+            </header>
+            <!--Game Settings-->
+            <section id="settings">
+                <h2>Game Setting</h2>
+                <label for="mode-select"> Game Mode:</label>
+                <select id="mode-select">
+                    <option value="pvp">PvP</option>
+                    <option value="pvai">PvAI</option>
+                </select>
+                
+                <div>
+                    <label for="player1-name">Player 1 Name:</label>
+                    <input type="text" id="player1-name" placeholder="Player 1" value="Player 1">
+                  </div>
+                  <div id="player2-div">
+                    <label for="player2-name">Player 2 Name:</label>
+                    <input type="text" id="player2-name" placeholder="Player 2" value="Player 2">
+                  </div>
+                </div>
+        
+                
+                <!--only shown if Ai mode is selected-->
+                <div id="ai-settings" style="display:none">
+                    <label for="ai-difficulty">AI Difficulty:</label>
+                    <select id="ai-difficulty">
+                      <option value="easy">Easy</option>
+                      <option value="hard">Hard</option>
+                    </select>
+                  </div>
+                  <button id="start-btn">Start Game</button>
+                </section>
+              
+                <!-- Scoreboard section -->
+                <section id="scoreboard">
+                  <h2>Scoreboard</h2>
+                  <p id="score-p1">Player 1: 0</p>
+                  <p id="score-p2">Player 2: 0</p>
+                  <p id="score-draws">Draws: 0</p>
+                </section>
+              
+                <!-- Game board and message section -->
+                <section id="game">
+                  <div class="board" id="board"></div>
+                  <div id="message"></div>
+                  <!-- Timer display for per-move countdown -->
+                  <div id="timer">Time left: <span id="time-left">10</span> sec</div>
+                  <button id="restart">Restart Game</button>
+                </section>
+              
+                <!-- Help Modal for game instructions -->
+                <div id="help-modal" class="modal">
+                  <div class="modal-content">
+                    <span id="close-modal" class="close">&times;</span>
+                    <h2>How to Play</h2>
+                    <p>
+                      This is a Tic Tac Toe game!<br>
+                      Choose your game mode (PvP or vs. AI),
+                      enter player names, and select an AI difficulty if applicable.<br>
+
+                      You have 10 seconds per move—if time runs out, the turn is passed.<br>
+                      Enjoy animations, sound effects, and a responsive design!
+                    </p>
+                  </div>
+                </div>
+              
+
+
+                </div>
+
+
+
+       <!--Link to the javascript -->
+       <script src="ticTak.js"></script>
+        </body>
+    </html>            
