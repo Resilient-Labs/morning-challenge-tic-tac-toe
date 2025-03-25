@@ -1,0 +1,91 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+.board {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  aspect-ratio: 1/1;
+  height: 90%;
+  border: 3px solid black;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+  font-size: 20rem;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+.cell:hover {
+  background: rgb(240,240,240);
+}
+.filled {
+  cursor: auto;
+}
+.filled:hover {
+  background: unset;
+}
+
+.game-over {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  background: white;
+  font-size: 3.2rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.game-over.active {
+  opacity: .97;
+  pointer-events: auto;
+
+}
+
+.game-over > button {
+  width: fit-content;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.game-over > span {
+  height: 20px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
