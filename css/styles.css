@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 50%;
+    font-family: "Zen Dots", Arial, Helvetica, sans-serif;
+  }
+
+  h1{
+    text-decoration: underline;
+    color: #214363;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px lightblue, 0 0 5px darkblue;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2.5rem;
+    background-image: url(../greatWave.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  
+  .board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    aspect-ratio: 1/1;
+    height: 85%;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    border: 2px solid black;
+    font-size: 20rem;
+    cursor:crosshair;
+    transition: background-color .5s;
+    background: linear-gradient(#163659, #c8d3bf)
+  }
+  .cell:hover {
+    background: linear-gradient(lightskyblue, rgb(141, 183, 247))
+    /*background: rgb(145, 218, 243);*/
+  }
+
+  button {
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 1000;
+    background-color: beige;
+    color: #14325b;
+  }
+
+  p {
+    color: darkblue;
+    font-weight: 800;
+    background-color: beige;
+    padding: 15px;
+  }
+
+.player1 {
+    color: rgb(12, 12, 161);
+}
+
+.player2 {
+    color: lightblue;
+}
