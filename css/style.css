@@ -1,0 +1,21 @@
+
+*{
+  box-sizing: border-box;
+}
+
+div{
+  border:2px solid black;
+  height:200px;
+}
+.topThree{display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  }
+
+.middleThree{display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+}    
+.bottomThree{display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+}    
+
+
