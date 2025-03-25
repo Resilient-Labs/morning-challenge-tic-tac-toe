@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+     margin-bottom: 50px;
+}
+
+.board{
+    height: 600px;
+    width: 600px;
+    border: 1px solid black;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.boardSquare{
+    width: 33.333%;
+    border: 1px solid black;
+}
+
+button{
+    margin-top: 50px;
+    width: 100px;
+    height: 25px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+
+p{
+    font-size: 2rem;
+    padding-top: 20px;
+}
