@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    height: 40em;
+    width: 33%;
+    margin: auto;
+}
+
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.board>div {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 1em;
+}

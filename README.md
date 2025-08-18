@@ -15,8 +15,10 @@
   - Anything specific on which you want feedback!
 
 Example:
+
 ```
 I completed the challenge: 5
 I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
+The extra time helped me get through this and challenge.
+I am looking forward to the next assignment and I will be reading and doing coding challenges in the meantime.
 ```
