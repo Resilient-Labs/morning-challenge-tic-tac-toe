@@ -1,22 +1,20 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+## Description
+Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+[Try the Live project!](https://l-meryem.github.io/tic-tac-toe/)
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<a href="https://l-meryem.github.io/tic-tac-toe/" target="_blank" ><img width="600" alt="Screenshot of my tic-tac-toe app" src="https://github.com/user-attachments/assets/1b27bbee-422e-46a6-9d5a-56d2f2084931" /></a>
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+### Tech used 
+
+ - `HTML`
+ - `CSS`
+ - `JavaScript`
+
+### Lessions Learned
+- A diffent way to randomize my values
+- New CSS property pointer-events
+- Player class
+- Changing player's properties through methods

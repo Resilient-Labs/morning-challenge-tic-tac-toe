@@ -1,0 +1,142 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+:root{
+  --accent-color: rgba(255, 0, 85, 0.613);
+  --text-color: rgb(243, 247, 230);
+  --gray-color: rgba(118, 118, 118, 0.613);
+  --border-color: rgba(0, 0, 255, 0.495);
+  --win-color:rgba(6, 153, 163, 0.678);
+  --loss-color:rgba(255, 0, 128, 0.732);
+
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+ font-family: 'Trebuchet MS', sans-serif;
+ background-color: var(--text-color);
+}
+
+main{
+  width: fit-content;
+  margin: 20px auto 0 auto;
+  /* border-radius: 10px; */
+  font-size: 3rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+#game-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: fit-content;
+  gap: 10px;
+  margin: 20px auto 20px auto;
+}
+
+.grid-cell{
+  height: 120px;
+  width: 120px;
+  background-color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  box-shadow: 4px 4px var(--gray-color);
+  border-radius: 10px;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.display,
+button{
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.disable{
+  pointer-events: none;
+}
+
+.grid-cell:active,
+button:active{
+  background-color: var(--text-color);
+  color: var(--border-color)
+}
+
+table{
+  width: 100%;
+}
+table th, table td{
+  padding: 10px;
+  min-width: 100px;
+  text-align: center;
+}
+
+table thead th,
+.turn, .turn-label{
+  color:var(--border-color);
+  font-weight: bold;
+}
+
+table thead th{
+  border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr:first-child td{
+  color:var(--win-color);
+}
+table tbody tr+tr td{
+  color: var(--loss-color);
+}
+
+.display{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.turn-label{
+  border-right: 1px solid var(--border-color);
+  flex: 1;
+}
+.turn{
+  flex:1;
+}
+
+button{
+  background-color: var(--border-color);
+  color: var(--text-color);
+  width: 80%;
+  display: block;
+  font-size: 2rem;
+  margin: 20px auto 20px auto;
+}
+
