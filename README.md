@@ -1,22 +1,62 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# 🎮 Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+Interact with this simple tic-tac-toe game built with **HTML, CSS, and JavaScript**.
 
-### How to submit your code for review:
+---
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## ✨ Features
 
-Example:
+* Two-player mode (X vs O)
+* Interactive grid with click-to-play
+* Visual feedback for winners and ties
+* Audio feedback for when a player wins
+* Reset button to start a new game
+* OOP used for the player, game and board
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/angy255/tic-tac-toe.git
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
+
+### 2. Open the project
+
+Go into the project folder:
+
+```bash
+cd tic-tac-toe
 ```
+
+### 3. Run the game
+
+Open `index.html` in your favorite browser.
+That’s it — no build tools or server needed.
+
+---
+
+## 🛠️ Built With
+
+* **HTML5** – structure of the game
+* **CSS3** – styling and layout
+* **JavaScript** – game logic
+
+---
+
+## 📸 Screenshots
+
+<img width="1792" height="874" alt="this is a screenshot of the game" src="https://github.com/user-attachments/assets/5926bd63-4fc3-4595-8d66-5275493a55d3" />
+
+---
+
+<img width="1792" height="876" alt="this is a screenshot of the game being won" src="https://github.com/user-attachments/assets/6935f68f-1c24-4a3d-a4c9-2d04b1fce9b3" />
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you’d like to improve the game (AI opponent, animations, etc.), feel free to fork the repo and submit a pull request.
+
+---
