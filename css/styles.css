@@ -1,0 +1,144 @@
+* {
+    box-sizing:border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 87);
+    font-family: 'Monoton','Times New Roman', Times, serif;
+}
+
+.container {
+    height: 600px;
+    width: 600px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;    
+}
+
+.row {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.row:first-of-type {
+
+    border-bottom:1px solid black;
+}
+
+.row:last-of-type {
+
+    border-top:1px solid black;
+}
+
+.square {
+    background: radial-gradient(transparent,blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    color:aquamarine;
+}
+
+.square:hover {
+    background:radial-gradient(transparent 0%,
+                            transparent 25%,
+                            blue)   
+}
+
+.col1 {
+    border-right: 1px solid black;
+}
+
+.col2 {
+    border-right: 1px solid black;
+}
+
+button {
+    display:none;
+    background: blue;
+    color:aquamarine;
+    padding:10px;
+    border-radius: 20px;
+}
+
+button:hover {
+    transform: translateY(  2px);
+}
+
+.description {
+    width:600px;
+    height:100px;
+    background: navy;
+    color:rgb(78, 78, 255);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik Burned','Times New Roman', Times, serif;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+.title {
+    width:600px;
+    height:50px;
+    background-color: blue;
+    color:navy;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
