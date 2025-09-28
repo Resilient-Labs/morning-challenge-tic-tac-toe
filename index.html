@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="img/favicon-swe.png" type="image/x-icon">
+    <title>Gossip Girl Tic Tac Toe</title>
+  </head>
+  <body>
+    <!-- display title above container -->
+    <header>
+      <h1>
+        Xoxo, Gossip Girl's Tic Tac Toe
+      </h1>
+    </header>
+    <!-- display boxes 3x3, decided to use the logic I used in the slot machine app to 
+     build the board-->
+    <section class="container">
+      <!-- containing the board -->
+      <section>
+        <p id="one"></p>
+        <p id="four"></p>
+        <p id="seven"></p>
+      </section>
+      <section>
+        <p id="two"></p>
+        <p id="five"></p>
+        <p id="eight"></p>
+      </section>
+      <section>
+        <p id="three"></p>
+        <p id="six"></p>
+        <p id="nine"></p>
+      </section>
+    </section>
+    <!-- display reset button -->
+    <button id="reset">Reset</button>
+    <!-- wanted a reset button ID to call in the JavaScript
+     source: https://github.com/sylviesworldcss/slot-machine/blob/answer/index.html -->
+    <h3 id="winningMsg"></h3>
+
+    <!-- okie so when playing the game of tic tac toe, first: I need boxes that
+     will sit next to each other(9 total for 3x3). Second I need to show two players. Third I need the boxes to hold and display the values of 
+     X and O in a pattern that allows there to be a winner or a draw. Store the game in a 2D array(source for this idea from reddit:https://www.reddit.com/r/learnjavascript/comments/xfu9iz/tictactoe_game_in_javascript/ ) Players click on boxes they want to place their X or O in can't click on already used boxes. I need a place to show the winner in the UI and DOM.
+     I need a button to reset the game. : This pseudo code are my own logic-->
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- ### Per RC- Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible. -->

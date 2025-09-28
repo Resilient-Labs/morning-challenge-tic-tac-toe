@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  background-color: rgb(27, 25, 25);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* was having and issues figuring out the height and looked at the calculator,horoscope
+  and the @Code with Ania video to remember there's default styling in certain browsers
+  so I need to set the vh height in order for the justifyy content to work  */
+
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: goldenrod;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  font-size: 75px;
+  color: gold;
+  width: 100px;
+  height: 100px;
+}
+#reset{
+  margin: 20px;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  background-color: goldenrod;
+  color: black
+}
+#winningMsg{
+  font-size: 60px;
+}
+/* got stuck and couldn't remember how to get rid of the space 
+    between my sections using CSS. I tried margin 0 and padding 0 in the body and
+    it didn't work. Stack overflow told me to add it to the top of the page.
+    https://stackoverflow.com/questions/24234561/how-do-i-get-rid-of-whitespace-between-sections-css-html*/
+/* body{ */
+/* "grabbing the whole body of the element and getting rid of default 
+    margin and padding. Add Flex to itialize flexbox. By ititalizing flexbox I can now center everything
+    in the doc from left to right using justify content center. Add 100vh(viewport height) to take up the whole viewport of the element and 
+    align and center the boxes" source: @Code with Ania Kubow https://www.youtube.com/watch?v=dtaZl_Uxzbo   */
+
+/* margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+} */
