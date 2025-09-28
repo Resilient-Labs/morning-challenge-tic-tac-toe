@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+}
+
+/* styling concept from ChatGPT*/
+body {
+	margin: 0;
+	background: linear-gradient(-45deg, #ff00cc, #3333ff, #00ffff, #ffcc00);
+	background-size: 400% 400%;
+	animation: neonBG 15s ease infinite;
+}
+
+@keyframes neonBG {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+section {
+	text-align: center;
+	border-radius: 12px;
+	width: 420px;
+	margin: 75px auto 0;
+	background: rgba(20, 20, 20, 0.85);
+	box-shadow: 0 0 30px rgba(0, 255, 255, 0.2), 0 0 30px rgba(255, 0, 255, 0.2);
+	border: 2px solid #333;
+}
+
+.game-title {
+	padding-top: 20px;
+	font-size: 1.8em;
+	letter-spacing: 2px;
+	color: #0ff;
+	text-shadow: 0 0 6px #0ff, 0 0 12px #0ff, 0 0 24px #0ff;
+}
+
+.game-container {
+	gap: 5px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	max-width: 260px;
+	margin: 20px auto;
+	border: 2px solid #333;
+}
+
+.tile {
+	width: 80px;
+	height: 80px;
+	background: #111;
+	border: 2px solid #444;
+	cursor: pointer;
+	font-size: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	transition: all 0.25s;
+	box-shadow: 0 0 6px #444;
+}
+
+.tile:hover {
+	border-color: #666;
+	box-shadow: 0 0 8px #666;
+}
+
+.tile.x {
+	color: #0ff;
+	text-shadow: 0 0 6px #0ff, 0 0 12px #0ff, 0 0 24px #0ff, 0 0 36px #0ff;
+	border-color: #0ff;
+	box-shadow: 0 0 12px #0ff, inset 0 0 8px #0ff;
+}
+
+.tile.o {
+	color: #f0f;
+	text-shadow: 0 0 6px #f0f, 0 0 12px #f0f, 0 0 24px #f0f, 0 0 36px #f0f;
+	border-color: #f0f;
+	box-shadow: 0 0 12px #f0f, inset 0 0 8px #f0f;
+}
+
+/* from ChatGPT */
+.tile.win {
+	color: #ff0 !important;
+	text-shadow: 0 0 6px #ff0, 0 0 12px #ff0, 0 0 24px #ff0, 0 0 36px #ff0;
+	border-color: #ff0 !important;
+	box-shadow: 0 0 14px #ff0, inset 0 0 10px #ff0;
+}
+
+
+button {
+	margin-bottom: 20px;
+	height: 36px;
+	border: none;
+	border-radius: 6px;
+	padding: 0 16px;
+	font-weight: bold;
+	cursor: pointer;
+	background: #222;
+	color: #0ff;
+	border: 2px solid #0ff;
+	text-shadow: 0 0 6px #0ff;
+	box-shadow: 0 0 10px #0ff;
+	transition: 0.3s;
+}
+
+button:hover {
+	color: #f0f;
+	border-color: #f0f;
+	text-shadow: 0 0 6px #f0f;
+	box-shadow: 0 0 10px #f0f;
+}
+
+#game-status {
+	margin: 15px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 0 8px #0ff, 0 0 8px #f0f;
+}
+
+#reset-button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+/* from ChatGPT */
+.game-container.draw {
+	animation: blinkRed 0.8s infinite;
+}
+
+@keyframes blinkRed {
+	0%,
+	100% {
+		box-shadow: 0 0 20px red;
+		border-color: red;
+	}
+	50% {
+		box-shadow: 0 0 40px red, 0 0 80px red;
+		border-color: #ff6666;
+	}
+}
