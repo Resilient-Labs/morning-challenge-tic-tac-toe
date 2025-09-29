@@ -1,0 +1,233 @@
+/* psuedocode 
+avatar selection 
+- select avatars showing all avatars available for both players, active effects to highlight selection 
+- choose avatar for player one on left side 
+- choose avatar for player two on right side 
+- start button underneath game board 
+- 3x3 grid in center of screen 
+- each cell clickable to place move 
+- player one move = avatar image for player one 
+- player two move = avatar image for player two 
+- status message below grid to show current player's turn 
+- reset button below status message to restart game
+- responsiveness for tablets and mobile phones */
+
+/******************************************
+/* CSS
+/*******************************************/
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html, body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background: url('../assets/img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  color: rgb(211, 194, 194);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid rgb(146, 4, 4);
+}
+
+p {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.avatarSelection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.playerSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.avatarList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.avatarList img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.avatarList img.selected {
+  border-color: rgb(192, 10, 10);
+  box-shadow: 0 0 10px rgb(192, 10, 10);
+}
+
+.selectedAvatar {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid rgb(29, 24, 24);
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+#startMe, #resetMe {
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(29, 24, 24);
+  color: whitesmoke;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+#startMe:active,
+#resetMe:active {
+  box-shadow: 0 0 10px #e90909;
+}
+
+#resetMe {
+  display: none;
+}
+
+.gameboardHidden {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 5px;
+}
+
+.cell {
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #da6767;
+}
+
+.cell img.move {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.playerArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatarArea {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  border: 2px solid #333;
+}
+
+#playerTurn {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (max-width: 768px) {
+  .playerSelect {
+    width: 45%;
+  }
+
+  .avatarList img, .selectedAvatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .board {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+  }
+
+  .cell {
+    width: 100px;
+    height: 100px;
+  }
+
+  .avatarArea {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatarSelection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playerSelect {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .avatarList img, .selectedAvatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .board {
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+  }
+
+  .cell {
+    width: 70px;
+    height: 70px;
+  }
+
+  .avatarArea {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Citations: */ 
+/* - Referenced from Stack Overflow: https://codereview.stackexchange.com/questions/184130/tic-tac-toe-oop 
+/* - Referenced from Tutorial: https://www.youtube.com/watch?v=AnmwHjpEhtA - Tic Tac Toe Game Tutorial
+/* - Use of Google AI overview and ChatGpt Suggestions to guide with code syntax and debug. Especially with Avatar Selection logic*/ 
+/* - Avatar images from Castlevania series, credited to original artists and Konami */

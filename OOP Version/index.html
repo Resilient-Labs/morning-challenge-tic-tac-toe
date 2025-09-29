@@ -1,0 +1,80 @@
+<!-- pseudocode create a simple tic tac toe game with castlevania characters as avatars first screen 
+ - two players can select their avatars from a list of castlevania characters 
+ - players name turn into characters name when selected 
+ - once characters selected, players can start the game 
+ - start button takes players to second screen second screen 
+ - the game board will display the selected avatars and allow players to take turns 
+ - player one has cross for turn and player two has sword 
+ - winner is announced when a player gets three in a row 
+ - option to restart the game -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe - Castlevania Edition</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Tic Tac Toe - Castlevania Edition</h1>
+
+<!-- Avatar Selection -->
+<section class="avatarSelection">
+    <section class="playerSelect" id="playerOneSelect">
+        <h3>Player One</h3>
+        <section class="avatarList" id="avatarOne"></section>
+        <p>You have selected:</p>			
+        <section class="selectedAvatar" id="selectedAvatarOne"></section>
+        <p id="playerOneName">Player One</p>
+    </section>
+
+    <section class="playerSelect" id="playerTwoSelect">
+        <h3>Player Two</h3>
+        <section class="avatarList" id="avatarTwo"></section>
+        <p>You have selected:</p>
+        <section class="selectedAvatar" id="selectedAvatarTwo"></section>
+        <p id="playerTwoName">Player Two</p>
+    </section>
+</section>
+
+<button id="startMe">Start Game</button>
+
+<!-- Game Board -->
+<section class="gameboardHidden" id="gameBoard">
+    <section class="playerArea" id="playerOneArea">
+        <section class="avatarArea" id="gameAvatarOne"></section>
+        <p id="gamePlayerOneName"></p>
+    </section>
+
+    <section class="board">
+        <section class="cell" id="cell0"></section>
+        <section class="cell" id="cell1"></section>
+        <section class="cell" id="cell2"></section>
+        <section class="cell" id="cell3"></section>
+        <section class="cell" id="cell4"></section>
+        <section class="cell" id="cell5"></section>
+        <section class="cell" id="cell6"></section>
+        <section class="cell" id="cell7"></section>
+        <section class="cell" id="cell8"></section>
+    </section>
+
+    <section class="playerArea" id="playerTwoArea">
+        <section class="avatarArea" id="gameAvatarTwo"></section>
+        <p id="gamePlayerTwoName"></p>
+    </section>
+</section>
+
+<p id="playerTurn"></p>
+<button id="resetMe">Restart</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+ <!-- Citations:  -->
+ <!-- - Referenced from Stack Overflow: https://codereview.stackexchange.com/questions/184130/tic-tac-toe-oop  -->
+ <!-- - Referenced from Tutorial: https://www.youtube.com/watch?v=AnmwHjpEhtA - Tic Tac Toe Game Tutorial -->
+ <!-- - Use of Google AI overview and ChatGpt Suggestions to guide with code syntax and debug. Especially with Avatar Selection Logic -->
+ <!-- - Avatar images from Castlevania series, credited to original artists and Konami -->

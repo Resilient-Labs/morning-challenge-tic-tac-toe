@@ -1,0 +1,222 @@
+/* psuedocode 
+avatar selection 
+- select avatars showing all avatars available for both players, active effects to highlight selection 
+- choose avatar for player one on left side 
+- choose avatar for player two on right side 
+- start button underneath game board 
+- 3x3 grid in center of screen 
+- each cell clickable to place move 
+- player one move = avatar image for player one 
+- player two move = avatar image for player two 
+- status message below grid to show current player's turn 
+- reset button below status message to restart game
+- responsiveness for tablets and mobile phones */
+
+/* global styles */
+* { box-sizing: border-box; }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background: url('assets/img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  color: rgb(211, 194, 194);
+  min-height: 100vh;
+}
+
+h1 { 
+  font-size: 48px; 
+  margin: 0 0 20px 0; 
+  border-bottom: 3px solid rgb(146, 4, 4); 
+  padding-bottom: 20px; 
+}
+
+h2 { margin-bottom: 10px; }
+
+/* - select avatars showing all avatars available for both players, active effects to highlight selection  */
+#avatarSelection { 
+  display: flex; 
+  justify-content: center; 
+  gap: 40px; 
+  margin-bottom: 20px; 
+  flex-wrap: wrap; 
+}
+  .playerArea { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+    
+  .avatarGrid { 
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-bottom: 10px; 
+  }
+  .avatarGrid img { 
+    width: 150px; 
+    height: 150px; 
+    cursor: pointer; 
+    border: 2px solid transparent; 
+    border-radius: 8px; 
+    transition: 0.3s; 
+  }
+  .avatarGrid img.selected { 
+    border-color: rgb(192,10,10); 
+    box-shadow: 0 0 10px rgb(192,10,10); 
+  }
+  .selected-avatar { 
+    width: 200px; 
+    height: 200px; 
+    background-size: cover; 
+    background-position: center; 
+    border: 2px solid rgb(29,24,24); 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+  }
+
+/* start button and reset button */
+#startButton, #resetButton {
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(29,24,24);
+  color: whitesmoke;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+  #resetButton { 
+    display: none; 
+  }
+
+  #startButton:active, #resetButton:active { 
+    box-shadow: 0 0 10px #e90909; 
+  }
+
+
+.mainContainer{
+  display: flex; 
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;  
+  gap: 40px;           
+  flex-wrap: nowrap;         
+}
+
+.gameboardHidden { 
+  display: none; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+#gameBoard { 
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 5px;
+  margin: 0;
+}
+  .cell { 
+    border: 2px solid rgb(31,1,1); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer; 
+    background: rgb(112,44,44); 
+  }
+  .cell img.move {
+    max-width: 70%;
+    max-height: 70%; 
+  }
+
+/* player move */
+#playerMove {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+
+/*player info on gamebaord*/
+
+#playerDisplay {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  gap: 40px;               
+}
+  .playerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatarArea { 
+    width: 150px; 
+    height: 150px; 
+    border: 2px solid rgb(192,10,10); 
+    border-radius: 10px; 
+    background-size: cover; 
+    background-position: center; 
+    margin: 10px; 
+  }
+  #playerOneDisplay { 
+    display: flex;
+  }
+  #playerTwoDisplay {  
+    display: flex;  
+  }
+
+/* media queries large */
+@media (max-width: 1024px){
+  .avatarGrid img, .selected-avatar, .avatarArea { 
+    width: 130px; 
+    height: 130px; 
+  }
+  #gameBoard { 
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3, 130px);
+  }
+}
+
+/* media queries medium */
+@media (max-width: 768px){
+  #avatarSelection {
+    flex-direction: column;
+  }
+  .avatarGrid img, .selected-avatar, .avatarArea {
+    width: 110px;
+    height: 110px;
+  }
+  #gameBoard {
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(3, 110px);
+  }
+  #playerDisplay { 
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* media queries small*/
+@media (max-width: 480px){
+  .avatarGrid img, .selected-avatar, .avatarArea {
+    width: 80px; 
+    height: 80px; 
+  }
+  #gameBoard { 
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+  }
+}
+
+/* Citations: */ 
+/* - Referenced from Stack Overflow: https://codereview.stackexchange.com/questions/184130/tic-tac-toe-oop 
+/* - Referenced from Tutorial: https://www.youtube.com/watch?v=AnmwHjpEhtA - Tic Tac Toe Game Tutorial
+/* - Use of Google AI overview and Co-Pilot Suggestions to assist with code syntax and debug*/ 
+/* - Avatar images from Castlevania series, credited to original artists and Konami */

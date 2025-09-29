@@ -1,0 +1,89 @@
+<!-- pseudocode create a simple tic tac toe game with castlevania characters as avatars first screen 
+ - two players can select their avatars from a list of castlevania characters 
+ - players name turn into characters name when selected 
+ - once characters selected, players can start the game 
+ - start button takes players to second screen
+ - the game board will display the selected avatars and allow players to take turns 
+ - game tells you which player's turn it is
+ - player one has cross for turn and player two has sword 
+ - winner is announced when a player gets three in a row 
+ - option to restart the game -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe - Castlevania</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Tic Tac Toe - Castlevania Edition</h1>
+ <!-- - two players can select their avatars from a list of castlevania characters  -->
+  <section id="avatarSelection">
+    <div class="playerArea">
+      <h2>Player One</h2>
+      <div class="avatarGrid" id="avatarGridOne"></div>
+      <div class="selected-avatar" id="selectedAvatarOne"></div>
+      <p id="selectedAvatarOneName"></p>
+    </div>
+
+    <div class="playerArea">
+      <h2>Player Two</h2>
+      <div class="avatarGrid" id="avatarGridTwo"></div>
+      <div class="selected-avatar" id="selectedAvatarTwo"></div>
+      <p id="selectedAvatarTwoName"></p>
+    </div>
+  </section>
+
+<!-- - start button takes players to second screen -->
+    <button id="startButton">Start Game</button>
+
+<!-- - selected avatars appear in second screen -->
+  <section id="playerOneDisplay" class="gameboardHidden">
+    <div class="playerInfo" id="playerOneDisplay">
+      <div class="avatarArea" id="playerOneGameAvatar"></div>
+      <p id="playerOneName"></p>
+    </div>
+  </section>
+
+ <!-- - the game board will display the selected avatars and allow players to take turns  -->
+  <section id="gameContainer" class="gameboardHidden">
+    <div id="gameBoard">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+  <!-- - selected avatars appear in second screen -->
+  <section id="playerTwoDisplay" class="gameboardHidden">
+    <div class="playerInfo" id="playerTwoDisplay">
+      <div class="avatarArea" id="playerTwoGameAvatar"></div>
+      <p id="playerTwoName"></p>
+    </div>
+  </section>
+
+ <!-- - game tells you which player's turn it is -->
+<p id="playerMove"></p>
+
+ <!-- - option to restart the game     -->
+<button id="resetButton">Reset Game</button>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+<!-- Citations:  -->
+<!-- - Referenced from Tutorial: https://www.youtube.com/watch?v=AnmwHjpEhtA - Tic Tac Toe Game Tutorial  -->
+<!-- - Referenced from Stack Overflow: https://codereview.stackexchange.com/questions/184130/tic-tac-toe-oop  -->
+<!-- - Use of Google AI overview and Co-pilot Suggestions to assist with code syntax and debug-->
+<!-- - Avatar images from Castlevania series, credited to original artists and Konami -->
