@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.cont{
+    width: 50%;
+    margin: auto;
+}
+
+.cen{
+    display: flex;
+    justify-content: center;
+}
+
+.flex section{
+    border: 2px solid green;
+    width: 33.3333%;
+    height: 44px;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.flex{
+    display: flex;
+    flex: 1;
+}
+
+.alicen{
+    display: flex;
+    align-items: center;
+}
