@@ -1,0 +1,17 @@
+.big-container{
+display: grid;
+border: 1px solid black;
+width: 700px;
+height: 600px;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+}
+
+.square{
+    border: 1px solid black;
+}

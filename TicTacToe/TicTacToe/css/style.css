@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --organge: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    color: var(--orange);
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: blue;
+}
+
+#gamesquares {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border: 2px solid red;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: white;
+    border-color: var(--orange);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* .big-container{
+display: grid;
+border: 1px solid black;
+width: 700px;
+height: 600px;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+}
+
+.square{
+    border: 1px solid black;
+} */

@@ -1,22 +1,3 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
-
-### How to submit your code for review:
-
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
-
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+![EABDD14D-AB38-4EBC-97F3-B25BEFDA7C1F](https://github.com/user-attachments/assets/91473dd6-aed3-4d3f-b574-23eacbc4908b)
+Welcome to "The Tic Tac Toe" game! We brought a classic game for your entertainment. In Javascript, we were able to bring our 9 boxes to life by being able to track whether an X or O is being used depending on who's turn it is. We gave Javascript an array of different winning combinations, after each player's turn, it check to see if there is a 3 in a row for a winner. If there is a winner, the game annunces the winner.
