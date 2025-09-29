@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 600px;
+    background-color: antiquewhite;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p {
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    width: 33.33%;
+    height: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0%;
+}
+
+section p:nth-of-type(3),
+p:nth-of-type(6),
+p:nth-of-type(9) {
+    border-right: none;
+}
+
+section p:nth-of-type(7),
+p:nth-of-type(8),
+p:nth-of-type(9) {
+    border-bottom: none;
+}
+
+section {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    font-family: fantasy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0%;
+}
+
+h2 {
+    width: 40%;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h2,
+h3 {
+    font-family: fantasy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    width: 40%;
+    height: 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+div {
+    display: flex;
+    gap: 2em;
+
+}
+
+.root {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+div button {
+    height: 50px;
+    width: 10em;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    font-family: fantasy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 1250px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    main {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 5rem;
+    }
+
+    div button {
+        width: 5em;
+    }
+
+    .root {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    section {
+        width: 250px;
+        height: 250px;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    section {
+        width: 200px;
+        height: 200px;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    div {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    div button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 1rem;
+    }
+
+    .root {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    h2,
+    h3 {
+        width: 100%;
+        margin-bottom: 2%;
+        margin-top: 0%;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .root button {
+        width: 15%;
+    }
+
+    p {
+        margin-bottom: 0%;
+    }
+
+    section {
+        margin-top: 2%;
+    }
+
+    .game {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .game button {
+        width: 25%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}

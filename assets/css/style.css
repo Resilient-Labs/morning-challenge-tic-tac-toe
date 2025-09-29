@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 600px;
+    background-color: bisque;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#container {
+    background-color: white;
+    height: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+div #progress-bar {
+    background-color: rgb(47, 157, 252);
+    position: absolute;
+    height: 20px;
+    animation: progress 3s forwards;
+    border-radius: 10px;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 79.3%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.root {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    font-family: fantasy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+    width: 21%;
+}
+
+form label {
+    font-size: 20px;
+    margin-top: 1.5%;
+}
+
+form button {
+    margin: 20px auto;
+}
+
+form input {
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+form input::placeholder {
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+    margin-top: 2%;
+}
+
+@media (max-width: 1250px) {
+    body {
+        height: 400px;
+    }
+}
+
+@media (max-width: 430px) {
+    html {
+        font-size: 1rem;
+    }
+
+    .root {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+
+    .root button {
+        width: 15%;
+    }
+    form{
+        width: 100%;
+    }
+    form label {
+        font-size: 1rem;
+        margin-top: 1.5%;
+    }
+
+    form button {
+        margin: 20px auto;
+    }
+
+    form input {
+        height: 40px;
+        width: 250px;
+        border-radius: 10px;
+        border-style: groove;
+    }
+
+    form input::placeholder {
+        font-size: 20px;
+    }
+
+    .game {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .game button {
+        width: 25%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}

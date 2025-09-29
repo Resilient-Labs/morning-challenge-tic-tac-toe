@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div class="root">
+        <button id="Music"><i class="fa-solid fa-music"></i></button>
+        <button id="Music-1"><i class="fa-solid fa-volume-xmark"></i></button>
+    </div>
+    <main>
+        <h1>Tic-Tac-Toe</h1>
+        <h3>Player Selection:</h3>
+        <form>
+            <label for="player-1">Player 1</label>
+            <input type="text" name="name" id="player-1" placeholder="Enter Name" required>
+
+            <label for="player-2">Player 2</label>
+            <input type="text" name="name" id="player-2" placeholder="Enter Name" required>
+
+            <button type="button" id="start">Start Game</button>
+        </form>
+        <h4></h4>
+        <div id="container" class="hidden">
+            <div id="progress-bar"></div>
+            <p>Loading...</p>
+        </div>
+    </main>
+
+    <audio id="game-start" src="assets/audio/gameStart.mp3">Your browser does not support this type of audio
+        file.</audio>
+    <audio id="welcome" src="assets/audio/welcome.wav">Your browser does not support this type of audio
+        file.</audio>
+
+
+    <!-- <a href="game.html">Start Game</a> -->
+    <script type="text/javascript" src="assets/js/main.js"> </script>
+</body>
+
+</html>
