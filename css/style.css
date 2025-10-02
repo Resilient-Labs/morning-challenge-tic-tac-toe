@@ -1,0 +1,46 @@
+*{
+ box-sizing: border-box;
+ background-color: azure;   
+
+}
+
+
+h1{
+    font-size: 10em;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 5em;
+    color: red;
+}
+
+.boxes{
+position: relative;
+padding-top: 5%;
+/* gap: .1%; */
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+
+}
+
+.boxes div{
+    border: 1px solid black;
+    background-color: #f1f7ff;
+    padding-top: 2%;
+    font-size: 12em;
+    text-align: center;
+    height: 200px;
+    text-align: center;
+    line-height: 120px;
+    border: 5px saddlebrown ridge;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
