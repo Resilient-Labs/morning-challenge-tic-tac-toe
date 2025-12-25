@@ -1,0 +1,162 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(97, 97, 97);
+  margin: 3% 10% 30% 10%;
+}
+main{
+  border: thick solid black;
+  display: grid;
+  /* grid-template-columns: repeat(3,33.333%);
+  grid-template-rows: repeat(3, 33.333%); */
+  grid-template-columns: 33.333% 33.333%;
+  grid-template-rows: 33.333% 33.333%;
+  grid-template-areas:
+  'slot1 slot2 slot3'
+  'slot4 slot5 slot6'
+  'slot7 slot8 slot9'
+  ;
+}
+.slotCont1{
+  grid-area: slot1;
+  border: solid 1px black;
+  width: 100%;
+  height: 100%;
+}
+.slotCont2{
+  grid-area: slot2;
+  border: solid 1px black;
+  width: 100%;
+  height: 100%;
+}
+.slotCont3{
+  grid-area: slot3;
+  border: solid 1px black;
+  width: 100%;
+  height: 100%;
+}
+.slotCont4{
+  grid-area: slot4;
+  border: solid 1px black;
+  width: 100%;
+  height: 100%;
+}
+.slotCont5{
+  grid-area: slot5;
+  border: solid 1px black;
+  width: 100%;
+  height: 100%;
+}
+.slotCont6{
+  grid-area: slot6;
+  border: solid 1px black;
+  width: 100%;
+  height: 100%;
+}
+.slotCont7{
+  grid-area: slot7;
+  border: solid 1px black;
+  width: 100%;
+  height: 100%;
+}
+.slotCont8{
+  grid-area: slot8;
+  border: solid 1px black;
+  width: 100%;
+  height: 100%;
+}
+.slotCont9{
+  grid-area: slot9;
+  border: solid 1px black;
+  width: 100%;
+  height: 100%;
+}
+.cell{
+  /* width: 100%;
+  height: 100%; */
+}
+div div{
+  /* Click Me */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+article{
+  border: solid thick black;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  'sonic shadow'
+  ;
+}
+.Player1Div{
+  grid-area: sonic;
+  border-right: solid thick black;
+}
+.Player2Div{
+  grid-area: shadow;
+  display:contents
+}
+/* .imageDiv{
+  
+} */
+.sonicPic,.shadowPic{
+  height: 50%;
+  width: 50%;
+  object-fit: fill;
+}
+.buttonDiv1{
+  display:flex;
+  justify-content: center;
+}
+.startButton{
+  margin-top: 10px;
+  background-color: yellowgreen;
+  color: whitesmoke;
+  border: 0;
+  border-radius: 10px;
+}
+.startButton:hover{
+  background-color: yellow;
+  color: black; 
+}
+.startButton:active {
+  background-color: greenyellow;
+  color: whitesmoke;
+}
+.buttonDiv2{
+  display:flex;
+  justify-content: center;
+}
+.resetButton {
+  margin-top: 10px;
+  background-color: yellowgreen;
+  color: whitesmoke;
+  border: 0;
+  border-radius: 10px;
+}
+.resetButton:hover{
+  background-color: yellow;
+  color: black; 
+}
+.resetButton:active {
+  background-color: greenyellow;
+  color: whitesmoke;
+}
+.gridButton{
+  visibility: visible;
+}
+.gridOutputs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
