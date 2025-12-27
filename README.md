@@ -1,22 +1,22 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# My Tic Tac Toe Project
+This project is a game of Tic Tac Toe. Get 3 in a row either in a column, row, or diagnolly and you win!
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+## How It's Made:
 
-### How to submit your code for review:
+**Tech used:** HTML, CSS, and JavaScript
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+I used HTML for the ui, CSS for styling, and Javascript for the logic of this project. 
+<!-- 
+## Optimizations
+*(optional)*
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews! -->
+
+## Lessons Learned:
+
+I learned how to set win conditions using a matrix (multi dimensional array) in rows, columns, and diagnolly. It was challenging to understand how it worked until I figured out that it worked through the indexes! I also learned how to switch players through if conditions, and learned how to set a cell(spot) to a certain players index and not have that cell be used again if the game is won, or the if a player picked that cell(spot) already. 
+
+## Example:
+Take a look at my project via image!
+
+![tictactoe image](tictactoe.png)
