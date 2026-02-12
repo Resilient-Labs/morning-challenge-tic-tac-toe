@@ -1,22 +1,21 @@
 # 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-### How to submit your code for review:
+A feature-rich implementation of the classic Tic-Tac-Toe game, built from scratch with a modern, minimalist aesthetic using vanilla JavaScript. This project demonstrates core frontend skills such as dynamic DOM manipulation and client-side state management. 
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+**🎮 Live Demo:** Found in About section.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+---
+
+## ✨ Features
+
+* **Responsive Design:** A clean, mobile-first design that looks great on any device, from phones to desktops.
+* **Restart Button:** Includes a restart button to play the game again without having to refresh the page.ce.
+
+## 🛠️ Tech Stack
+
+* **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+)
+* **Core Concepts:** DOM Manipulation, Advanced Event Handling (Event Delegation), and Client-Side State Management.
+* **Deployment:** Git Pages

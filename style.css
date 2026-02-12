@@ -1,0 +1,46 @@
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    box-shadow: 0 0 0 2px; /*to prevent double borders*/
+    line-height: 75px;
+    font-size: 50px;
+}
+h1{
+    font-family: 'OI', sans-serif;
+    font-weight: 100;
+    color: goldenrod;
+}
+
+body{
+    text-align: center;
+}
+#gameContainer{
+    background-image: url(img/grass.png);
+    height: 700px;
+}
+button{
+    border-radius: 25px;
+}
+
+#displayText{
+    color: white;
+    font-size: 30px;
+    background:green;
+    margin-right: 500px;
+    margin-left: 500px;
+}
+.hidden{
+    display: none;
+}
+#cookie{
+    height: 200px;
+    margin-top: 20px;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 75px);
+    grid-template-rows: repeat(3, 75px);
+    gap: 0px 0px;
+    justify-content: center;
+}
