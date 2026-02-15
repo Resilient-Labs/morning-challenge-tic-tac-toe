@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: center;
+    background-color: lightblue
+}
+h1{
+    margin-left: 10px;
+}
+h2{
+    color: violet;
+    margin-top: -100px;
+}
+.grid{
+    display: grid;
+    margin-left: auto;
+    width: 500px;
+    height: 500px;
+    margin-right: auto;
+    padding-left: 200px;
+    grid-template-columns: repeat(3, 100px);/*referenced from https://medium.com/@canankorkut1/how-to-create-a-tic-tac-toe-with-html-css-and-javascript-10a25fddd356: used these two to complement my thought process and pseudo-code*/
+    grid-template-rows: repeat(3, 100px);
+    
+}
+
+.face{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    background-color: rgb(237, 232, 232);
+}
+
+.face:hover{
+    background-color: lightblue;
+}
+#reset:hover{
+    background-color: lightpink;
+}
+

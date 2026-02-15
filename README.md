@@ -1,22 +1,19 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+The tic-tac-toe game is a game for two players X and O who take turn filling in the empty squares of the 3x3 grid with the player X starting the game. A player wins the game when he fills in the whole row, column or diagonal with X or O. Otherwise, there is a tie meaning that nobody wins. The game restarts when a player hits the reset button and Player X always goes first.
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+Find the live demo at https://ishelvirakeira.github.io/morning-challenge-tic-tac-toe/
 
-### How to submit your code for review:
+<img width="656" height="414" alt="tic tac toe" src="https://github.com/user-attachments/assets/987cd1de-ef50-44fe-97ea-f4f05eb3103b" />
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+Tools used: HTML, CSS, JavaScript
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+Lesson learned:
+
+- how to use classes, constructors in the context of a game
+- gained more experience with how to display messages in the DOM
+- understood how to check the win and tie conditions
+- how to activate and deactivate event listeners in order to control the clicks on the grid
+
+Notes:
+- I completed the challenge: 4
+- I feel good about my code: 4
+- Open to feedback that can help improve my code
