@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<meta charset="utf-8">
+  		<meta name="description" content="Your description goes here">
+  		<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Tic-Tack_Toe</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1> Tic-tac-toe</h1>
+		<!-- I need a rest button, i need 9 boxes 3 by 3, i need a score baord, extra things maybe after the basic stuff add a mode 2 playrs or 1, 1 player uses API key if i can find a free one -->
+		<section id ="scores">
+			<p>Player X Wins: <span id="playerXScore">0</span></p>
+      		<p>Player O Wins: <span id="playerOScore">0</span></p>
+      		<p>Ties: <span id="tieScore">0</span></p>
+		</section>
+		<button id="reset">Reset Game</button>
+
+		<section id="ttt"> <!-- 9 boxes with classe box and ids-->
+			<div class="cell" id ="cell0"></div>
+			<div class="cell" id ="cell1"></div>
+			<div class="cell" id ="cell2"></div>
+			<div class="cell" id ="cell3"></div>
+			<div class="cell" id ="cell4"></div>
+			<div class="cell" id ="cell5"></div>
+			<div class="cell" id ="cell6"></div>
+			<div class="cell" id ="cell7"></div>
+			<div class="cell" id ="cell8"></div>
+		</section>
+		<p id="WinMessage"><p>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
