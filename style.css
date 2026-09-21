@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  background: brown;
+}
+
+.clearfix::after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+h1{
+  margin-left: 55rem;
+}
+
+.board{
+  width:308px;
+  border:3px solid black;
+  margin-left: 55rem;
+  margin-top: 20rem;
+
+
+}
+
+.cell{
+  float:left;
+  width:100px;
+  height:100px;
+  border:1px solid black;
+  font-size:5rem;
+  text-align:center;
+  background: gold;
+  
+}
+
+button{
+   margin-left: 58rem;
+}
