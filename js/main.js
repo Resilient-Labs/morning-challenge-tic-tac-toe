@@ -48,7 +48,7 @@ class GameBoard {
 }
 
 class Game {
-    construtor(){
+    constructor(){
         this.board = new GameBoard()
         this.player = 'X'
         //since it is started, we set the default as false
@@ -60,7 +60,7 @@ class Game {
         if (this.isGameOver){
             return {placed:false} //for preventing cell can be marked even that winning result out
         }if ( !this.board.place(index, this.player)){
-            
+            return { placed: false }
         }
         const winnerDinner = this.board.winnerDinner()
         if ( winnerDinner ){
