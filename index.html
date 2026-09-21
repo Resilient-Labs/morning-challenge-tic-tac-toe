@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header>
+    <h1> Tic - Tac - Toe </h1>
+    <button class="reset" type="button"> RESTART</button>
+    </header>
+<section id="playingField">
+    <section class="rowOne block clearfix">
+        <div id = "cell"></div>
+        <div id = "cell"></div>
+        <div id = "cell"></div>
+    </section>
+
+    <section class="rowTwo block clearfix">
+        <div id = "cell"></div>
+        <div id = "cell"></div>
+        <div id = "cell"></div>
+    </section>
+    <section class="rowThree block clearfix">
+        <div id = "cell"></div>
+        <div id = "cell"></div>
+        <div id = "cell"></div>
+    </section>
+</section>
+
+<div id= "customAlertDraw" class="custom-alert-overlay">
+  <div class="custom-alert-box">
+    <h3>CATS GAME</h3>
+    
+    <img src="images\kawaii-purple-wallpaper-4fhhn.jpg" alt="Alert Icon" class="alert-image">
+    
+    <p>Its a draw!</p>
+    <button class="close-btn" onclick="this.closest('.custom-alert-overlay').style.display='none'">OK</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
+

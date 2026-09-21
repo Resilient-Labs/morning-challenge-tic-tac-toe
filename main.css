@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* clear-fix Hack */
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+body{
+    background-image: url(images/kawaii-purple-background.jpg) ;
+    /* overflow: hidden;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: left;
+    font-family: "Chango", Arial, Helvetica, sans-serif;
+    color: #b75d69;
+    height: 100vh;
+}
+
+.clear{
+    clear:both;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1{ 
+    border-top: 10em;
+    color: #372549;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7em;
+    height: 20%;
+    
+}
+.reset{
+  background-color: #b75d69;
+  color: white;
+  border: 2px solid #372549;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-self: center;
+}
+#playingField{
+    width: 70%;
+    margin: 10% auto;
+    border: 8px solid #372549;
+    border-radius: 3%;
+    padding: 5%;
+}
+
+.block{
+  border-bottom: 5px solid #372549;
+}
+
+#cell{
+    /* margin: 10%; */
+    border-bottom: 5px solid #774c60;
+    border-right: 5px solid #774c60;
+    width: 33.333%;
+    float: left;
+    font-size: 10em;
+    text-align: center;
+    height: 10rem;
+    background: #eacdc2;
+    border-radius: 10%;
+}
+
+/* Dark background overlay that covers the entire screen */
+.custom-alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* The actual alert window box */
+.custom-alert-box {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Styling for the picture inside the alert */
+.alert-image {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+/* OK button styling */
+.close-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn:hover {
+  background-color: #0056b3;
+}
