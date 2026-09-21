@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    
+}
+header{
+    text-align: center;
+}
+
+body{
+    padding: 5%;
+}
+.matrix{
+    width: 80%;
+    margin: 10% auto;
+    background-color: rgb(28, 41, 56);
+    padding: 1rem 2rem;
+}
+
+.reel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(37, 55, 77);
+}
+.celda{
+     /** vw para q se mantenga el tamano de la pantalla **/
+    width: 20vw; 
+    height: 20vw;
+    margin: 8px;
+    border: 1px solid rgb(80, 148, 224);
+    background: rgb(80, 148, 224);
+    font-size: 5em;
+    color: white;
+}
+.container-button{
+    text-align: center;
+}
+.container-names{
+    display: block;
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cadetblue;
+}
+button{
+    height: 48px;
+    padding: 0 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: rgb(37, 55, 77);
+    box-shadow: 0 4px 16px 0 rgba(99, 102, 241, 0.30);
+    color: white;
+}
