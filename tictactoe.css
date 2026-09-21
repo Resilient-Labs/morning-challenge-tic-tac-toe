@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+    
+    
+body{
+    text-align: center;
+    background-color: black;
+    color: gray;
+}
+
+h1{
+    color: rgb(255, 0, 140);
+    font-size: 6rem;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    width: 600px;
+    padding-bottom: 20px;
+}
+
+h1{
+    color: rgb(255, 0, 140);
+}
+
+.cell{
+    border: 5px solid rgb(255, 0, 140);
+    background-color: black;
+    font-size: 10rem;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.restart {
+    padding: 10px 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    background-color: rgb(255, 0, 140);
+    color: black;
+    border-radius: 2rem;
+    padding: 10px 15px;
+}
+
+
