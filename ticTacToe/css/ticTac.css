@@ -1,0 +1,59 @@
+/* Universal*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Trying to figure how to make background image animted but had issues, will be back */
+    background-color: url('/week07-material/week07-material/ticTacToe/images/cartoon.jpg')
+    /* width: 100%;
+    height: 100vh;
+    background-image: url('/week07-material/week07-material/ticTacToe/images/sageGreenForest.jpg');
+    Replace with your image */
+    /* background-size: cover; */
+    /* Ensures the image covers the entire area */
+    /* background-repeat: repeat; */
+    /* Repeats the image seamlessly */
+    /* animation: moveBackground 10s linear infinite; */
+    /* Infinite animation
+    
+}
+}
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+        /* Start position */
+    }
+
+     /* to {
+        background-position: 100% 0;
+        /* End position (horizontal movement) */
+
+
+
+/* header */
+h1 {
+    text-align: center;
+}
+
+/* Table*/
+.table {
+    margin: 50px 20%;
+
+    .flexy {
+        display: flex;
+
+        .inline {
+            width: 300px;
+            height: 150px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+    }
+}
+
+/* */
