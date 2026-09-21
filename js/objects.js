@@ -22,11 +22,10 @@ cells.forEach( celda => { celda.addEventListener('click', () => {
             {
                 return 
             }
-            playGame();
+            //playGame();
             celda.innerText=currentPlayer.symbol;
             winner();
             checkForDraw();
-           
             currentPlayer=currentPlayer==jugador1 ? jugador2 : jugador1
 })})
 
@@ -51,7 +50,14 @@ function winner(){
             alert(`${currentPlayer.name} WON!!`)
             currentPlayer = jugador1
             cells.forEach(cell=>cell.innerText='');
-            currentPlayer.score++;
+            if(currentPlayer.symbol=='X')
+            {
+                jugador1.score++;
+            }else{
+                jugador2.score++;
+            }
+            
+            
             updateScore();
             console.log(currentPlayer.score)
     }
