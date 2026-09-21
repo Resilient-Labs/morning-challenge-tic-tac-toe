@@ -1,0 +1,144 @@
+    /* ==========================================================================
+    COLOR PALETTE CONFIGURATION
+    ========================================================================== */
+    :root {
+    --bg-main: #050507;        /* Entire page background */
+    --text-main: #f8fafc;      /* Main headings text color */
+    --text-sub: #94a3b8;       /* Subtext / Player Turn status color */
+    
+    --board-grid: #1e293b;     /* The lines between squares */
+    --cell-bg: #334155;        /* Background of an empty square box */
+    --cell-hover: #475569;     /* Color of a square when your mouse hovers over it */
+    
+    --player-x: #109ad5;       /* Color of the X marker */
+    --player-o: #eb1337;       /* Color of the O marker */
+    
+    --btn-bg: #6366f1;         /* Reset Button background color*/
+    --btn-hover: #4f46e5;      /* Reset Button when hovered */
+    --btn-text: #ffffff;       /* Reset Button text color */
+    }
+
+    body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.3s ease;
+    }
+
+    h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    color: var(--text-main);
+    letter-spacing: -0.05em;
+    }
+
+
+    #status {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    height: 2rem;
+    color: var(--text-sub);
+    display: flex;
+    align-items: center;
+    }
+
+    /* ==========================================================================
+    THE 3x3 GAME BOARD GRID
+    ========================================================================== */
+    .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+    background-color: var(--board-grid);
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+    }
+
+    /* Individual square block design */
+    .cell {
+    background-color: var(--cell-bg);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.15s ease, transform 0.1s ease;
+    }
+
+    /* Hover effect on empty squares */
+    .cell:hover {
+    background-color: var(--cell-hover);
+    transform: scale(1.02);
+    }
+
+    /* Markers colors pulling from variables */
+    .cell.x-marker {
+    color: var(--player-x);
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.2);
+    }
+
+    .cell.o-marker {
+    color: var(--player-o);
+    text-shadow: 0 0 8px rgba(244, 63, 94, 0.2);
+    }
+
+
+    .controls {
+    margin-top: 2rem;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    }
+
+    button {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    }
+
+    button:active {
+    transform: scale(0.96);
+    }
+
+    /* Reset button styling */
+    #reset {
+    padding: 0.75rem 1.5rem;
+    color: var(--btn-text);
+    background-color: var(--btn-bg);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    }
+
+    #reset:hover {
+    background-color: var(--btn-hover);
+    }
+
+    /* X and O turn indicator buttons styling */
+    .turn-indicator {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+    background-color: var(--cell-bg);
+    color: var(--text-sub);
+    }
+
+    .turn-indicator:hover {
+    background-color: var(--cell-hover);
+    }
+
+
