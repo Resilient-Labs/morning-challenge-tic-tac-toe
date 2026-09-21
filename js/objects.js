@@ -48,18 +48,19 @@ function winner(){
         || (cells[2].innerText == currentPlayer.symbol && cells[4].innerText==currentPlayer.symbol && cells[6].innerText==currentPlayer.symbol)
     ){  
             alert(`${currentPlayer.name} WON!!`)
-            currentPlayer = jugador1
-            cells.forEach(cell=>cell.innerText='');
-            if(currentPlayer.symbol=='X')
+            console.log('after winnig')
+            console.log(currentPlayer)
+             if(currentPlayer.symbol=='X')
             {
                 jugador1.score++;
             }else{
                 jugador2.score++;
             }
-            
-            
+            currentPlayer = jugador1
+            console.log('reasignning')
+            console.log(currentPlayer)
+            cells.forEach(cell=>cell.innerText='');
             updateScore();
-            console.log(currentPlayer.score)
     }
 }
 function playGame(){
@@ -70,8 +71,6 @@ function playGame(){
     const namePlayer2=prompt('Player 2: What is your name')
     jugador2.name=namePlayer2;
     document.querySelector(".p2").innerText+=jugador2.name
-    console.log(jugador1)
-    console.log(jugador2)
 }
 function updateScore(){
     document.querySelector('.score1').innerText = jugador1.score;
