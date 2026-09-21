@@ -12,15 +12,17 @@ section {
 
 #tic-tac-toe-container {
   display: grid;
+  border: 5px solid green;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   height: 40rem;
   width: 40rem;
 }
 
-div {
+#tic-tac-toe-container > div {
   display: flex;
   border: 1px solid black;
   justify-content: center;
   align-items: center;
+  font-size: 7rem;
 }
