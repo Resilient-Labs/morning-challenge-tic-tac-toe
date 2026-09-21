@@ -5,5 +5,14 @@ body {
 section {
   display: flex;
   border: 5px solid black;
-  height: auto;
+  height: 50rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#tic-tac-toe-container {
+  display: grid;
+  border: 5px solid green;
+  height: 40rem;
+  width: 40rem;
 }
