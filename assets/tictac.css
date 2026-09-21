@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+/* Clear-fix Hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+}
+.clear {
+    clear: both;
+}
+body{
+    padding: 5%;
+}
+section {
+    width: 50%;
+    margin: 10% auto;
+}
+.row > div {
+    width: 33.333%;
+    float: left;
+    font-size: 15em;
+    text-align: center;
+    height: 20rem;
+    background: #b89a63;
+}
+.row, #cell {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+
+h1, p {
+    color: #000000;
+}

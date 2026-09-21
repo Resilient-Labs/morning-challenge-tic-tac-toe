@@ -1,22 +1,24 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+❌⭕ Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+A two-player Tic-Tac-Toe game built with vanilla JavaScript, using an object-oriented approach. Click a cell to place your X or O — the game announces the winner directly in the DOM.
 
-### How to submit your code for review:
+![screenshot]()
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## 🔗 Live Demo
+[Try it here]()
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+✨ Features
+Two-player gameplay (X and O take turns)
+Click-to-place moves on the board
+Win detection with the result displayed in the DOM
+Built using an object-oriented structure (classes for the game, board, and players)
+🛠️ Built With
+HTML, CSS, JavaScript
+🚀 Running Locally
+Clone the repo
+Open index.html in your browser
+📚 What I Learned
+Structuring a small app with classes (OOP) instead of loose functions and globals
+Managing game state (current player, board state, win/draw conditions) within objects
+Updating the DOM dynamically in response to user clicks
+Writing win-checking logic for rows, columns, and diagonals
