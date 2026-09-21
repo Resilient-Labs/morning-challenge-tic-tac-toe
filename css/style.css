@@ -1,0 +1,26 @@
+*{ box-sizing: border-box;
+}
+
+
+.square{
+border:1px solid;
+}
+#squares{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    width: 300px;
+    height:300px;
+    margin:auto;
+    max-width: 300px;
+    border:1px solid; 
+    border-right: hidden;
+    border-bottom: hidden;
+}
+   
+
+body{
+    background-color: green;
+}
+
+
