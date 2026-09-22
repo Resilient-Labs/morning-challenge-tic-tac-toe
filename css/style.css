@@ -1,0 +1,35 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#board {
+	width: 306px;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	grid-template-rows: repeat(3, 100px);
+	gap: 3px;
+}
+
+.cell {
+	background-color: #f0f0f0;
+	border: 2px solid #333;
+	font-size: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+/* placed cells shouldn't look clickable anymore */
+.cell.taken {
+	cursor: not-allowed;
+}
+
+#reset-btn {
+	margin-top: 10px;
+	padding: 8px 16px;
+	cursor: pointer;
+}
