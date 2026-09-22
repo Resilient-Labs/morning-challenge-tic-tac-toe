@@ -1,0 +1,47 @@
+
+*{
+    box-sizing: border-box;
+  } 
+
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .clear{
+    clear: both;
+  }
+
+
+  body{
+    padding: 5%;
+    background-color: purple;
+  }
+
+  section {
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  .row > div {
+    width: 33.333%;
+    float: left;
+    font-size: 15em;
+    text-align: center;
+    height: 20rem;
+    background: rgb(243, 81, 108)
+  }
+
+  .row, .cell {
+    border-bottom: 1px solid purple;
+    border-right: 1px solid purple;
+  }
+
+  h1, p {
+    color: purple;
+  }
+
