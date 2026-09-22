@@ -1,0 +1,31 @@
+*{ box-sizing: border-box;
+}
+
+
+.square{
+border:1px solid;
+font-size: 2rem;
+}
+#squares-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    width: 300px;
+    height:300px;
+    margin:auto;
+    max-width: 300px;
+    border:1px solid; 
+    border-right: hidden;
+    border-bottom: hidden;
+}
+   
+#startGame{
+    width:80px;
+    height:60px;
+    padding:10px;
+}
+body{
+    background-color: green;
+}
+
+
