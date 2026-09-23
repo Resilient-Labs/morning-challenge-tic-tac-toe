@@ -1,0 +1,131 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+/* .clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+} */
+
+/* .clear {
+	clear: both;
+} */
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* body {
+  margin: 0
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: bisque;
+  font-style: italic;
+  text-decoration-color: rgba(56, 55, 55, 0.3);
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+} */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f1ec;
+  color: #22211f;
+  /* text-align: center; */
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.gameContainer {
+  text-align: center;
+}
+
+h1 {
+  /* text-decoration: underline; */
+  margin-top: 10px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.heading:hover {
+  color: #fdc9e7;
+}
+
+#status {
+  margin-bottom: 25px;
+  color: #6f6258;
+  font-size: 1rem;
+}
+
+
+/* header {
+
+}
+
+footer {
+
+} */
+
+/******************************************
+/* GAME BOARD
+/*******************************************/
+
+/* tic-tac-toe board breakdown */
+
+.gameBoard{
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: center;
+  margin: 0 auto 30px;
+}
+
+/* individual squares breakdown */
+
+.box {
+  border: 1px solid #a8a29a;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  /* font-size: 3rem; */
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.box:hover {
+  background: #fdc9e7;
+}
+
+/******************************************
+/* BUTTON
+/*******************************************/
+
+#reset {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #22211f;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background: #4a4540;
+}
