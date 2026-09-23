@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="A simple two-player Tic-Tac-Toe game called Tic-Tac-Woah.">
+  	<meta name="keywords" content="game, tic-tac-toe, multiplayer">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Tic-Tac-Toe</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+    <main class="gameContainer">
+            
+        <h1 class="heading">Tic-Tac-Woah!</h1>
+
+        <p id="status">Player X's turn</p>
+
+        <section class="gameBoard">
+
+            <!-- NOTE: data-index is giving each square a number JavaScript can use. JavaScript arrays are zero-indexed, hence use of 0 through 8 as opposed to 1 through 9 (which would entail subtracting 1 before accessing the array).-->
+
+            <div class="box" data-index="0"></div>
+            <div class="box" data-index="1"></div>
+            <div class="box" data-index="2"></div>
+
+            <div class="box" data-index="3"></div>
+            <div class="box" data-index="4"></div>
+            <div class="box" data-index="5"></div>
+
+            <div class="box" data-index="6"></div>
+            <div class="box" data-index="7"></div>
+            <div class="box" data-index="8"></div>
+
+            <!-- <div class="box" data-index="0">spot 1 box</div>
+            <div class="box" data-index="1">spot 2 box</div>
+            <div class="box" data-index="2">spot 3 box</div>
+
+            <div class="box" data-index="3">spot 4 box</div>
+            <div class="box" data-index="4">spot 5 box</div>
+            <div class="box" data-index="5">spot 6 box</div>
+
+            <div class="box" data-index="6">spot 7 box</div>
+            <div class="box" data-index="7">spot 8 box</div>
+            <div class="box" data-index="8">spot 9 box</div> -->
+
+        </section>
+
+        <button id="reset" type="button">Reset Game</button>
+
+    </main>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
