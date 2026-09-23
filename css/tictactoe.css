@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(36, 88, 36);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameBoard {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: pink;
+    color: white;
+    border: 6px solid rgb(186, 107, 120);
+    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+}
+
+.gameBox {
+    border: 6px solid rgb(186, 107, 120);
+    border-radius: 1px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#restart{
+    height:75px;
+    width:180px;
+    margin-top:15px;
+    background:pink;
+    border: 6px solid rgb(186, 107, 120);
+    border-radius:6px;
+    color:white;
+    font-size: 1.8rem;
+}
+
+.winnerBox{
+    color:pink;
+    background:white;
+}
