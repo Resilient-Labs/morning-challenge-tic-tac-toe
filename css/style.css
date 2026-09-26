@@ -1,0 +1,70 @@
+
+body{
+   font-family: "Gravitas One", serif;
+   background-color: #b51f1e;
+
+}
+.players{
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.players div{
+  font-size: 20px;
+  color: white;
+ padding: 20px;
+ background-color: #e0692c;
+font-weight: bold;
+ border-radius: 10px;
+}
+#scoreX , #scoreO{
+  font-weight: bold;
+  color: rgb(19, 22, 19);
+  font-size: 40px;
+}
+
+.tic-tac-toe-container{
+  
+  display: grid;
+    grid-template-columns: repeat(3,1fr);
+  place-items: center;
+    gap: 80px;
+    height: auto;
+   
+    max-width: 600px;
+    background-color:#D5AB85;
+    border-radius: 10px;
+    margin: 30px auto;
+    
+}
+.box{
+  margin: 20px 0 20px 0 ; 
+   width: 50px; 
+   height: 50px;
+  background-color: #9A3B00;
+  font-size: 72px;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+/* border:1px solid darkblue; */
+  text-align: center;
+}
+
+button{
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+
+}
+
+.Xstyle{
+  color: #FFF8C4;
+  font-weight: bold;
+}
+.Ostyle{
+  color: lightblue;
+    font-weight: bold;
+}
