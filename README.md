@@ -1,22 +1,66 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+A two-player **Tic-Tac-Toe game** where players take turns placing X's and O's until someone wins. 🎮
 
-### How to submit your code for review:
+🔗 **[Play the Live Demo](https://tic-tac-toe-mayanja.vercel.app)**
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## 📸 Project Preview
 
-Example:
+<!-- Add your screenshot below -->
+![Project Screenshot](xo.png)
+
+## ✨ Features
+
+- Two-player gameplay
+- Click to place an X or O
+- Players take turns automatically
+- Displays the winner on the page
+- Built using object-oriented programming (OOP)
+- Dynamically update the page using JavaScript
+- Simple and user-friendly interface
+
+## 🛠️ Built With
+
+- HTML
+- CSS
+- JavaScript (OOP)
+
+## 💡 What I Learned
+
+This project gave me more practice organizing code with **object-oriented programming** while building an interactive game.
+
+I also gained more experience working with:
+
+- Classes and constructors
+- Methods
+- Event listeners
+- DOM manipulation
+- Arrays
+- Conditional logic
+- Tracking player turns
+- Checking win conditions
+- Dynamically updating content
+
+One of the biggest takeaways was learning how to **structure a game with classes** so the code is organized and easier to maintain.
+
+## 🚀 Running the Project
+
+To run this project locally:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/smayanja3/tic-tac-toe.git
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+2. Navigate into the project folder.
+
+3. Open the project in VS Code.
+
+4. Open `index.html` in your browser.
+
+5. Take turns clicking the board and see who wins! 
+
+---
+
+Thanks for checking out my project! 
