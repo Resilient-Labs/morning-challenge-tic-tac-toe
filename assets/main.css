@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/*clear-fix hack*/
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+}
+.containerTitle{
+    background-color: rgb(254 251 157);
+    width: 16rem;
+    margin: 5% auto;
+}
+h1{
+    color: rgb(92,65,64);
+    font-family: "Carter One", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body{
+    background-image: url('atlaBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clear{
+    clear: both;
+}
+.containerGame{
+    width: 40%;
+    height: auto;
+    margin: 10% auto;
+}
+
+.row > div{
+    width: 33.333%;
+    float:left;
+    font-size: 12em;
+    text-align: center;
+    height: 15rem;
+    background: white;
+    border-bottom: 2px solid rgb(92,65,64);
+    border-right: 2px solid rgb(92,65,64);
+}
+.row{
+    border-bottom: rgb(92,65,64);
+}
+#restart{
+    float:left;
+    font-family: "Carter One", Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+    font-size: 2rem;
+    background-color: rgb(254 251 157);
+    color: rgb(92,65,64);
+}
