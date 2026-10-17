@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: 111827;
+  color: white;
+}
+
+button {
+  font-family: inherit;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+
+.hero {
+  background: #edc76f;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 35px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 480px;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 30px;
+}
+
+.hero-small-text {
+  margin: 0 0 8px;
+  color: #4c7512;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.hero-content h1 {
+  margin: 0 0 10px;
+  color: #062d49;
+  font-size: 46px;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #25425a;
+  line-height: 1.6;
+}
+
+.game-container {
+  width: 100%;
+  border: 1px solid #20445d;
+  padding: 35px;
+  background: #071d30;
+  border-radius: 25px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.game-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.game-heading h2 {
+  margin: 5px 0 8px;
+  font-size: 32px;
+}
+
+.game-heading > p:last-child {
+  color: #aebdca;
+  margin-top: 8px;
+}
+
+.game-label {
+  color: #a4d929;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+  max-width: 720px;
+  margin: 0 auto 10px;
+  padding: 18px 24px;
+  background: #0d314c;
+  border: 2px solid #244e6b;
+  border-radius: 15px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.player-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.player-icon {
+  font-size: 38px;
+}
+.score-label {
+  margin: 0 0 5px;
+  font-size: 11px;
+  color: #a4d929;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.score-number {
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.match-center {
+  text-align: center;
+  color: #e8c663;
+}
+
+.match-center p {
+  margin: auto;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.match-center span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.draw-score {
+  text-align: center;
+  color: #aebdca;
+  font-size: 13px;
+  margin: 12px 0 20px;
+}
+
+#gameMessage {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  padding: 14px 20px;
+  background: #102f46;
+  border-left: 5px solid #a4d929;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.tennis-court {
+  position: relative;
+  width: min(100%, 600px);
+  aspect-ratio: 1.45 / 1;
+  margin: 0 auto;
+  padding: 20px;
+  background: #338955;
+  border: 9px solid #173527;
+  border-radius: 10px;
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.court-outline {
+  position: relative;
+  top: 9%;
+  left: 7%;
+  right: 7%;
+  bottom: 9%;
+  border: 4px solid white;
+
+  pointer-events: none;
+  z-index: 2;
+}
+
+.service-line {
+  position: relative;
+  top: 50%;
+  left: 7%;
+  right: 7%;
+  height: 4px;
+  background: white;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.center-service-line {
+  position: relative;
+  top: 9%;
+  bottom: 9%;
+  left: 50%;
+  width: 4px;
+  background: white;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.court-net {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 8px;
+  transform: translateX(-50%);
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.8) 0,
+    rgba(255, 255, 255, 0.8) 3px,
+    rgba(10, 30, 30, 0.5) 3px,
+    rgba(10, 30, 30, 0.5) 7px
+  );
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.game-board {
+  position: relative;
+  z-index: 4;
+
+  width: 100%;
+  height: 100%;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 7px;
+}
+
+.cell {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  background: rgba(12, 89, 52, 0.35);
+  color: white;
+  font-size: clamp(35px, 7vw, 60px);
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.cell:hover {
+  background: rgba(164, 217, 41, 0.28);
+  transform: scale(0.97);
+}
+
+.cell.ball {
+  background: rgba(155, 205, 38, 0.25);
+}
+
+.cell.racket {
+  background: rgba(235, 199, 99, 0.25);
+}
+
+.cell.winner {
+  background: #a4d929;
+  box-shadow: inset 0 0 0 4px #f8e87c 0 0 25px rgba(164, 217, 41, 0.8);
+
+  transform: scale(0.94);
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+#restartButton,
+#resetScoreButton {
+  padding: 13px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #eab308;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+#restartButton {
+  background: #a4d929;
+  color: #071d30;
+}
+
+#resetScoreButton {
+  background: #e8c663;
+  color: #071d30;
+}
+
+#resartButton:hover,
+#resetScoreButton:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+@media (max-width: 650px) {
+  .page-container {
+    padding: 15px 12px 40px;
+  }
+
+  .game-container {
+    padding: 25px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .scoreboard {
+    gap: 8px;
+    padding: 15px 8px;
+  }
+
+  .player-icon {
+    font-size: 28px;
+  }
+  .score-label {
+    font-size: 9px;
+  }
+
+  .score-number {
+    font-size: 28px;
+  }
+  .tennis-court {
+    padding: 13px;
+    border-width: 6px;
+  }
+  .game-buttons {
+    flex-direction: column;
+  }
+
+  #restartButton,
+  #resetScoreButton {
+    width: 100%;
+  }
+}
