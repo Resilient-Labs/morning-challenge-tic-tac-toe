@@ -4,33 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Dev Duel | Tic-Tac-Toe</title>
+    <title>Center Court | Tennis Tic-Tac-Toe</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="game-container">
-      <h1>Dev Duel</h1>
+    <main class="page-container">
+      <section class="hero">
+        <img
+          src="images/tennis banner.jpg"
+          class="hero-image"
+          alt="Tennis hero banner with trophy, racket, and tennis balls"
+        />
 
-      <p class="subtitle">Two players. One board. First to three wins.</p>
-
-      <p id="gameMessage">Player X's turn</p>
-
-      <section class="game-board" id="gameBoard">
-        <button class="cell" data-index="0"></button>
-        <button class="cell" data-index="1"></button>
-        <button class="cell" data-index="2"></button>
-
-        <button class="cell" data-index="3"></button>
-        <button class="cell" data-index="4"></button>
-        <button class="cell" data-index="5"></button>
-
-        <button class="cell" data-index="6"></button>
-        <button class="cell" data-index="7"></button>
-        <button class="cell" data-index="8"></button>
+        <div class="hero-content">
+          <p class="hero-small-text">WELCOME TO</p>
+          <h1>Center Court</h1>
+          <p>
+            Tennis meets Tic-Tac-Toe. Win the rally by getting three in a row.
+          </p>
+        </div>
       </section>
 
-      <button id="restartButton">Play Again</button>
+      <section class="game-container">
+        <div class="game-heading">
+          <p class="game-label">Match In Progress</p>
+          <h2>Center Court Showdown</h2>
+          <p>Ball vs. Racket: First to land three in a row wins.</p>
+        </div>
+
+        <section class="scoreboard">
+          <div class="player-score">
+            <span class="player-icon">🎾</span>
+
+            <div>
+              <p class="score-label">Player Ball</p>
+              <p class="score-number" id="ballScore">0</p>
+            </div>
+          </div>
+
+          <div class="match-center">
+            <p>Match</p>
+            <span>VS</span>
+          </div>
+
+          <div class="player-score">
+            <div>
+              <p class="score-label">Player Racket</p>
+              <p class="score-number" id="racketScore">0</p>
+            </div>
+            <span class="player-icon">🏸</span>
+          </div>
+        </section>
+
+        <p class="draw-score">
+          Draws:
+          <span id="drawScore">0</span>
+        </p>
+
+        <div id="gameMessage">🎾 Player Ball serves first!</div>
+
+        <section class="tennis-court">
+          <div class="court-outline"></div>
+          <div class="service-line"></div>
+          <div class="center-service-line"></div>
+          <div class="court-net"></div>
+
+          <div class="game-board" id="gameBoard">
+            <button
+              class="cell"
+              data-index="0"
+              aria-label="Coourt position 1"
+            ></button>
+            <button
+              class="cell"
+              data-index="1"
+              aria-label="Coourt position 2"
+            ></button>
+            <button
+              class="cell"
+              data-index="2"
+              aria-label="Coourt position 3"
+            ></button>
+            <button
+              class="cell"
+              data-index="3"
+              aria-label="Coourt position 4"
+            ></button>
+            <button
+              class="cell"
+              data-index="4"
+              aria-label="Coourt position 5"
+            ></button>
+            <button
+              class="cell"
+              data-index="5"
+              aria-label="Coourt position 6"
+            ></button>
+            <button
+              class="cell"
+              data-index="6"
+              aria-label="Coourt position 7"
+            ></button>
+            <button
+              class="cell"
+              data-index="7"
+              aria-label="Coourt position 8"
+            ></button>
+            <button
+              class="cell"
+              data-index="8"
+              aria-label="Coourt position 9"
+            ></button>
+          </div>
+        </section>
+
+        <div class="game-buttons">
+          <button id="restartButton">Next Match</button>
+          <button id="resetScoreButton">Reset Score</button>
+        </div>
+      </section>
     </main>
 
     <script src="main.js"></script>

@@ -1,7 +1,8 @@
 class Player {
-  constructor(name, symbol) {
+  constructor(name, symbol, cssClass) {
     this.name = name;
     this.symbol = symbol;
+    this.cssClass = cssClass;
   }
 }
 
@@ -29,21 +30,61 @@ class Board {
   }
 }
 
-class TicTacToe {
+class Scoreboard {
   constructor() {
-    this.playerOne = new Player("Player X", "X");
-    this.playerTwo = new Player("Player O", "O");
+    this.ballScore = 0;
+    this.racketScore = 0;
+    this.drawScore = 0;
+    this.ballScoreDisplay = document.querySelector("#ballScore");
+    this.racketScoreDisplay = document.querySelector("#racketScore");
+    this.drawScoreDisplay = document.querySelector("#drawScore");
+  }
+
+  addPoint(player) {
+    if (player.name === "Player Ball") {
+      this.ballScore++;
+    } else {
+      this.racketScore++;
+    }
+    this.updateDisplay();
+  }
+  addDraw() {
+    this.drawScore++;
+    this.updateDisplay();
+  }
+
+  updateDisplay() {
+    this.ballScoreDisplay.textContent = this.ballScore;
+
+    this.racketScoreDisplay.textContent = this.racketScore;
+
+    this.drawScoreDisplay.textContent = this.drawScore;
+  }
+
+  reset() {
+    this.ballScore = 0;
+    this.racketScore = 0;
+    this.drawScore = 0;
+
+    this.updateDisplay();
+  }
+}
+
+class TennisGame {
+  constructor() {
+    this.playerOne = new Player("Player Ball", "🎾", "ball");
+    this.playerTwo = new Player("Player Racket", "🏸", "racket");
 
     this.board = new Board();
-
+    this.scoreboard = new Scoreboard();
     this.currentPlayer = this.playerOne;
-
     this.gameOver = false;
 
     this.cells = document.querySelectorAll(".cell");
     this.message = document.querySelector("#gameMessage");
 
     this.restartButton = document.querySelector("#restartButton");
+    this.resetScoreButton = document.querySelector("#resetScoreButton");
 
     this.startGame();
   }
@@ -56,6 +97,11 @@ class TicTacToe {
     });
 
     this.restartButton.addEventListener("click", () => {
+      this.restartGame();
+    });
+
+    this.resetScoreButton.addEventListener("click", () => {
+      this.scoreboard.reset();
       this.restartGame();
     });
   }
@@ -74,33 +120,36 @@ class TicTacToe {
     );
 
     if (!moveWasPlaced) {
-      this.message.textContent = "That space is already taken!";
+      this.message.textContent = "That court position is already taken!";
       return;
     }
 
     clickedCell.textContent = this.currentPlayer.symbol;
 
-    clickedCell.classList.add(this.currentPlayer.symbol.toLowerCase());
+    clickedCell.classList.add(this.currentPlayer.cssClass);
 
-    if (this.checkWinner()) {
-      this.message.textContent = `Congratulations ${this.currentPlayer.name} wins!`;
+    const winningCombinations = this.checkWinner();
 
+    if (winningCombinations) {
       this.gameOver = true;
+      this.scoreboard.addPoint(this.currentPlayer);
 
+      this.highlightWinner(winningCombinations);
+
+      this.message.textContent = `🏆 ${this.currentPlayer.name} wins the match!`;
       return;
     }
 
     if (this.board.isFull()) {
-      this.message.textContent = "It's a draw! Nobody escaped victorious.";
-
       this.gameOver = true;
+      this.scoreboard.addDraw();
+      this.message.textContent = "It's a draw! The match ends in a draw.";
 
       return;
     }
 
     this.switchPlayer();
-
-    this.message.textContent = `${this.currentPlayer.name}'s turn `;
+    this.message.textContent = `${this.currentPlayer.symbol} ${this.currentPlayer.name}'s turn!`;
   }
 
   switchPlayer() {
@@ -126,10 +175,20 @@ class TicTacToe {
       [0, 4, 8],
       [2, 4, 6],
     ];
-    return winningCombinations.some((combination) => {
+
+    for (const combination of winningCombinations) {
       const [a, b, c] = combination;
 
-      return board[a] !== "" && board[a] === board[b] && board[b] === board[c];
+      if (board[a] !== "" && board[a] === board[b] && board[b] === board[c]) {
+        return combination;
+      }
+    }
+    return null;
+  }
+
+  highlightWinner(combination) {
+    combination.forEach((index) => {
+      this.cells[index].classList.add("winner");
     });
   }
 
@@ -143,12 +202,11 @@ class TicTacToe {
     this.cells.forEach((cell) => {
       cell.textContent = "";
 
-      cell.classList.remove("x");
-      cell.classList.remove("o");
+      cell.classList.remove("ball", "racket", "winner");
     });
 
-    this.message.textContent = `${this.currentPlayer.name}'s turn`;
+    this.message.textContent = "🎾 Player Ball serves first!";
   }
 }
 
-const game = new TicTacToe();
+const game = new TennisGame();
