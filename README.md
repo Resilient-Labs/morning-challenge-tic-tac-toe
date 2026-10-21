@@ -2,6 +2,8 @@
 
 A two-player Tic-Tac-Toe game built as a Resilient Coders morning challenge, with the goal of making it as object-oriented as possible. Players take turns clicking the board to place an X or an O, and the game announces whose turn it is, who won, or that it's a tie. A Restart button clears the board for a new round.
 
+[![Screenshot-2026-10-20-at-8-48-25-PM.png](https://i.postimg.cc/pdLzZBy0/Screenshot-2026-10-20-at-8-48-25-PM.png)](https://postimg.cc/87x7kMRW)
+
 ## How It's Made:
 
 **Tech used:**
