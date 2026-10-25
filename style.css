@@ -1,0 +1,99 @@
+
+.row{
+    display: flex; 
+}
+
+
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: #1f2a44;
+    color: #f5f1e8;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+ 
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+ 
+.game_boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ 
+.row {
+    display: flex;
+    gap: 8px;
+}
+ 
+.boxes {
+    width: 95px;
+    height: 95px;
+    background: #313f5c;
+    border: 4px solid #e2a834;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 55px;
+    font-weight: 700;
+    color: #ede8df;
+
+    transition: all 0.2s ease;
+}
+ 
+.message{
+    margin: 0;
+    height: 2rem; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  #f2b134;
+
+}
+
+.boxes:hover {
+    background: #3a4c7a;
+}
+ 
+button {
+    padding: 10px 28px;
+    background: #f2b134;
+    color: #1f2a44;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background: #ffc94d;
+}
+ 
+
+
+ 
+@media (max-width: 400px) {
+   .boxes {
+    width: 75px;
+    height: 75px;
+    font-size: 40px;
+}
+}
+

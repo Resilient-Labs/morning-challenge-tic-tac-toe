@@ -1,22 +1,45 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+A two-player tic-tac-toe game built with HTML, CSS, and vanilla JavaScript. No libraries or frameworks.
 
-### How to submit your code for review:
+<img width="503" height="519" alt="Screenshot 2026-10-15 at 9 51 11 AM" src="https://github.com/user-attachments/assets/49d00d3b-e08c-4fb7-a022-7df32f98434c" />
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
+## How to play
+
+1. Open `index.html` in your browser.
+2. Players take turns clicking a box. X goes first.
+3. Get three in a row (across, down, or diagonal) to win.
+4. If the board fills up with no winner, the game ends in a draw.
+5. Click **Reset** to start a new game.
+
+## Features
+
+- Two players taking turns on the same screen
+- Win detection for all 8 winning lines
+- Draw detection when the board is full
+- Board locks after a win so no more moves can be made
+- Result message shown on the page (no pop-up alerts)
+- Reset button that clears the board and the message
+- Layout adjusts for small screens
+
+## Project structure
+
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
+index.html   page structure: the board, message, and reset button
+style.css    layout and styling
+main.js      game logic
 ```
+
+## How it works
+
+- Each box is a `div` with the class `boxes`. Clicking one puts the current player's mark in it.
+- `winning()` checks the eight winning lines and returns `true` if the current player has one.
+- `tie()` runs only when nobody won, and checks whether every box is filled.
+- A `gameOver` variable stops further clicks after a win. `resetGame()` turns it back off.
+
+## Possible next steps
+
+- Show whose turn it is
+- Highlight the winning boxes
+- Add a computer opponent
