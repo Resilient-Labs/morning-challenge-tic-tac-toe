@@ -4,6 +4,10 @@ Tic-Tac-Toe is a two-player game built with HTML, CSS, and JavaScript. Players t
 
 I built this project to strengthen my understanding of JavaScript game logic, objects, DOM manipulation, and managing changing information throughout an application.
 
+## Project Link
+
+[Play Tic Tac Toe](https://kelvinimalenowa.github.io/tic-tac-toe/)
+
 ## 📸 Project Preview
 
 ![Tic-Tac-Toe project preview](assets/mockup.png)
