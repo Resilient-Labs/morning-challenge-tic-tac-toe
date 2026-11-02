@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+}
+
+header,
+main,
+footer {
+    padding: 2% 1%;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: plum;
+
+    h1 {
+        text-wrap: nowrap;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-grow: 1;
+
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: end;
+            gap: 0.5rem;
+            list-style: none;
+
+            li {
+                padding: 1% 2%;
+                border: 2px solid rgb(40, 20, 50);
+                border-radius: 16px;
+
+                a {
+                    color: rgb(40, 20, 50);
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+}
+
+main {
+    background: chartreuse;
+}
+
+.gameCurrent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: tomato;
+
+    div {
+        display: flex;
+        gap: 1rem;
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+}
+
+.currentTurn {
+    font-weight: bold;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    height: 24rem;
+    width: 24rem;
+    text-align: center;
+    margin: auto;
+}
+
+.gameSquare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: steelblue;
+}
+
+.gameRow {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.gameColumn {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.gameSquare:hover {
+    cursor: pointer;
+    background: lightblue;
+}
+
+.gameScore {
+    padding: 1%;
+
+    h2 {
+        text-align: center;
+        color: tomato;
+    }
+}
+
+table {
+    margin: auto;
+    padding: 0.5%;
+}
+
+th {
+    background: lightcoral;
+}
+
+td {
+    background-color: peachpuff;
+    text-align: right;
+    font-weight: bold;
+}
+
+footer {
+    background-color: plum;
+}

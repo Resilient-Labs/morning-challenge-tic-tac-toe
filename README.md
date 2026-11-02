@@ -1,22 +1,61 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+A two-player Tic-Tac-Toe game with turn tracking, win and tie detection, and scorekeeping.
 
-### How to submit your code for review:
+## Overview
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+Tic-Tac-Toe lets two players take turns placing X and O on a three-by-three board.
 
-Example:
+The application tracks whose turn it is, checks the board after each move, detects wins and ties, updates player scores, and resets the board for the next round.
+
+## Features
+
+- Two-player local gameplay
+- X and O turn tracking
+- Prevention of moves on occupied squares
+- Win detection across rows, columns, and diagonals
+- Tie detection
+- Player score tracking across rounds
+- Automatic board reset after a win or tie
+
+## Technologies
+
+<p>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="40" height="40">
+  </a>
+  &nbsp;
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="40" height="40">
+  </a>
+  &nbsp;
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40">
+  </a>
+</p>
+
+## How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/nilesleesmith/play-tic-tac-toe.git
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+2. Open the project folder.
+
+3. Open `index.html` in a web browser.
+
+No additional packages or build steps are required.
+
+## Project Context
+
+This project was originally completed from a provided Tic-Tac-Toe coding challenge. The current implementation includes the game logic, player state, score tracking, and browser interface contained in this repository.
+
+## Live Site
+
+https://nilesleesmith.github.io/play-tic-tac-toe/
+
+## Screenshots
+
+![Tic-Tac-Toe desktop view](./screenshots/play-tic-tac-toe-desktop.png)

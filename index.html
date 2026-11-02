@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toee</title>
+        <link rel="stylesheet" href="./css/modern-normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+            <nav>
+                <ul>
+                    <li><a href="./pages/how-to-play.html">How to Play</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="gameCurrent">
+                <h2>Current Turn:</h2>
+                <div>
+                    <span class="currentTurn" id="playerOne">Player X</span>
+                    <span id="playerTwo">Player O</span>
+                </div>
+            </section>
+            <section class="gameBoard">
+                <div class="gameSquare" id="spotOne"><span></span></div>
+                <div class="gameSquare gameColumn" id="spotTwo"><span></span></div>
+                <div class="gameSquare" id="spotThree"><span></span></div>
+                <div class="gameSquare gameRow" id="spotFour"><span></span></div>
+                <div class="gameSquare gameRow gameColumn" id="spotFive"><span></span></div>
+                <div class="gameSquare gameRow" id="spotSix"><span></span></div>
+                <div class="gameSquare" id="spotSeven"><span></span></div>
+                <div class="gameSquare gameColumn" id="spotEight"><span></span></div>
+                <div class="gameSquare" id="spotNine"><span></span></div>
+            </section>
+            <section class="gameScore">
+                <h2 id="gameOutcome">Ready to Play?</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Player X</th>
+                            <th>Player O</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Score</th>
+                            <td id="scorePlayerOne">0</td>
+                            <td id="scorePlayerTwo">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <small>&copy; 2026 Made by: Niles</small>
+        </footer>
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
