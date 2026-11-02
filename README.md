@@ -1,22 +1,22 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# 🧩 Tic Tac Toe
+Use this program if you want to convert clients' payments to USD!
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+# 📋 How to use
+1. Open the app in your browser  
+2. Play game
+3. See who wins
 
-### How to submit your code for review:
+# 📸 Images
+<img width="1657" height="1199" alt="Screenshot 2026-10-09 at 9 50 31 PM" src="https://github.com/user-attachments/assets/6d10de69-a7ce-4df2-87b0-a6aa67b025a5" />
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# ✨ Features
+* Responsive design for desktop and mobile     
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+# 🔨 Built With
+* HTML5 – structure    
+* CSS3 – responsive design and background   
+* JavaScript - Game Logic
+
+# 🧠 What I Learned  
+* How to create game logic 
+* How to handle errors  
