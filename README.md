@@ -6,7 +6,7 @@ A two-player Tic-Tac-Toe game built with HTML, CSS, and object-oriented JavaScri
 
 Live: [Live Demo](https://morning-challenge-tic-tac-toe-two.vercel.app/)
 
-![Game Board](img/screenshot.jpg)
+![Game Board](./img/UI.jpeg)
 
 ## The Challenge
 
@@ -61,7 +61,7 @@ morning-challenge-tic-tac-toe/
 - How to model a game with JavaScript classes and methods
 - How to check win conditions with arrays of winning combinations
 - How to update the DOM based on game state
-- 【例如：how to separate game logic from the UI】
+
 
 ## Credit
 
