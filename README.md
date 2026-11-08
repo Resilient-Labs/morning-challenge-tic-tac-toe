@@ -1,22 +1,39 @@
-# 📊 Morning Challenge: Tic-Tac-Toe
+# Tic-Tac-Toe
 
-### Goal: Create a two player Tic-Tac-Toe game. The users should be able to click to place their X or O and if they win the program should mention their win in the DOM. Please make the game as OOP as possible.
+The Tic-Tac-Toe game is a simple two-player web application where players take turns placing X's and O's on a 3x3 game board. The goal is to get three matching symbols in a row, column, or diagonal to win the game.
 
-### How to submit your code for review:
+The game uses JavaScript to track player turns, check for winning combinations, and display the winner directly on the webpage.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Features
+Two-Player Game: Play against another person using the same game board.
+Interactive Game Board: Click on a square to place an X or O.
+Turn-Based Gameplay: Players alternate turns between X and O.
+Win Detection: Check for three matching symbols in a row, column, or diagonal.
+Winner Announcement: Display a message on the webpage when a player wins.
+Draw Detection: Recognize when all spaces are filled without a winner.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Tech Stack
+Frontend: HTML, CSS, JavaScript
+Programming Concepts: Object-Oriented Programming (OOP)
+
+## What I Learned
+Applying Object-Oriented Programming principles in JavaScript.
+Using classes and objects to organize game functionality.
+Managing game state and tracking player turns.
+Handling click events and user interactions.
+Using arrays to represent and manage the game board.
+Implementing conditional statements to check winning combinations.
+Detecting winning and draw conditions.
+Updating the DOM dynamically to display game results.
+Organizing code to make it more reusable and maintainable.
+
+## Installation
+Fork and clone the repository.
+Navigate to the project directory.
+
+## Usage
+Open the index.html file in your browser.
+Player 1 starts by clicking an empty square to place an X.
+Player 2 clicks an empty square to place an O.
+Continue taking turns until a player gets three matching symbols in a row, column, or diagonal.
+The winner will be announced on the webpage.
