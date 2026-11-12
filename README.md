@@ -8,6 +8,11 @@
 * Displays a message in the DOM when a player wins.
 * Uses a camping-inspired green color scheme.
 
+## Tech Stack
+
+- **Front end:** HTML, CSS, JavaScript (object-oriented, with `Game` and `Player` classes), Google Fonts (Agbalumo)
+- **Hosting:** GitHub Pages
+
 
 ## How to Use
 
