@@ -1,6 +1,9 @@
 ## Tic-Tac-Toe JS
 A classic Tic-Tac-Toe game built with vanilla JavaScript, designed to sharpen core programming fundamentals through hands-on DOM manipulation and game logic.
 
+## Live Demo
+ https://camerondcrawley.github.io/morning-challenge-tic-tac-toe/
+
 ## Features
 Interactive Grid: Clickable cells that handle turn-taking seamlessly and prevent overwriting existing moves.
 
